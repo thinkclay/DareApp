@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    cocoapods (0.5.1)
+      xcodeproj (~> 0.1.0)
+    rake (10.0.3)
+    teacup (1.2.5)
+      rake
+    xcodeproj (0.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cocoapods
+  teacup
