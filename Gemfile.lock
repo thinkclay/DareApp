@@ -1,8 +1,11 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    bubble-wrap (1.1.5)
     cocoapods (0.5.1)
       xcodeproj (~> 0.1.0)
+    motion-cocoapods (1.0.5)
+      cocoapods (>= 0.5.1)
     rake (10.0.3)
     teacup (1.2.5)
       rake
@@ -12,5 +15,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cocoapods
+  bubble-wrap
+  motion-cocoapods
   teacup

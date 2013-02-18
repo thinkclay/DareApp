@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
 
 gem 'teacup'
-gem 'cocoapods'
+gem 'motion-cocoapods'
+gem 'bubble-wrap'
