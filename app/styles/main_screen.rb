@@ -1,3 +1,12 @@
+#
+# Main Screen Styles
+#
+# Styles that relate to the middle column
+#
+# @author     Clay McIlrath <thinkclay@gmail.com>
+# @copyright  (c) 2013 Clayton McIlrath, All rights reserved
+#
+
 Teacup::Stylesheet.new :main_screen do
   
   style :create_button,
@@ -18,21 +27,21 @@ Teacup::Stylesheet.new :main_screen do
     left: 20, 
     height: 70,
     image: UIImage.imageNamed('ui-menu-profile.png'),
-    top: 370,
+    top: (Device.screen.height - 110),
     width: 70
 
   style :activity_button,
     left: 125, 
     height: 70,
     image: UIImage.imageNamed('ui-menu-activity.png'),
-    top: 370,
+    top: (Device.screen.height - 110),
     width: 70
 
   style :friends_button,
     left: 230, 
     height: 70,
     image: UIImage.imageNamed('ui-menu-friends.png'),
-    top: 370,
+    top: (Device.screen.height - 110),
     width: 70
 
 end

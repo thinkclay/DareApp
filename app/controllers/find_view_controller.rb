@@ -4,20 +4,21 @@
 # The Find a Challenge Menu
 #
 # @author     Clay McIlrath <thinkclay@gmail.com>
-# @copyright  Clayton McIlrath (c) 2013 
+# @copyright  (c) 2013 Clayton McIlrath, All rights reserved
 #
+
 class FindViewController < UIViewController
+
+  stylesheet :find_screen
+
   def loadView
-    self.view = UIImageView.alloc.init
+    super
+
+    self.view.backgroundColor = UIColor.colorWithPatternImage(UIImage.imageNamed('ui-bg-denim.png'))
   end
 
-  def viewDidLoad   
-    view.backgroundColor = UIColor.colorWithPatternImage(UIImage.imageNamed('ui-bg-denim.png'))
-     
-    @text_find = UIImageView.alloc.initWithFrame([ [20, 20], [250, 20] ])
-    @text_find.image = UIImage.imageNamed('txt-header-find.png')
-
-    view.addSubview(@text_find)
+  layout do
+    subview(UIImageView, :text_find)
   end
 
 end

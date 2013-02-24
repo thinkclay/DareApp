@@ -3,3 +3,9 @@ build
 resources/*.nib
 resources/*.momd
 resources/*.storyboardc
+.dat*
+
+.DS_Store
+*~
+*.sw[po]
+.eprj
