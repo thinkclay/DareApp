@@ -3,8 +3,9 @@ $:.unshift("/Library/RubyMotion/lib")
 require 'rubygems'
 require 'motion/project'
 require 'bundler'
-
 require 'motion-cocoapods'
+
+Bundler.require
 
 require 'bubble-wrap'
 require 'sugarcube'
@@ -15,7 +16,7 @@ require 'geomotion'
 
 require 'graymatter'
 
-Bundler.require
+
 
 Motion::Project::App.setup do |app|
   # Get our CocoaPods

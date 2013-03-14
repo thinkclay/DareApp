@@ -44,4 +44,46 @@ Teacup::Stylesheet.new :main_screen do
     top: (Device.screen.height - 110),
     width: 70
 
+
+  # Headers
+  style :menu_header,
+    left: 34,
+    height: 20,
+    top: 21,
+    width: 250
+
+  style :text_profile,
+    extends: :menu_header,
+    image: UIImage.imageNamed('txt-header-profile.png')
+
+  style :text_activity,
+    extends: :menu_header,
+    image: UIImage.imageNamed('txt-header-activity.png')
+
+  style :text_friends,
+    extends: :menu_header,
+    image: UIImage.imageNamed('txt-header-friends.png')
+
+
+  style :background_modal,
+    left: 20,
+    image: UIImage.imageNamed('bg-modal.png'),
+    top: 40
+
+  # modal window
+  style :modal_profile,
+    backgroundColor: UIColor.blueColor,
+    height: Device.screen.height,
+    left: 0,
+    top: Device.screen.height,
+    width: Device.screen.width
+
+  style :text_profile,
+    left: 34,
+    height: 20,
+    top: 21,
+    width: 250,
+    image: UIImage.imageNamed('txt-header-profile.png')
+
+
 end

@@ -6,7 +6,7 @@ gem 'motion-cocoapods'
 
 gem 'teacup', :git => 'https://github.com/rubymotion/teacup.git'
 gem 'bubble-wrap'
-gem 'sugarcube', :git => 'https://github.com/rubymotion/sugarcube'
+gem 'sugarcube', :git => 'https://github.com/rubymotion/sugarcube.git'
 gem 'sweettea'
 gem 'geomotion'
 

@@ -1,6 +1,4 @@
 .repl_history
-Gemfile.lock
-build
 resources/*.nib
 resources/*.momd
 resources/*.storyboardc

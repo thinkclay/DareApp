@@ -25,7 +25,7 @@ class CreateViewController < UIViewController
     @create_challenge = UIScrollView.new
 
     # A nice handy function from @colinta which will intercept our keyboard delegation
-    # and do work for us, like making the scroll area larger to accomodate overlap and such
+    # and do work for us, like making the scroll area larger to accommodate overlap and such
     prepare_keyboard_handler(@create_challenge)
   end
 
@@ -34,18 +34,34 @@ class CreateViewController < UIViewController
   # these should be moved out into their own controllers.. but then how will
   # keyboard delegation and other master -> child properties get passed?
   layout :root do
+    # assign our input fields to an array so we can loop through
+    # and manage keyboard actions
+    @input_fields = [];
+
     subview(@pagination, :pagination) do
 
       subview(@create_challenge, :form_create) do
         subview(UIImageView, :text_create)
 
-        subview(UIImageView, :input_text_wrapper) do
-          @challenge_name = subview(UITextField, :challenge_name)
+        subview(UIImageView, :input_text_type) do
+          @input_fields << subview(UITextField, :challenge_type)
+        end
+
+        subview(UIImageView, :input_text_name) do
+          @input_fields << subview(UITextField, :challenge_name)
+        end
+
+        subview(UIImageView, :input_text_location) do
+          @input_fields << subview(UITextField, :challenge_location)
         end
       end
 
       subview(UIScrollView, :form_rules) do
         subview(UIImageView, :text_rules)
+      end
+
+      subview(UIScrollView, :form_badge) do
+        subview(UIImageView, :text_badge)
       end
     
     end
@@ -63,7 +79,6 @@ class CreateViewController < UIViewController
     keyboard_handler_start
 
     @page_1.when_tapped do 
-      NSLog('page 1 clicked')
       @page_1.image = UIImage.imageNamed('ui-bullet-selected.png')
       @page_2.image = UIImage.imageNamed('ui-bullet-normal.png')
       @page_3.image = UIImage.imageNamed('ui-bullet-normal.png')
@@ -72,7 +87,6 @@ class CreateViewController < UIViewController
     end
 
     @page_2.when_tapped do 
-      NSLog('page 2 clicked')
       @page_1.image = UIImage.imageNamed('ui-bullet-normal.png')
       @page_2.image = UIImage.imageNamed('ui-bullet-selected.png')
       @page_3.image = UIImage.imageNamed('ui-bullet-normal.png')
@@ -81,7 +95,6 @@ class CreateViewController < UIViewController
     end
 
     @page_3.when_tapped do 
-      NSLog('page 3 clicked')
       @page_1.image = UIImage.imageNamed('ui-bullet-normal.png')
       @page_2.image = UIImage.imageNamed('ui-bullet-normal.png')
       @page_3.image = UIImage.imageNamed('ui-bullet-selected.png')
@@ -90,7 +103,6 @@ class CreateViewController < UIViewController
     end
 
     @page_4.when_tapped do 
-      NSLog('page 4 clicked')
       @page_1.image = UIImage.imageNamed('ui-bullet-normal.png')
       @page_2.image = UIImage.imageNamed('ui-bullet-normal.png')
       @page_3.image = UIImage.imageNamed('ui-bullet-normal.png')
@@ -99,8 +111,9 @@ class CreateViewController < UIViewController
     end
 
     self.view.when_tapped do
-      NSLog('self.view clicked')
-      @challenge_name.resignFirstResponder
+      @input_fields.each { |field|
+        field.resignFirstResponder
+      }
     end
   end
 

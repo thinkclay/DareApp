@@ -20,6 +20,9 @@ class MainViewController < UIViewController
     else
       self.view.backgroundColor = UIColor.colorWithPatternImage(UIImage.imageNamed('ui-bg-octo-5.png'));
     end
+
+    @profile = UIView.alloc.initWithFrame([[Device.screen.width, Device.screen.height], [Device.screen.width, Device.screen.height]])
+    @profile.backgroundColor = UIColor.blueColor
   end
 
   layout do
@@ -30,12 +33,27 @@ class MainViewController < UIViewController
     activity_button = subview(UIImageView, :activity_button)
     friends_button = subview(UIImageView, :friends_button)
 
+    modal_profile = subview(@profile, :modal_profile) do
+      subview(UIImageView, :text_profile)
+    end
+
+    modal_activity = subview(UIView, :modal_activity)
+    modal_friends = subview(UIView, :modal_friends)
+
     create_button.when_tapped do
       self.viewDeckController.toggleRightViewAnimated(true)
     end
 
     find_button.when_tapped do
       self.viewDeckController.toggleLeftViewAnimated(true)
+    end
+
+    profile_button.when_tapped do
+      @profile.move_to([0, 100])
+    end
+
+    self.view.when_tapped do
+      @profile.move_to([0, Device.screen.height])
     end
 
   end
