@@ -3,6 +3,8 @@ resources/*.nib
 resources/*.momd
 resources/*.storyboardc
 .dat*
+vendor
+
 
 .DS_Store
 *~
