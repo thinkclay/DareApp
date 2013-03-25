@@ -17,7 +17,7 @@ class CreateViewController < UIViewController
     self.view = UIView.new
     self.view.backgroundColor = UIColor.colorWithPatternImage(UIImage.imageNamed('ui-bg-denim.png'))
 
-    # This is the pagination wrapper which is a scroll view containing many more scroll views    
+    # This is the pagination wrapper which is a scroll view containing many more scroll views
     @pagination = UIScrollView.new
     @pagination.pagingEnabled = true
     @pagination.bounces = false
@@ -63,7 +63,13 @@ class CreateViewController < UIViewController
       subview(UIScrollView, :form_badge) do
         subview(UIImageView, :text_badge)
       end
-    
+
+      subview(UIScrollView, :form_share) do
+        subview(UIImageView, :text_share)
+        @share_facebook = subview(UIImageView, :button_share_facebook)
+        @share_twitter = subview(UIImageView, :button_share_twitter)
+      end
+
     end
 
     # pagination control
@@ -78,7 +84,15 @@ class CreateViewController < UIViewController
     super
     keyboard_handler_start
 
-    @page_1.when_tapped do 
+    @share_facebook.when_tapped do
+      Composer.new(self, "Facebook", "I just created a challenge!")
+    end
+
+    @share_twitter.when_tapped do
+      Composer.new(self, "Twitter", "I just created a challenge!")
+    end
+
+    @page_1.when_tapped do
       @page_1.image = UIImage.imageNamed('ui-bullet-selected.png')
       @page_2.image = UIImage.imageNamed('ui-bullet-normal.png')
       @page_3.image = UIImage.imageNamed('ui-bullet-normal.png')
@@ -86,7 +100,7 @@ class CreateViewController < UIViewController
       @pagination.setContentOffset(CGPointMake(0, 0), animated: true)
     end
 
-    @page_2.when_tapped do 
+    @page_2.when_tapped do
       @page_1.image = UIImage.imageNamed('ui-bullet-normal.png')
       @page_2.image = UIImage.imageNamed('ui-bullet-selected.png')
       @page_3.image = UIImage.imageNamed('ui-bullet-normal.png')
@@ -94,7 +108,7 @@ class CreateViewController < UIViewController
       @pagination.setContentOffset(CGPointMake(Device.screen.width, 0), animated: true)
     end
 
-    @page_3.when_tapped do 
+    @page_3.when_tapped do
       @page_1.image = UIImage.imageNamed('ui-bullet-normal.png')
       @page_2.image = UIImage.imageNamed('ui-bullet-normal.png')
       @page_3.image = UIImage.imageNamed('ui-bullet-selected.png')
@@ -102,7 +116,7 @@ class CreateViewController < UIViewController
       @pagination.setContentOffset(CGPointMake(Device.screen.width*2, 0), animated: true)
     end
 
-    @page_4.when_tapped do 
+    @page_4.when_tapped do
       @page_1.image = UIImage.imageNamed('ui-bullet-normal.png')
       @page_2.image = UIImage.imageNamed('ui-bullet-normal.png')
       @page_3.image = UIImage.imageNamed('ui-bullet-normal.png')

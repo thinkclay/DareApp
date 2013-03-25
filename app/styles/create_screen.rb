@@ -27,7 +27,7 @@ Teacup::Stylesheet.new :create_screen do
     extends: :form,
     left: (Device.screen.width*2 + 25)
 
-  style :form_social,
+  style :form_share,
     extends: :form,
     left: (Device.screen.width*3 + 25)
 
@@ -50,9 +50,9 @@ Teacup::Stylesheet.new :create_screen do
     extends: :create_header,
     image: UIImage.imageNamed('txt-header-badge.png')
 
-  style :text_badge,
-    extends: :create_social,
-    image: UIImage.imageNamed('txt-header-social.png')
+  style :text_share,
+    extends: :create_header,
+    image: UIImage.imageNamed('txt-header-share.png')
 
   # Pagination
   style :pagination,
@@ -119,7 +119,7 @@ Teacup::Stylesheet.new :create_screen do
   style :input_text,
     color: BubbleWrap.rgb_color(118, 90, 59),
     height: 21,
-    left: 8, 
+    left: 8,
     placeholder: 'Nothing Set',
     top: 5,
     width: 237
@@ -135,5 +135,18 @@ Teacup::Stylesheet.new :create_screen do
   style :challenge_location,
     extends: :input_text,
     placeholder: 'Start Location'
+
+  # Social
+  style :button_share_facebook,
+    image: UIImage.imageNamed('ui-btn-facebook.png'),
+    left: 24,
+    top: 60
+
+  style :button_share_twitter,
+    image: UIImage.imageNamed('ui-btn-twitter.png'),
+    constraints: [
+      constrain(:left).equals(:button_share_facebook, :right).plus(8)
+    ],
+    top: 60
 
 end

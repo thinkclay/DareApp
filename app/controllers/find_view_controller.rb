@@ -18,7 +18,7 @@ class FindViewController < UIViewController
   end
 
   layout do
-    subview(UIImageView, :text_find)
+    find_text = subview(UIImageView, :text_find)
   end
 
 end

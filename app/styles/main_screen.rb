@@ -45,45 +45,56 @@ Teacup::Stylesheet.new :main_screen do
     width: 70
 
 
-  # Headers
+  #
+  # Modal Windows
+  #
+
+  # Universal
+  style :modal_window,
+    backgroundColor: UIColor.clearColor,
+    height: Device.screen.height,
+    left: 0,
+    top: Device.screen.height,
+    width: Device.screen.width
+
   style :menu_header,
     left: 34,
     height: 20,
     top: 21,
     width: 250
 
-  style :text_profile,
-    extends: :menu_header,
-    image: UIImage.imageNamed('txt-header-profile.png')
-
-  style :text_activity,
-    extends: :menu_header,
-    image: UIImage.imageNamed('txt-header-activity.png')
-
-  style :text_friends,
-    extends: :menu_header,
-    image: UIImage.imageNamed('txt-header-friends.png')
-
-
+  # Universal
   style :background_modal,
     left: 20,
     image: UIImage.imageNamed('bg-modal.png'),
     top: 40
 
-  # modal window
-  style :modal_profile,
-    backgroundColor: UIColor.blueColor,
-    height: Device.screen.height,
-    left: 0,
-    top: Device.screen.height,
-    width: Device.screen.width
-
-  style :text_profile,
-    left: 34,
+  style :modal_close,
     height: 20,
-    top: 21,
-    width: 250,
+    right: 20,
+    top: 25,
+    width: 22
+
+  # profile window
+  style :text_profile,
+    extends: :menu_header,
     image: UIImage.imageNamed('txt-header-profile.png')
 
+  style :avatar,
+    height: 50,
+    image: UIImage.imageNamed('ph-avatar.png'),
+    left: 30,
+    top: 50,
+    width: 50
+
+  # activity window
+  style :text_activity,
+    extends: :menu_header,
+    image: UIImage.imageNamed('txt-header-activity.png')
+
+  # friends window
+  style :text_friends,
+    extends: :menu_header,
+    image: UIImage.imageNamed('txt-header-friends.png')
 
 end

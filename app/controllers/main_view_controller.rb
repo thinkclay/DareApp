@@ -22,7 +22,8 @@ class MainViewController < UIViewController
     end
 
     @profile = UIView.alloc.initWithFrame([[Device.screen.width, Device.screen.height], [Device.screen.width, Device.screen.height]])
-    @profile.backgroundColor = UIColor.blueColor
+    @activity = UIView.alloc.initWithFrame([[Device.screen.width, Device.screen.height], [Device.screen.width, Device.screen.height]])
+    @friends = UIView.alloc.initWithFrame([[Device.screen.width, Device.screen.height], [Device.screen.width, Device.screen.height]])
   end
 
   layout do
@@ -33,12 +34,21 @@ class MainViewController < UIViewController
     activity_button = subview(UIImageView, :activity_button)
     friends_button = subview(UIImageView, :friends_button)
 
-    modal_profile = subview(@profile, :modal_profile) do
+    modal_profile = subview(@profile, :modal_window) do
       subview(UIImageView, :text_profile)
+      subview(UIImageView, :background_modal)
+      subview(UIImageView, :avatar)
     end
 
-    modal_activity = subview(UIView, :modal_activity)
-    modal_friends = subview(UIView, :modal_friends)
+    modal_activity = subview(@activity, :modal_window) do
+      subview(UIImageView, :text_activity)
+      subview(UIImageView, :background_modal)
+    end
+
+    modal_friends = subview(@friends, :modal_window) do
+      subview(UIImageView, :text_friends)
+      subview(UIImageView, :background_modal)
+    end
 
     create_button.when_tapped do
       self.viewDeckController.toggleRightViewAnimated(true)
@@ -49,11 +59,21 @@ class MainViewController < UIViewController
     end
 
     profile_button.when_tapped do
-      @profile.move_to([0, 100])
+      @profile.move_to([0, 0])
+    end
+
+    activity_button.when_tapped do
+      @activity.move_to([0, 0])
+    end
+
+    friends_button.when_tapped do
+      @friends.move_to([0, 0])
     end
 
     self.view.when_tapped do
       @profile.move_to([0, Device.screen.height])
+      @activity.move_to([0, Device.screen.height])
+      @friends.move_to([0, Device.screen.height])
     end
 
   end
