@@ -38,6 +38,10 @@ class MainViewController < UIViewController
       subview(UIImageView, :text_profile)
       subview(UIImageView, :background_modal)
       subview(UIImageView, :avatar)
+      subview(UILabel, :user_name)
+      subview(UILabel, :user_location)
+      subview(UIImageView, :btn_friends)
+      @coins = subview(UIImageView, :btn_coins)
     end
 
     modal_activity = subview(@activity, :modal_window) do
@@ -68,6 +72,10 @@ class MainViewController < UIViewController
 
     friends_button.when_tapped do
       @friends.move_to([0, 0])
+    end
+
+    @coins.when_tapped do
+      self.navigationController.pushViewController(MapViewController.alloc.init, animated: true)
     end
 
     self.view.when_tapped do

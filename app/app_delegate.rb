@@ -10,7 +10,7 @@
 
 class AppDelegate
 
-  # 
+  #
   # Application Launch
   #
   # our regions are defined as left, center, and right, which each contain a set of navigation views (for now) that will
@@ -28,7 +28,7 @@ class AppDelegate
 
     @center = UINavigationController.alloc.initWithRootViewController(MainViewController.new)
     @center.navigationBarHidden = true
-    @center.viewControllers = [MainViewController.new]
+    @center.viewControllers = [MapViewController.new, MainViewController.new]
 
     @deckViewController = IIViewDeckController.alloc.initWithCenterViewController(@center, leftViewController: @left, rightViewController: @right)
     @deckViewController.leftSize = 25

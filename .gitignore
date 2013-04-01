@@ -4,7 +4,10 @@ resources/*.momd
 resources/*.storyboardc
 .dat*
 vendor
+build
 
+*.sublime-project
+.idea
 
 .DS_Store
 *~

@@ -1,0 +1,427 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"class",
+				"class_exists"
+			],
+			[
+				"clas",
+				"class_exists"
+			],
+			[
+				"functio",
+				"function_exists"
+			],
+			[
+				"password",
+				"password_confirm"
+			],
+			[
+				"passw",
+				"password_confirm"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"image",
+				"image_name"
+			],
+			[
+				"quer",
+				"query_string"
+			],
+			[
+				"media",
+				"media_type"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"conv",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"conv ",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"conv spa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pack co i",
+				"Package Control: Install Package"
+			],
+			[
+				"pac i",
+				"Package Control: Install Package"
+			],
+			[
+				"pack in",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/classes/Model/User.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/classes/Controller/Private/Content.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/classes/Annex/Theme.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/themes/default/views/forms/register.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/classes/Controller/Private.php",
+		"/Volumes/Data/Projects/PHP/P2BI/modules/annex/classes/Model/Content.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/classes/Controller/Private/Annex.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/submodules/Brass/classes/Validation.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/submodules/Brass/classes/BrassDB.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/application/bootstrap.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/config/annex_annex.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/classes/Controller/Public/Annex.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/init.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/application/config/authenticate.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/config/annex_core.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/submodules/Brass/classes/Brass.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/submodules/Brass/classes/Valid.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/application/classes/Model/Mango/User.php",
+		"/Volumes/Data/Projects/PHP/P2BI/modules/annex/classes/Model/Content/User.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/classes/Controller/Public.php",
+		"/Volumes/Data/Projects/PHP/P2BI/modules/annex/classes/Controller/Private/Content.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/submodules/Registration/config/registration_annex.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/submodules/Registration/classes/Registration.php",
+		"/Volumes/Data/Projects/PHP/P2BI/modules/annex/submodules/Registration/classes/Core.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/submodules/Less/classes/Less/Core.php",
+		"/Volumes/Data/Projects/PHP/P2BI/modules/annex/submodules/Registration/classes/Registration.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/submodules/Less/classes/Less.php",
+		"/Volumes/Data/Projects/PHP/P2BI/modules/annex/classes/Controller/Private/Cms.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/classes/Theme.php",
+		"/Volumes/Data/Projects/PHP/P2BI/modules/annex/classes/Controller/Public/Scripts.php",
+		"/Volumes/Data/Projects/PHP/P2BI/modules/annex/classes/Controller/Public/Styles.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/submodules/Auth/classes/authorize.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/submodules/Auth/classes/authenticate.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/themes/default/views/forms/login.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/config/encrypt.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/submodules/Auth/classes/model/authenticate/user/mango.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/submodules/Auth/classes/a1/core.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/system/classes/Kohana/Response.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/system/classes/Kohana/Request.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/submodules/Auth/A1/classes/a1/core.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/README.md",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/classes/controller/private/annex.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/classes/controller/Private.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/config/private.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/config/mangoDB.php",
+		"/Users/clay/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/clay/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/Volumes/Data/Projects/PHP/P2Bi/application/config/mangoDB.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/application/config/private.php",
+		"/Users/clay/Library/Application Support/Sublime Text 3/Packages/User/PHP.sublime-settings",
+		"/Volumes/Data/Projects/PHP/P2Bi/system/classes/Kohana/Cookie.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/config/a1.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/classes/controller/Public.php",
+		"/Users/clay/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/classes/controller/Welcome.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/application/classes/Controller/Welcome.php",
+		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/classes/controller/public/annex.php",
+		"/Volumes/Data/Projects/Ruby/Analytics/root.rb",
+		"/Volumes/Data/Projects/Ruby/Analytics/analytics.sublime-project",
+		"/Users/clay/Library/Application Support/Sublime Text 3/Packages/User/GitGutter.sublime-settings",
+		"/Users/clay/Library/Application Support/Sublime Text 3/Packages/GitGutter/GitGutter.sublime-settings",
+		"/Volumes/Data/Projects/Ruby/Analytics/views/wrapper.haml.html",
+		"/Volumes/Data/Projects/Ruby/Analytics/view/wrapper.haml.html",
+		"/Volumes/Data/Projects/Ruby/Analytics/test.rb",
+		"/Volumes/Data/Projects/Ruby/Analytics/Rakefile"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mango",
+			"_save_",
+			"=>",
+			"          =>",
+			"public",
+			"static",
+			"type",
+			"minimap",
+			".to_s",
+			"request.",
+			"request",
+			", "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "bringitonapp.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"ann/clas/mode/user",
+				"modules/annex/classes/Model/User.php"
+			],
+			[
+				"annex/clas/mod/user",
+				"modules/annex/classes/Model/User.php"
+			],
+			[
+				"annex/authent",
+				"modules/annex/submodules/Auth/classes/Authenticate.php"
+			],
+			[
+				"annex/auth.php",
+				"modules/annex/submodules/Auth/classes/Authorize.php"
+			],
+			[
+				"theme",
+				"modules/annex/classes/Annex/Theme.php"
+			],
+			[
+				"regist",
+				"modules/annex/themes/default/views/forms/register.php"
+			],
+			[
+				"login",
+				"modules/annex/themes/default/views/forms/login.php"
+			],
+			[
+				"annex_ann",
+				"modules/annex/config/annex_annex.php"
+			],
+			[
+				"registe",
+				"modules/annex/themes/default/views/forms/register.php"
+			],
+			[
+				"author",
+				"modules/annex/submodules/Auth/classes/authorize.php"
+			],
+			[
+				"ann/priva",
+				"modules/annex/classes/Controller/Private.php"
+			],
+			[
+				"mod/auth/model",
+				"modules/annex/submodules/Auth/classes/model/authenticate/user/mango.php"
+			],
+			[
+				"model/mango/user",
+				"application/classes/Model/Mango/User.php"
+			],
+			[
+				"annex/auth",
+				"modules/annex/submodules/Auth/classes/authenticate.php"
+			],
+			[
+				"authent",
+				"application/config/authenticate.php"
+			],
+			[
+				"pub/annex",
+				"modules/annex/classes/Controller/Public/Annex.php"
+			],
+			[
+				"model/user",
+				"modules/annex/classes/Model/User.php"
+			],
+			[
+				"public.php",
+				"modules/annex/classes/Controller/Public.php"
+			],
+			[
+				"ko/respons",
+				"system/classes/Kohana/Response.php"
+			],
+			[
+				"ko/request.php",
+				"system/classes/Kohana/Request.php"
+			],
+			[
+				"a1/core.",
+				"modules/annex/submodules/Auth/classes/a1/core.php"
+			],
+			[
+				"a1/core.php",
+				"modules/annex/submodules/Auth/A1/classes/a1/core.php"
+			],
+			[
+				"regist.",
+				"modules/annex/themes/default/views/forms/register.php"
+			],
+			[
+				"login.php",
+				"modules/annex/themes/default/views/forms/login.php"
+			],
+			[
+				"wrap",
+				"views/wrapper.haml"
+			],
+			[
+				"haml",
+				"views/wrapper.haml"
+			],
+			[
+				"hamt",
+				"views/wrapper.haml.html"
+			],
+			[
+				"",
+				"root.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 220.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -16,6 +16,8 @@ require 'geomotion'
 
 require 'graymatter'
 
+require 'map-kit-wrapper'
+
 Motion::Project::App.setup do |app|
   # Get our CocoaPods
   app.pods do
@@ -28,9 +30,10 @@ Motion::Project::App.setup do |app|
 
   app.deployment_target = '6.0'
   app.device_family = [:iphone]
-  app.frameworks += ['Social', 'Twitter']
+  app.frameworks += ['Social', 'Twitter', 'CoreLocation', 'MapKit']
 
   app.icons = ['Icon.png', 'Icon@2x.png', 'Icon-72.png', 'iTunesArtwork.png', 'iTunesArtwork@2x.png']
+  app.fonts = ['CabinSketch-Bold.ttf', 'CabinSketch-Regular.ttf']
   app.prerendered_icon = true
   app.interface_orientations = [:portrait]
 end

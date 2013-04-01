@@ -8,37 +8,37 @@
 #
 
 Teacup::Stylesheet.new :main_screen do
-  
+
   style :create_button,
-    left: 29, 
+    left: 29,
     height: 45,
     image: UIImage.imageNamed('ui-btn-create.png'),
     top: 100,
     width: 291
 
   style :find_button,
-    left: 0, 
+    left: 0,
     height: 45,
     image: UIImage.imageNamed('ui-btn-find.png'),
     top: 250,
     width: 261
 
   style :profile_button,
-    left: 20, 
+    left: 20,
     height: 70,
     image: UIImage.imageNamed('ui-menu-profile.png'),
     top: (Device.screen.height - 110),
     width: 70
 
   style :activity_button,
-    left: 125, 
+    left: 125,
     height: 70,
     image: UIImage.imageNamed('ui-menu-activity.png'),
     top: (Device.screen.height - 110),
     width: 70
 
   style :friends_button,
-    left: 230, 
+    left: 230,
     height: 70,
     image: UIImage.imageNamed('ui-menu-friends.png'),
     top: (Device.screen.height - 110),
@@ -86,6 +86,44 @@ Teacup::Stylesheet.new :main_screen do
     left: 30,
     top: 50,
     width: 50
+
+  style :user_name,
+    background: UIColor.clearColor,
+    color: BubbleWrap.rgb_color(182, 164, 131),
+    font: UIFont.fontWithName('CabinSketch-Regular', size: 20),
+    constraints: [
+      constrain(:left).equals(:avatar, :right).plus(10),
+      constrain(:top).equals(:avatar, :top).plus(2)
+    ],
+    text: 'Clayton McIlrath'
+
+  style :user_location,
+    background: UIColor.clearColor,
+    color: BubbleWrap.rgb_color(150, 130, 95),
+    constraints: [
+      constrain(:left).equals(:avatar, :right).plus(10),
+      constrain(:top).equals(:avatar, :top).plus(28)
+    ],
+    font: UIFont.systemFontOfSize(14.0),
+    text: 'Lafayette, CO'
+
+  style :btn_friends,
+    image: UIImage.imageNamed('ui-btn-friends.png'),
+    constraints: [
+      constrain(:bottom).equals(:modal_window, :bottom).minus(38),
+      constrain(:left).equals(:modal_window, :left).plus(38)
+    ],
+    height: 29,
+    width: 110
+
+  style :btn_coins,
+    image: UIImage.imageNamed('ui-btn-coins.png'),
+    constraints: [
+      constrain(:bottom).equals(:modal_window, :bottom).minus(38),
+      constrain(:right).equals(:modal_window, :right).minus(38)
+    ],
+    height: 29,
+    width: 110
 
   # activity window
   style :text_activity,
