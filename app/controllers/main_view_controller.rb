@@ -37,9 +37,25 @@ class MainViewController < UIViewController
     modal_profile = subview(@profile, :modal_window) do
       subview(UIImageView, :text_profile)
       subview(UIImageView, :background_modal)
+
+      subview(UIImageView, :close_button).when_tapped do
+        @profile.move_to([0, Device.screen.height])
+      end
+
       subview(UIImageView, :avatar)
       subview(UILabel, :user_name)
       subview(UILabel, :user_location)
+
+      subview(UIImageView, :map_data)
+      subview(UIImageView, :map_overlay)
+
+      subview(UIScrollView, :badges_earned) do
+        subview(UIImageView, :badge_chinup)
+        subview(UIImageView, :badge_green)
+        subview(UIImageView, :badge_drunk)
+      end
+      subview(UIImageView, :badges_overlay)
+
       subview(UIImageView, :btn_friends)
       @coins = subview(UIImageView, :btn_coins)
     end
@@ -47,11 +63,19 @@ class MainViewController < UIViewController
     modal_activity = subview(@activity, :modal_window) do
       subview(UIImageView, :text_activity)
       subview(UIImageView, :background_modal)
+
+      subview(UIImageView, :close_button).when_tapped do
+        @activity.move_to([0, Device.screen.height])
+      end
     end
 
     modal_friends = subview(@friends, :modal_window) do
       subview(UIImageView, :text_friends)
       subview(UIImageView, :background_modal)
+
+      subview(UIImageView, :close_button).when_tapped do
+        @friends.move_to([0, Device.screen.height])
+      end
     end
 
     create_button.when_tapped do
@@ -76,12 +100,6 @@ class MainViewController < UIViewController
 
     @coins.when_tapped do
       self.navigationController.pushViewController(MapViewController.alloc.init, animated: true)
-    end
-
-    self.view.when_tapped do
-      @profile.move_to([0, Device.screen.height])
-      @activity.move_to([0, Device.screen.height])
-      @friends.move_to([0, Device.screen.height])
     end
 
   end

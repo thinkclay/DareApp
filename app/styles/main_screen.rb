@@ -63,6 +63,13 @@ Teacup::Stylesheet.new :main_screen do
     top: 21,
     width: 250
 
+  style :close_button,
+    height: 22,
+    image: UIImage.imageNamed('ui-close.png'),
+    left: 290,
+    top: 28,
+    width: 22
+
   # Universal
   style :background_modal,
     left: 20,
@@ -83,8 +90,8 @@ Teacup::Stylesheet.new :main_screen do
   style :avatar,
     height: 50,
     image: UIImage.imageNamed('ph-avatar.png'),
-    left: 30,
-    top: 50,
+    left: 35,
+    top: 55,
     width: 50
 
   style :user_name,
@@ -106,6 +113,68 @@ Teacup::Stylesheet.new :main_screen do
     ],
     font: UIFont.systemFontOfSize(14.0),
     text: 'Lafayette, CO'
+
+  style :map_data,
+    constraints: [
+      constrain(:left).equals(:avatar, :left),
+      constrain(:top).equals(:user_location, :bottom).plus(15)
+    ],
+    height: 129,
+    image: UIImage.imageNamed('ph-map.png'),
+    width: 250
+
+  style :map_overlay,
+    constraints: [
+      constrain(:left).equals(:avatar, :left),
+      constrain(:top).equals(:user_location, :bottom).plus(15)
+    ],
+    height: 129,
+    image: UIImage.imageNamed('profile-map-overlay.png'),
+    width: 250
+
+  style :badges_earned,
+    background: BubbleWrap.rgba_color(55, 44, 31, 0.4),
+    contentSize: CGSizeMake(250, 500),
+    height: 129,
+    left: 35,
+    top: 258,
+    width: 250
+
+  style :badge,
+    height: 100,
+    image: UIImage.imageNamed('ph-badge-chinup.png'),
+    left: 6,
+    top: 0,
+    width: 75
+
+  style :badge_chinup,
+    extends: :badge,
+    image: UIImage.imageNamed('ph-badge-chinup.png')
+
+  style :badge_green,
+    constraints: [
+      constrain(:left).equals(:badge_chinup, :right).plus(6),
+      constrain(:top).equals(:badge_chinup, :top)
+    ],
+    extends: :badge,
+    image: UIImage.imageNamed('ph-badge-green.png')
+
+  style :badge_drunk,
+    constraints: [
+      constrain(:left).equals(:badge_green, :right).plus(6),
+      constrain(:top).equals(:badge_chinup, :top)
+    ],
+    extends: :badge,
+    image: UIImage.imageNamed('ph-badge-drunk.png')
+
+  style :badges_overlay,
+    constraints: [
+      constrain(:left).equals(:avatar, :left),
+      constrain(:bottom).equals(:badges_earned, :bottom)
+    ],
+    height: 22,
+    image: UIImage.imageNamed('profile-badges-overlay.png'),
+    width: 250
 
   style :btn_friends,
     image: UIImage.imageNamed('ui-btn-friends.png'),

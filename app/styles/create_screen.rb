@@ -102,19 +102,22 @@ Teacup::Stylesheet.new :create_screen do
 
   style :input_text_type,
     extends: :input_text_wrapper,
+    tag: 1,
     top: 50
 
   style :input_text_name,
     extends: :input_text_wrapper,
     constraints: [
       constrain(:top).equals(:input_text_type, :bottom).plus(15)
-    ]
+    ],
+    tag: 2
 
   style :input_text_location,
     extends: :input_text_wrapper,
     constraints: [
       constrain(:top).equals(:input_text_name, :bottom).plus(15)
-    ]
+    ],
+    tag: 3
 
   style :input_text,
     color: BubbleWrap.rgb_color(118, 90, 59),

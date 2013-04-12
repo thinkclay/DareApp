@@ -18,24 +18,31 @@ class AppDelegate
   #
   def application(application, didFinishLaunchingWithOptions:launchOptions)
 
-    @left = UINavigationController.alloc.initWithRootViewController(FindViewController.new)
+    find = FindViewController.new
+    create = CreateViewController.new
+    main = MainViewController.new
+    auth = AuthViewController.new
+    map = MapViewController.new
+
+
+    @left = UINavigationController.alloc.initWithRootViewController(find)
     @left.navigationBarHidden = true
-    @left.viewControllers = [FindViewController.new]
+    @left.viewControllers = [find]
 
-    @right = UINavigationController.alloc.initWithRootViewController(CreateViewController.new)
+    @right = UINavigationController.alloc.initWithRootViewController(create)
     @right.navigationBarHidden = true
-    @right.viewControllers = [CreateViewController.new]
+    @right.viewControllers = [create]
 
-    @center = UINavigationController.alloc.initWithRootViewController(MainViewController.new)
+    @center = UINavigationController.alloc.initWithRootViewController(main)
     @center.navigationBarHidden = true
-    @center.viewControllers = [MapViewController.new, MainViewController.new]
+    @center.viewControllers = [auth, map, main]
 
     @deckViewController = IIViewDeckController.alloc.initWithCenterViewController(@center, leftViewController: @left, rightViewController: @right)
     @deckViewController.leftSize = 25
     @deckViewController.rightSize = 25
 
     @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
-    @window.rootViewController = @deckViewController
+    @window.rootViewController = (false) ? AuthViewController.alloc.init : @deckViewController
     @window.makeKeyAndVisible
 
     return true

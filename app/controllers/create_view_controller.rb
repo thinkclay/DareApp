@@ -124,6 +124,11 @@ class CreateViewController < UIViewController
       @pagination.setContentOffset(CGPointMake(Device.screen.width*3, 0), animated: true)
     end
 
+
+    @input_fields.each { |field|
+      field.delegate = self
+    }
+
     self.view.when_tapped do
       @input_fields.each { |field|
         field.resignFirstResponder
@@ -142,6 +147,16 @@ class CreateViewController < UIViewController
   def viewWillLayoutSubviews
     @create_challenge.contentSize = CGSizeMake( (Device.screen.width - 25), (Device.screen.height - 50) )
     @pagination.contentSize = self.view.superview.bounds.size
+  end
+
+  def textFieldShouldReturn(textfield)
+    index = @input_fields.index(textfield)
+
+    if index == @input_fields.length - 1
+      textfield.resignFirstResponder
+    else
+      @input_fields[index + 1].becomeFirstResponder
+    end
   end
 
 end

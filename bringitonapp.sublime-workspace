@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"close_",
+				"close_profile"
+			],
+			[
+				"ba",
+				"badge_chinup"
+			],
+			[
+				"conts",
+				"constrain"
+			],
+			[
+				"co",
+				"constraints"
+			],
+			[
+				"con",
+				"constrain"
+			],
+			[
+				"ima",
+				"imageNamed"
+			],
+			[
+				"map",
+				"map_overlay"
+			],
+			[
+				"const",
+				"constrain"
+			],
+			[
+				"sub",
+				"subview"
+			],
+			[
+				"when",
+				"when_tapped"
+			],
+			[
+				"modal",
+				"modal_window"
+			],
+			[
+				"image",
+				"imageNamed"
+			],
+			[
+				"UIIma",
+				"UIImageView"
+			],
+			[
 				"print",
 				"print_r"
 			],
@@ -32,10 +84,6 @@
 				"var_dump"
 			],
 			[
-				"image",
-				"image_name"
-			],
-			[
 				"quer",
 				"query_string"
 			],
@@ -47,13 +95,90 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/controllers/main_view_controller.rb",
+			"settings":
+			{
+				"buffer_size": 3304,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/auth_view_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1168,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/auth_screen.rb",
+			"settings":
+			{
+				"buffer_size": 1599,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 381,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controllers/map_view_controller.rb",
+			"settings":
+			{
+				"buffer_size": 362,
+				"line_ending": "Unix",
+				"name": "class MapViewController < UIViewController"
+			}
+		},
+		{
+			"file": "app/app_delegate.rb",
+			"settings":
+			{
+				"buffer_size": 1651,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/styles/main_screen.rb",
+			"settings":
+			{
+				"buffer_size": 4879,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/create_screen.rb",
+			"settings":
+			{
+				"buffer_size": 3374,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/create_view_controller.rb",
+			"settings":
+			{
+				"buffer_size": 5190,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 47.0,
+		"height": 147.0,
 		"selected_items":
 		[
+			[
+				"synt sh",
+				"Set Syntax: Shell Script (Bash)"
+			],
 			[
 				"insta",
 				"Package Control: Install Package"
@@ -123,6 +248,13 @@
 	},
 	"file_history":
 	[
+		"/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/app/styles/main_screen.rb",
+		"/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/app/classes/social/auto.rb",
+		"/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/Gemfile",
+		"/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/Rakefile",
+		"/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/app/classes/modal.rb",
+		"/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/app/controllers/map_view.rb",
+		"/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/.gitignore",
 		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/classes/Model/User.php",
 		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/classes/Controller/Private/Content.php",
 		"/Volumes/Data/Projects/PHP/P2Bi/modules/annex/classes/Annex/Theme.php",
@@ -205,6 +337,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"UIImage",
+			"10",
+			"badges_earned",
 			"mango",
 			"_save_",
 			"=>",
@@ -234,8 +369,269 @@
 	"groups":
 	[
 		{
+			"selected": 8,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/controllers/main_view_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3304,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1708,
+								1736
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 238.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/controllers/auth_view_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								942,
+								942
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/styles/auth_screen.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1599,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								646,
+								646
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 16.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 381,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								167,
+								167
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/controllers/map_view_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								351,
+								351
+							]
+						],
+						"settings":
+						{
+							"auto_name": "class MapViewController < UIViewController",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/app_delegate.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1651,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1538,
+								1538
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/styles/main_screen.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4879,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2185,
+								1856
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1226.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/styles/create_screen.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3374,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2627,
+								2627
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1343.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/controllers/create_view_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5190,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5179,
+								5179
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -281,6 +677,18 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"creatvi",
+				"app/controllers/create_view_controller.rb"
+			],
+			[
+				"creat",
+				"app/styles/create_screen.rb"
+			],
+			[
+				"style",
+				"app/styles/main_screen.rb"
+			],
 			[
 				"ann/clas/mode/user",
 				"modules/annex/classes/Model/User.php"
