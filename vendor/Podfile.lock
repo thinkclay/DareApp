@@ -1,6 +1,6 @@
 PODS:
   - AFNetworking (1.2.1)
-  - NewRelicAgent (1.309.0)
+  - NewRelicAgent (1.328.0)
   - ViewDeck (2.2.8)
 
 DEPENDENCIES:
@@ -10,7 +10,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 1061ede8ec9e096e3d04296923aa308f0b035a93
-  NewRelicAgent: ea2a8eb62f5291be68b13aa54fcf5dd6d1d75a2f
+  NewRelicAgent: 68efaf4cdaf0293e3465d157093931a49c7a3bda
   ViewDeck: afae518548b8d853e9d17d5e247ee15123e8e7db
 
 COCOAPODS: 0.18.1

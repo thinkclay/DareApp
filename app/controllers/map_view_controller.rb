@@ -11,7 +11,7 @@ class MapViewController < UIViewController
 
   def viewDidLoad
     region = MKCoordinateRegionMake(CLLocationCoordinate2D.new(50.85, 4.35), MKCoordinateSpanMake(3.1, 3.1))
-    self.view.setRegion(region)
+    self.view.setRegion(region, animated: true)
   end
 
   def viewWillAppear(animated)

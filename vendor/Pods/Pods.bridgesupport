@@ -1,1848 +1,1848 @@
 <?xml version='1.0'?>
 <signatures version='1.0'>
-<constant declared_type='NSString*' const='true' type='@' name='AFNetworkingErrorDomain'/>
-<constant declared_type='NSString*' const='true' type='@' name='AFNetworkingOperationDidFinishNotification'/>
-<constant declared_type='NSString*' const='true' type='@' name='AFNetworkingOperationDidStartNotification'/>
-<constant declared_type='NSString*' const='true' type='@' name='AFNetworkingOperationFailingURLRequestErrorKey'/>
-<constant declared_type='NSString*' const='true' type='@' name='AFNetworkingOperationFailingURLResponseErrorKey'/>
-<constant declared_type='NSTimeInterval' const='true' type='d' name='kAFUploadStream3GSuggestedDelay'/>
-<constant declared_type='NSUInteger' const='true' type='I' name='kAFUploadStream3GSuggestedPacketSize'/>
-<enum value='0' name='AFFormURLParameterEncoding'/>
-<enum value='1' name='AFJSONParameterEncoding'/>
-<enum value='2' name='AFPropertyListParameterEncoding'/>
-<enum value='6' name='IIViewDeckAllViewsPanning'/>
-<enum value='4' name='IIViewDeckBottomSide'/>
-<enum value='1' name='IIViewDeckCenterHiddenNotUserInteractive'/>
-<enum value='2' name='IIViewDeckCenterHiddenNotUserInteractiveWithTapToClose'/>
-<enum value='3' name='IIViewDeckCenterHiddenNotUserInteractiveWithTapToCloseBouncing'/>
-<enum value='0' name='IIViewDeckCenterHiddenUserInteractive'/>
-<enum value='1' name='IIViewDeckDelegateAndSubControllers'/>
-<enum value='0' name='IIViewDeckDelegateOnly'/>
-<enum value='4' name='IIViewDeckDelegatePanning'/>
-<enum value='1' name='IIViewDeckFullViewPanning'/>
-<enum value='1' name='IIViewDeckHorizontalOrientation'/>
-<enum value='0' name='IIViewDeckLedgeSizeMode'/>
-<enum value='1' name='IIViewDeckLeftSide'/>
-<enum value='5' name='IIViewDeckNavigationBarOrOpenCenterPanning'/>
-<enum value='2' name='IIViewDeckNavigationBarPanning'/>
-<enum value='0' name='IIViewDeckNavigationControllerContained'/>
-<enum value='1' name='IIViewDeckNavigationControllerIntegrated'/>
-<enum value='0' name='IIViewDeckNoPanning'/>
-<enum value='3' name='IIViewDeckPanningViewPanning'/>
-<enum value='2' name='IIViewDeckRightSide'/>
-<enum value='3' name='IIViewDeckTopSide'/>
-<enum value='2' name='IIViewDeckVerticalOrientation'/>
-<enum value='1' name='IIViewDeckViewSizeMode'/>
-<enum value='0' name='II_SDK_SUPPORTS_WEAK'/>
+<constant name='AFNetworkingErrorDomain' const='true' type='@' declared_type='NSString*'/>
+<constant name='AFNetworkingOperationDidFinishNotification' const='true' type='@' declared_type='NSString*'/>
+<constant name='AFNetworkingOperationDidStartNotification' const='true' type='@' declared_type='NSString*'/>
+<constant name='AFNetworkingOperationFailingURLRequestErrorKey' const='true' type='@' declared_type='NSString*'/>
+<constant name='AFNetworkingOperationFailingURLResponseErrorKey' const='true' type='@' declared_type='NSString*'/>
+<constant name='kAFUploadStream3GSuggestedDelay' const='true' type='d' declared_type='NSTimeInterval'/>
+<constant name='kAFUploadStream3GSuggestedPacketSize' const='true' type='I' declared_type='NSUInteger'/>
+<enum name='AFFormURLParameterEncoding' value='0'/>
+<enum name='AFJSONParameterEncoding' value='1'/>
+<enum name='AFPropertyListParameterEncoding' value='2'/>
+<enum name='IIViewDeckAllViewsPanning' value='6'/>
+<enum name='IIViewDeckBottomSide' value='4'/>
+<enum name='IIViewDeckCenterHiddenNotUserInteractive' value='1'/>
+<enum name='IIViewDeckCenterHiddenNotUserInteractiveWithTapToClose' value='2'/>
+<enum name='IIViewDeckCenterHiddenNotUserInteractiveWithTapToCloseBouncing' value='3'/>
+<enum name='IIViewDeckCenterHiddenUserInteractive' value='0'/>
+<enum name='IIViewDeckDelegateAndSubControllers' value='1'/>
+<enum name='IIViewDeckDelegateOnly' value='0'/>
+<enum name='IIViewDeckDelegatePanning' value='4'/>
+<enum name='IIViewDeckFullViewPanning' value='1'/>
+<enum name='IIViewDeckHorizontalOrientation' value='1'/>
+<enum name='IIViewDeckLedgeSizeMode' value='0'/>
+<enum name='IIViewDeckLeftSide' value='1'/>
+<enum name='IIViewDeckNavigationBarOrOpenCenterPanning' value='5'/>
+<enum name='IIViewDeckNavigationBarPanning' value='2'/>
+<enum name='IIViewDeckNavigationControllerContained' value='0'/>
+<enum name='IIViewDeckNavigationControllerIntegrated' value='1'/>
+<enum name='IIViewDeckNoPanning' value='0'/>
+<enum name='IIViewDeckPanningViewPanning' value='3'/>
+<enum name='IIViewDeckRightSide' value='2'/>
+<enum name='IIViewDeckTopSide' value='3'/>
+<enum name='IIViewDeckVerticalOrientation' value='2'/>
+<enum name='IIViewDeckViewSizeMode' value='1'/>
+<enum name='II_SDK_SUPPORTS_WEAK' value='0'/>
 <function name='AFContentTypesFromHTTPHeader'>
-<arg declared_type='NSString*' type='@' name='string'/>
-<retval declared_type='NSSet*' type='@'/>
+<arg name='string' type='@' declared_type='NSString*'/>
+<retval type='@' declared_type='NSSet*'/>
 </function>
 <function name='AFQueryStringFromParametersWithEncoding'>
-<arg declared_type='NSDictionary*' type='@' name='parameters'/>
-<arg declared_type='NSStringEncoding' type='I' name='encoding'/>
-<retval declared_type='NSString*' type='@'/>
+<arg name='parameters' type='@' declared_type='NSDictionary*'/>
+<arg name='encoding' type='I' declared_type='NSStringEncoding'/>
+<retval type='@' declared_type='NSString*'/>
 </function>
 <function name='IIViewDeckOffsetOrientationFromIIViewDeckSide'>
-<arg declared_type='IIViewDeckSide' type='L' name='side'/>
-<retval declared_type='IIViewDeckOffsetOrientation' type='L'/>
+<arg name='side' type='L' declared_type='IIViewDeckSide'/>
+<retval type='L' declared_type='IIViewDeckOffsetOrientation'/>
 </function>
 <function name='NSStringFromIIViewDeckSide'>
-<arg declared_type='IIViewDeckSide' type='L' name='side'/>
-<retval declared_type='NSString*' type='@'/>
+<arg name='side' type='L' declared_type='IIViewDeckSide'/>
+<retval type='@' declared_type='NSString*'/>
 </function>
 <class name='AFHTTPClient'>
 <method selector='HTTPRequestOperationWithRequest:success:failure:'>
-<arg declared_type='NSURLRequest*' index='0' type='@' name='urlRequest'/>
-<arg declared_type='void (^)(AFHTTPRequestOperation *, id)' function_pointer='true' index='1' type='@?' name='success'>
-<arg declared_type='AFHTTPRequestOperation*' type='@'/>
-<arg declared_type='id' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='urlRequest' type='@' declared_type='NSURLRequest*'/>
+<arg index='1' name='success' function_pointer='true' type='@?' declared_type='void (^)(AFHTTPRequestOperation *, id)'>
+<arg type='@' declared_type='AFHTTPRequestOperation*'/>
+<arg type='@' declared_type='id'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='void (^)(AFHTTPRequestOperation *, NSError *)' function_pointer='true' index='2' type='@?' name='failure'>
-<arg declared_type='AFHTTPRequestOperation*' type='@'/>
-<arg declared_type='NSError*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='2' name='failure' function_pointer='true' type='@?' declared_type='void (^)(AFHTTPRequestOperation *, NSError *)'>
+<arg type='@' declared_type='AFHTTPRequestOperation*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='AFHTTPRequestOperation*' type='@'/>
+<retval type='@' declared_type='AFHTTPRequestOperation*'/>
 </method>
 <method selector='allowsInvalidSSLCertificate'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='baseURL'>
-<retval declared_type='NSURL*' type='@'/>
+<retval type='@' declared_type='NSURL*'/>
 </method>
 <method selector='cancelAllHTTPOperationsWithMethod:path:'>
-<arg declared_type='NSString*' index='0' type='@' name='method'/>
-<arg declared_type='NSString*' index='1' type='@' name='path'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='method' type='@' declared_type='NSString*'/>
+<arg index='1' name='path' type='@' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='clearAuthorizationHeader'>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method class_method='true' selector='clientWithBaseURL:'>
-<arg declared_type='NSURL*' index='0' type='@' name='url'/>
-<retval declared_type='id' type='@'/>
+<arg index='0' name='url' type='@' declared_type='NSURL*'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='defaultValueForHeader:'>
-<arg declared_type='NSString*' index='0' type='@' name='header'/>
-<retval declared_type='NSString*' type='@'/>
+<arg index='0' name='header' type='@' declared_type='NSString*'/>
+<retval type='@' declared_type='NSString*'/>
 </method>
 <method selector='deletePath:parameters:success:failure:'>
-<arg declared_type='NSString*' index='0' type='@' name='path'/>
-<arg declared_type='NSDictionary*' index='1' type='@' name='parameters'/>
-<arg declared_type='void (^)(AFHTTPRequestOperation *, id)' function_pointer='true' index='2' type='@?' name='success'>
-<arg declared_type='AFHTTPRequestOperation*' type='@'/>
-<arg declared_type='id' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='path' type='@' declared_type='NSString*'/>
+<arg index='1' name='parameters' type='@' declared_type='NSDictionary*'/>
+<arg index='2' name='success' function_pointer='true' type='@?' declared_type='void (^)(AFHTTPRequestOperation *, id)'>
+<arg type='@' declared_type='AFHTTPRequestOperation*'/>
+<arg type='@' declared_type='id'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='void (^)(AFHTTPRequestOperation *, NSError *)' function_pointer='true' index='3' type='@?' name='failure'>
-<arg declared_type='AFHTTPRequestOperation*' type='@'/>
-<arg declared_type='NSError*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='3' name='failure' function_pointer='true' type='@?' declared_type='void (^)(AFHTTPRequestOperation *, NSError *)'>
+<arg type='@' declared_type='AFHTTPRequestOperation*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='enqueueBatchOfHTTPRequestOperations:progressBlock:completionBlock:'>
-<arg declared_type='NSArray*' index='0' type='@' name='operations'/>
-<arg declared_type='void (^)(NSUInteger, NSUInteger)' function_pointer='true' index='1' type='@?' name='progressBlock'>
-<arg declared_type='NSUInteger' type='I'/>
-<arg declared_type='NSUInteger' type='I'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='operations' type='@' declared_type='NSArray*'/>
+<arg index='1' name='progressBlock' function_pointer='true' type='@?' declared_type='void (^)(NSUInteger, NSUInteger)'>
+<arg type='I' declared_type='NSUInteger'/>
+<arg type='I' declared_type='NSUInteger'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='void (^)(NSArray *)' function_pointer='true' index='2' type='@?' name='completionBlock'>
-<arg declared_type='NSArray*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='2' name='completionBlock' function_pointer='true' type='@?' declared_type='void (^)(NSArray *)'>
+<arg type='@' declared_type='NSArray*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='enqueueBatchOfHTTPRequestOperationsWithRequests:progressBlock:completionBlock:'>
-<arg declared_type='NSArray*' index='0' type='@' name='urlRequests'/>
-<arg declared_type='void (^)(NSUInteger, NSUInteger)' function_pointer='true' index='1' type='@?' name='progressBlock'>
-<arg declared_type='NSUInteger' type='I'/>
-<arg declared_type='NSUInteger' type='I'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='urlRequests' type='@' declared_type='NSArray*'/>
+<arg index='1' name='progressBlock' function_pointer='true' type='@?' declared_type='void (^)(NSUInteger, NSUInteger)'>
+<arg type='I' declared_type='NSUInteger'/>
+<arg type='I' declared_type='NSUInteger'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='void (^)(NSArray *)' function_pointer='true' index='2' type='@?' name='completionBlock'>
-<arg declared_type='NSArray*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='2' name='completionBlock' function_pointer='true' type='@?' declared_type='void (^)(NSArray *)'>
+<arg type='@' declared_type='NSArray*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='enqueueHTTPRequestOperation:'>
-<arg declared_type='AFHTTPRequestOperation*' index='0' type='@' name='operation'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='operation' type='@' declared_type='AFHTTPRequestOperation*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='getPath:parameters:success:failure:'>
-<arg declared_type='NSString*' index='0' type='@' name='path'/>
-<arg declared_type='NSDictionary*' index='1' type='@' name='parameters'/>
-<arg declared_type='void (^)(AFHTTPRequestOperation *, id)' function_pointer='true' index='2' type='@?' name='success'>
-<arg declared_type='AFHTTPRequestOperation*' type='@'/>
-<arg declared_type='id' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='path' type='@' declared_type='NSString*'/>
+<arg index='1' name='parameters' type='@' declared_type='NSDictionary*'/>
+<arg index='2' name='success' function_pointer='true' type='@?' declared_type='void (^)(AFHTTPRequestOperation *, id)'>
+<arg type='@' declared_type='AFHTTPRequestOperation*'/>
+<arg type='@' declared_type='id'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='void (^)(AFHTTPRequestOperation *, NSError *)' function_pointer='true' index='3' type='@?' name='failure'>
-<arg declared_type='AFHTTPRequestOperation*' type='@'/>
-<arg declared_type='NSError*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='3' name='failure' function_pointer='true' type='@?' declared_type='void (^)(AFHTTPRequestOperation *, NSError *)'>
+<arg type='@' declared_type='AFHTTPRequestOperation*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='initWithBaseURL:'>
-<arg declared_type='NSURL*' index='0' type='@' name='url'/>
-<retval declared_type='id' type='@'/>
+<arg index='0' name='url' type='@' declared_type='NSURL*'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='multipartFormRequestWithMethod:path:parameters:constructingBodyWithBlock:'>
-<arg declared_type='NSString*' index='0' type='@' name='method'/>
-<arg declared_type='NSString*' index='1' type='@' name='path'/>
-<arg declared_type='NSDictionary*' index='2' type='@' name='parameters'/>
-<arg declared_type='void (^)(id)' function_pointer='true' index='3' type='@?' name='block'>
-<arg declared_type='id' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='method' type='@' declared_type='NSString*'/>
+<arg index='1' name='path' type='@' declared_type='NSString*'/>
+<arg index='2' name='parameters' type='@' declared_type='NSDictionary*'/>
+<arg index='3' name='block' function_pointer='true' type='@?' declared_type='void (^)(id)'>
+<arg type='@' declared_type='id'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='NSMutableURLRequest*' type='@'/>
+<retval type='@' declared_type='NSMutableURLRequest*'/>
 </method>
 <method selector='operationQueue'>
-<retval declared_type='NSOperationQueue*' type='@'/>
+<retval type='@' declared_type='NSOperationQueue*'/>
 </method>
 <method selector='parameterEncoding'>
-<retval declared_type='AFHTTPClientParameterEncoding' type='i'/>
+<retval type='i' declared_type='AFHTTPClientParameterEncoding'/>
 </method>
 <method selector='patchPath:parameters:success:failure:'>
-<arg declared_type='NSString*' index='0' type='@' name='path'/>
-<arg declared_type='NSDictionary*' index='1' type='@' name='parameters'/>
-<arg declared_type='void (^)(AFHTTPRequestOperation *, id)' function_pointer='true' index='2' type='@?' name='success'>
-<arg declared_type='AFHTTPRequestOperation*' type='@'/>
-<arg declared_type='id' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='path' type='@' declared_type='NSString*'/>
+<arg index='1' name='parameters' type='@' declared_type='NSDictionary*'/>
+<arg index='2' name='success' function_pointer='true' type='@?' declared_type='void (^)(AFHTTPRequestOperation *, id)'>
+<arg type='@' declared_type='AFHTTPRequestOperation*'/>
+<arg type='@' declared_type='id'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='void (^)(AFHTTPRequestOperation *, NSError *)' function_pointer='true' index='3' type='@?' name='failure'>
-<arg declared_type='AFHTTPRequestOperation*' type='@'/>
-<arg declared_type='NSError*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='3' name='failure' function_pointer='true' type='@?' declared_type='void (^)(AFHTTPRequestOperation *, NSError *)'>
+<arg type='@' declared_type='AFHTTPRequestOperation*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='postPath:parameters:success:failure:'>
-<arg declared_type='NSString*' index='0' type='@' name='path'/>
-<arg declared_type='NSDictionary*' index='1' type='@' name='parameters'/>
-<arg declared_type='void (^)(AFHTTPRequestOperation *, id)' function_pointer='true' index='2' type='@?' name='success'>
-<arg declared_type='AFHTTPRequestOperation*' type='@'/>
-<arg declared_type='id' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='path' type='@' declared_type='NSString*'/>
+<arg index='1' name='parameters' type='@' declared_type='NSDictionary*'/>
+<arg index='2' name='success' function_pointer='true' type='@?' declared_type='void (^)(AFHTTPRequestOperation *, id)'>
+<arg type='@' declared_type='AFHTTPRequestOperation*'/>
+<arg type='@' declared_type='id'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='void (^)(AFHTTPRequestOperation *, NSError *)' function_pointer='true' index='3' type='@?' name='failure'>
-<arg declared_type='AFHTTPRequestOperation*' type='@'/>
-<arg declared_type='NSError*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='3' name='failure' function_pointer='true' type='@?' declared_type='void (^)(AFHTTPRequestOperation *, NSError *)'>
+<arg type='@' declared_type='AFHTTPRequestOperation*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='putPath:parameters:success:failure:'>
-<arg declared_type='NSString*' index='0' type='@' name='path'/>
-<arg declared_type='NSDictionary*' index='1' type='@' name='parameters'/>
-<arg declared_type='void (^)(AFHTTPRequestOperation *, id)' function_pointer='true' index='2' type='@?' name='success'>
-<arg declared_type='AFHTTPRequestOperation*' type='@'/>
-<arg declared_type='id' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='path' type='@' declared_type='NSString*'/>
+<arg index='1' name='parameters' type='@' declared_type='NSDictionary*'/>
+<arg index='2' name='success' function_pointer='true' type='@?' declared_type='void (^)(AFHTTPRequestOperation *, id)'>
+<arg type='@' declared_type='AFHTTPRequestOperation*'/>
+<arg type='@' declared_type='id'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='void (^)(AFHTTPRequestOperation *, NSError *)' function_pointer='true' index='3' type='@?' name='failure'>
-<arg declared_type='AFHTTPRequestOperation*' type='@'/>
-<arg declared_type='NSError*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='3' name='failure' function_pointer='true' type='@?' declared_type='void (^)(AFHTTPRequestOperation *, NSError *)'>
+<arg type='@' declared_type='AFHTTPRequestOperation*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='registerHTTPOperationClass:'>
-<arg declared_type='Class' index='0' type='#' name='operationClass'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='operationClass' type='#' declared_type='Class'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='requestWithMethod:path:parameters:'>
-<arg declared_type='NSString*' index='0' type='@' name='method'/>
-<arg declared_type='NSString*' index='1' type='@' name='path'/>
-<arg declared_type='NSDictionary*' index='2' type='@' name='parameters'/>
-<retval declared_type='NSMutableURLRequest*' type='@'/>
+<arg index='0' name='method' type='@' declared_type='NSString*'/>
+<arg index='1' name='path' type='@' declared_type='NSString*'/>
+<arg index='2' name='parameters' type='@' declared_type='NSDictionary*'/>
+<retval type='@' declared_type='NSMutableURLRequest*'/>
 </method>
 <method selector='setAllowsInvalidSSLCertificate:'>
-<arg declared_type='BOOL' index='0' type='B' name='allowsInvalidSSLCertificate'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='allowsInvalidSSLCertificate' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setAuthorizationHeaderWithToken:'>
-<arg declared_type='NSString*' index='0' type='@' name='token'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='token' type='@' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setAuthorizationHeaderWithUsername:password:'>
-<arg declared_type='NSString*' index='0' type='@' name='username'/>
-<arg declared_type='NSString*' index='1' type='@' name='password'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='username' type='@' declared_type='NSString*'/>
+<arg index='1' name='password' type='@' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setDefaultCredential:'>
-<arg declared_type='NSURLCredential*' index='0' type='@' name='credential'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='credential' type='@' declared_type='NSURLCredential*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setDefaultHeader:value:'>
-<arg declared_type='NSString*' index='0' type='@' name='header'/>
-<arg declared_type='NSString*' index='1' type='@' name='value'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='header' type='@' declared_type='NSString*'/>
+<arg index='1' name='value' type='@' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setParameterEncoding:'>
-<arg declared_type='AFHTTPClientParameterEncoding' index='0' type='i' name='parameterEncoding'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='parameterEncoding' type='i' declared_type='AFHTTPClientParameterEncoding'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setStringEncoding:'>
-<arg declared_type='NSStringEncoding' index='0' type='I' name='stringEncoding'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='stringEncoding' type='I' declared_type='NSStringEncoding'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='stringEncoding'>
-<retval declared_type='NSStringEncoding' type='I'/>
+<retval type='I' declared_type='NSStringEncoding'/>
 </method>
 <method selector='unregisterHTTPOperationClass:'>
-<arg declared_type='Class' index='0' type='#' name='operationClass'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='operationClass' type='#' declared_type='Class'/>
+<retval type='v' declared_type='void'/>
 </method>
 </class>
 <class name='AFHTTPRequestOperation'>
 <method class_method='true' selector='acceptableContentTypes'>
-<retval declared_type='NSSet*' type='@'/>
+<retval type='@' declared_type='NSSet*'/>
 </method>
 <method class_method='true' selector='acceptableStatusCodes'>
-<retval declared_type='NSIndexSet*' type='@'/>
+<retval type='@' declared_type='NSIndexSet*'/>
 </method>
 <method class_method='true' selector='addAcceptableContentTypes:'>
-<arg declared_type='NSSet*' index='0' type='@' name='contentTypes'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='contentTypes' type='@' declared_type='NSSet*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method class_method='true' selector='addAcceptableStatusCodes:'>
-<arg declared_type='NSIndexSet*' index='0' type='@' name='statusCodes'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='statusCodes' type='@' declared_type='NSIndexSet*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method class_method='true' selector='canProcessRequest:'>
-<arg declared_type='NSURLRequest*' index='0' type='@' name='urlRequest'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='urlRequest' type='@' declared_type='NSURLRequest*'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='failureCallbackQueue'>
-<retval declared_type='dispatch_queue_t' type='@'/>
+<retval type='@' declared_type='dispatch_queue_t'/>
 </method>
 <method selector='hasAcceptableContentType'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='hasAcceptableStatusCode'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='response'>
-<retval declared_type='NSHTTPURLResponse*' type='@'/>
+<retval type='@' declared_type='NSHTTPURLResponse*'/>
 </method>
 <method selector='setCompletionBlockWithSuccess:failure:'>
-<arg declared_type='void (^)(AFHTTPRequestOperation *, id)' function_pointer='true' index='0' type='@?' name='success'>
-<arg declared_type='AFHTTPRequestOperation*' type='@'/>
-<arg declared_type='id' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='success' function_pointer='true' type='@?' declared_type='void (^)(AFHTTPRequestOperation *, id)'>
+<arg type='@' declared_type='AFHTTPRequestOperation*'/>
+<arg type='@' declared_type='id'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='void (^)(AFHTTPRequestOperation *, NSError *)' function_pointer='true' index='1' type='@?' name='failure'>
-<arg declared_type='AFHTTPRequestOperation*' type='@'/>
-<arg declared_type='NSError*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='1' name='failure' function_pointer='true' type='@?' declared_type='void (^)(AFHTTPRequestOperation *, NSError *)'>
+<arg type='@' declared_type='AFHTTPRequestOperation*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setFailureCallbackQueue:'>
-<arg declared_type='dispatch_queue_t' index='0' type='@' name='failureCallbackQueue'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='failureCallbackQueue' type='@' declared_type='dispatch_queue_t'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setSuccessCallbackQueue:'>
-<arg declared_type='dispatch_queue_t' index='0' type='@' name='successCallbackQueue'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='successCallbackQueue' type='@' declared_type='dispatch_queue_t'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='successCallbackQueue'>
-<retval declared_type='dispatch_queue_t' type='@'/>
+<retval type='@' declared_type='dispatch_queue_t'/>
 </method>
 </class>
 <class name='AFImageRequestOperation'>
 <method class_method='true' selector='imageRequestOperationWithRequest:imageProcessingBlock:success:failure:'>
-<arg declared_type='NSURLRequest*' index='0' type='@' name='urlRequest'/>
-<arg declared_type='UIImage *(^)(UIImage *)' function_pointer='true' index='1' type='@?' name='imageProcessingBlock'>
-<arg declared_type='UIImage*' type='@'/>
-<retval declared_type='UIImage*' type='@'/>
+<arg index='0' name='urlRequest' type='@' declared_type='NSURLRequest*'/>
+<arg index='1' name='imageProcessingBlock' function_pointer='true' type='@?' declared_type='UIImage *(^)(UIImage *)'>
+<arg type='@' declared_type='UIImage*'/>
+<retval type='@' declared_type='UIImage*'/>
 </arg>
-<arg declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, UIImage *)' function_pointer='true' index='2' type='@?' name='success'>
-<arg declared_type='NSURLRequest*' type='@'/>
-<arg declared_type='NSHTTPURLResponse*' type='@'/>
-<arg declared_type='UIImage*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='2' name='success' function_pointer='true' type='@?' declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, UIImage *)'>
+<arg type='@' declared_type='NSURLRequest*'/>
+<arg type='@' declared_type='NSHTTPURLResponse*'/>
+<arg type='@' declared_type='UIImage*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, NSError *)' function_pointer='true' index='3' type='@?' name='failure'>
-<arg declared_type='NSURLRequest*' type='@'/>
-<arg declared_type='NSHTTPURLResponse*' type='@'/>
-<arg declared_type='NSError*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='3' name='failure' function_pointer='true' type='@?' declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, NSError *)'>
+<arg type='@' declared_type='NSURLRequest*'/>
+<arg type='@' declared_type='NSHTTPURLResponse*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='id' type='@'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method class_method='true' selector='imageRequestOperationWithRequest:success:'>
-<arg declared_type='NSURLRequest*' index='0' type='@' name='urlRequest'/>
-<arg declared_type='void (^)(UIImage *)' function_pointer='true' index='1' type='@?' name='success'>
-<arg declared_type='UIImage*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='urlRequest' type='@' declared_type='NSURLRequest*'/>
+<arg index='1' name='success' function_pointer='true' type='@?' declared_type='void (^)(UIImage *)'>
+<arg type='@' declared_type='UIImage*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='id' type='@'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='imageScale'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='responseImage'>
-<retval declared_type='UIImage*' type='@'/>
+<retval type='@' declared_type='UIImage*'/>
 </method>
 <method selector='setImageScale:'>
-<arg declared_type='CGFloat' index='0' type='f' name='imageScale'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='imageScale' type='f' declared_type='CGFloat'/>
+<retval type='v' declared_type='void'/>
 </method>
 </class>
 <class name='AFJSONRequestOperation'>
 <method selector='JSONReadingOptions'>
-<retval declared_type='NSJSONReadingOptions' type='I'/>
+<retval type='I' declared_type='NSJSONReadingOptions'/>
 </method>
 <method class_method='true' selector='JSONRequestOperationWithRequest:success:failure:'>
-<arg declared_type='NSURLRequest*' index='0' type='@' name='urlRequest'/>
-<arg declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, id)' function_pointer='true' index='1' type='@?' name='success'>
-<arg declared_type='NSURLRequest*' type='@'/>
-<arg declared_type='NSHTTPURLResponse*' type='@'/>
-<arg declared_type='id' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='urlRequest' type='@' declared_type='NSURLRequest*'/>
+<arg index='1' name='success' function_pointer='true' type='@?' declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, id)'>
+<arg type='@' declared_type='NSURLRequest*'/>
+<arg type='@' declared_type='NSHTTPURLResponse*'/>
+<arg type='@' declared_type='id'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, NSError *, id)' function_pointer='true' index='2' type='@?' name='failure'>
-<arg declared_type='NSURLRequest*' type='@'/>
-<arg declared_type='NSHTTPURLResponse*' type='@'/>
-<arg declared_type='NSError*' type='@'/>
-<arg declared_type='id' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='2' name='failure' function_pointer='true' type='@?' declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, NSError *, id)'>
+<arg type='@' declared_type='NSURLRequest*'/>
+<arg type='@' declared_type='NSHTTPURLResponse*'/>
+<arg type='@' declared_type='NSError*'/>
+<arg type='@' declared_type='id'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='id' type='@'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='responseJSON'>
-<retval declared_type='id' type='@'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='setJSONReadingOptions:'>
-<arg declared_type='NSJSONReadingOptions' index='0' type='I' name='JSONReadingOptions'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='JSONReadingOptions' type='I' declared_type='NSJSONReadingOptions'/>
+<retval type='v' declared_type='void'/>
 </method>
 </class>
 <class name='AFNetworkActivityIndicatorManager'>
 <method selector='decrementActivityCount'>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='incrementActivityCount'>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='isEnabled'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='isNetworkActivityIndicatorVisible'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='setEnabled:'>
-<arg declared_type='BOOL' index='0' type='B' name='enabled'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='enabled' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method class_method='true' selector='sharedManager'>
-<retval declared_type='id' type='@'/>
+<retval type='@' declared_type='id'/>
 </method>
 </class>
 <class name='AFPropertyListRequestOperation'>
 <method selector='propertyListReadOptions'>
-<retval declared_type='NSPropertyListReadOptions' type='I'/>
+<retval type='I' declared_type='NSPropertyListReadOptions'/>
 </method>
 <method class_method='true' selector='propertyListRequestOperationWithRequest:success:failure:'>
-<arg declared_type='NSURLRequest*' index='0' type='@' name='urlRequest'/>
-<arg declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, id)' function_pointer='true' index='1' type='@?' name='success'>
-<arg declared_type='NSURLRequest*' type='@'/>
-<arg declared_type='NSHTTPURLResponse*' type='@'/>
-<arg declared_type='id' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='urlRequest' type='@' declared_type='NSURLRequest*'/>
+<arg index='1' name='success' function_pointer='true' type='@?' declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, id)'>
+<arg type='@' declared_type='NSURLRequest*'/>
+<arg type='@' declared_type='NSHTTPURLResponse*'/>
+<arg type='@' declared_type='id'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, NSError *, id)' function_pointer='true' index='2' type='@?' name='failure'>
-<arg declared_type='NSURLRequest*' type='@'/>
-<arg declared_type='NSHTTPURLResponse*' type='@'/>
-<arg declared_type='NSError*' type='@'/>
-<arg declared_type='id' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='2' name='failure' function_pointer='true' type='@?' declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, NSError *, id)'>
+<arg type='@' declared_type='NSURLRequest*'/>
+<arg type='@' declared_type='NSHTTPURLResponse*'/>
+<arg type='@' declared_type='NSError*'/>
+<arg type='@' declared_type='id'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='id' type='@'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='responsePropertyList'>
-<retval declared_type='id' type='@'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='setPropertyListReadOptions:'>
-<arg declared_type='NSPropertyListReadOptions' index='0' type='I' name='propertyListReadOptions'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='propertyListReadOptions' type='I' declared_type='NSPropertyListReadOptions'/>
+<retval type='v' declared_type='void'/>
 </method>
 </class>
 <class name='AFURLConnectionOperation'>
 <method selector='allowsInvalidSSLCertificate'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='credential'>
-<retval declared_type='NSURLCredential*' type='@'/>
+<retval type='@' declared_type='NSURLCredential*'/>
 </method>
 <method selector='error'>
-<retval declared_type='NSError*' type='@'/>
+<retval type='@' declared_type='NSError*'/>
 </method>
 <method selector='initWithRequest:'>
-<arg declared_type='NSURLRequest*' index='0' type='@' name='urlRequest'/>
-<retval declared_type='id' type='@'/>
+<arg index='0' name='urlRequest' type='@' declared_type='NSURLRequest*'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='inputStream'>
-<retval declared_type='NSInputStream*' type='@'/>
+<retval type='@' declared_type='NSInputStream*'/>
 </method>
 <method selector='isPaused'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='outputStream'>
-<retval declared_type='NSOutputStream*' type='@'/>
+<retval type='@' declared_type='NSOutputStream*'/>
 </method>
 <method selector='pause'>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='request'>
-<retval declared_type='NSURLRequest*' type='@'/>
+<retval type='@' declared_type='NSURLRequest*'/>
 </method>
 <method selector='response'>
-<retval declared_type='NSURLResponse*' type='@'/>
+<retval type='@' declared_type='NSURLResponse*'/>
 </method>
 <method selector='responseData'>
-<retval declared_type='NSData*' type='@'/>
+<retval type='@' declared_type='NSData*'/>
 </method>
 <method selector='responseString'>
-<retval declared_type='NSString*' type='@'/>
+<retval type='@' declared_type='NSString*'/>
 </method>
 <method selector='responseStringEncoding'>
-<retval declared_type='NSStringEncoding' type='I'/>
+<retval type='I' declared_type='NSStringEncoding'/>
 </method>
 <method selector='resume'>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='runLoopModes'>
-<retval declared_type='NSSet*' type='@'/>
+<retval type='@' declared_type='NSSet*'/>
 </method>
 <method selector='setAllowsInvalidSSLCertificate:'>
-<arg declared_type='BOOL' index='0' type='B' name='allowsInvalidSSLCertificate'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='allowsInvalidSSLCertificate' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setAuthenticationAgainstProtectionSpaceBlock:'>
-<arg declared_type='BOOL (^)(NSURLConnection *, NSURLProtectionSpace *)' function_pointer='true' index='0' type='@?' name='block'>
-<arg declared_type='NSURLConnection*' type='@'/>
-<arg declared_type='NSURLProtectionSpace*' type='@'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='block' function_pointer='true' type='@?' declared_type='BOOL (^)(NSURLConnection *, NSURLProtectionSpace *)'>
+<arg type='@' declared_type='NSURLConnection*'/>
+<arg type='@' declared_type='NSURLProtectionSpace*'/>
+<retval type='B' declared_type='BOOL'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setAuthenticationChallengeBlock:'>
-<arg declared_type='void (^)(NSURLConnection *, NSURLAuthenticationChallenge *)' function_pointer='true' index='0' type='@?' name='block'>
-<arg declared_type='NSURLConnection*' type='@'/>
-<arg declared_type='NSURLAuthenticationChallenge*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='block' function_pointer='true' type='@?' declared_type='void (^)(NSURLConnection *, NSURLAuthenticationChallenge *)'>
+<arg type='@' declared_type='NSURLConnection*'/>
+<arg type='@' declared_type='NSURLAuthenticationChallenge*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setCacheResponseBlock:'>
-<arg declared_type='NSCachedURLResponse *(^)(NSURLConnection *, NSCachedURLResponse *)' function_pointer='true' index='0' type='@?' name='block'>
-<arg declared_type='NSURLConnection*' type='@'/>
-<arg declared_type='NSCachedURLResponse*' type='@'/>
-<retval declared_type='NSCachedURLResponse*' type='@'/>
+<arg index='0' name='block' function_pointer='true' type='@?' declared_type='NSCachedURLResponse *(^)(NSURLConnection *, NSCachedURLResponse *)'>
+<arg type='@' declared_type='NSURLConnection*'/>
+<arg type='@' declared_type='NSCachedURLResponse*'/>
+<retval type='@' declared_type='NSCachedURLResponse*'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setCredential:'>
-<arg declared_type='NSURLCredential*' index='0' type='@' name='credential'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='credential' type='@' declared_type='NSURLCredential*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setDownloadProgressBlock:'>
-<arg declared_type='void (^)(NSUInteger, long long, long long)' function_pointer='true' index='0' type='@?' name='block'>
-<arg declared_type='NSUInteger' type='I'/>
-<arg declared_type='long long' type='q'/>
-<arg declared_type='long long' type='q'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='block' function_pointer='true' type='@?' declared_type='void (^)(NSUInteger, long long, long long)'>
+<arg type='I' declared_type='NSUInteger'/>
+<arg type='q' declared_type='long long'/>
+<arg type='q' declared_type='long long'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setInputStream:'>
-<arg declared_type='NSInputStream*' index='0' type='@' name='inputStream'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='inputStream' type='@' declared_type='NSInputStream*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setOutputStream:'>
-<arg declared_type='NSOutputStream*' index='0' type='@' name='outputStream'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='outputStream' type='@' declared_type='NSOutputStream*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setRedirectResponseBlock:'>
-<arg declared_type='NSURLRequest *(^)(NSURLConnection *, NSURLRequest *, NSURLResponse *)' function_pointer='true' index='0' type='@?' name='block'>
-<arg declared_type='NSURLConnection*' type='@'/>
-<arg declared_type='NSURLRequest*' type='@'/>
-<arg declared_type='NSURLResponse*' type='@'/>
-<retval declared_type='NSURLRequest*' type='@'/>
+<arg index='0' name='block' function_pointer='true' type='@?' declared_type='NSURLRequest *(^)(NSURLConnection *, NSURLRequest *, NSURLResponse *)'>
+<arg type='@' declared_type='NSURLConnection*'/>
+<arg type='@' declared_type='NSURLRequest*'/>
+<arg type='@' declared_type='NSURLResponse*'/>
+<retval type='@' declared_type='NSURLRequest*'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setRunLoopModes:'>
-<arg declared_type='NSSet*' index='0' type='@' name='runLoopModes'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='runLoopModes' type='@' declared_type='NSSet*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setShouldExecuteAsBackgroundTaskWithExpirationHandler:'>
-<arg declared_type='void (^)(void)' function_pointer='true' index='0' type='@?' name='handler'>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='handler' function_pointer='true' type='@?' declared_type='void (^)(void)'>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setShouldUseCredentialStorage:'>
-<arg declared_type='BOOL' index='0' type='B' name='shouldUseCredentialStorage'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='shouldUseCredentialStorage' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setUploadProgressBlock:'>
-<arg declared_type='void (^)(NSUInteger, long long, long long)' function_pointer='true' index='0' type='@?' name='block'>
-<arg declared_type='NSUInteger' type='I'/>
-<arg declared_type='long long' type='q'/>
-<arg declared_type='long long' type='q'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='block' function_pointer='true' type='@?' declared_type='void (^)(NSUInteger, long long, long long)'>
+<arg type='I' declared_type='NSUInteger'/>
+<arg type='q' declared_type='long long'/>
+<arg type='q' declared_type='long long'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setUserInfo:'>
-<arg declared_type='NSDictionary*' index='0' type='@' name='userInfo'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='userInfo' type='@' declared_type='NSDictionary*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='shouldUseCredentialStorage'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='userInfo'>
-<retval declared_type='NSDictionary*' type='@'/>
+<retval type='@' declared_type='NSDictionary*'/>
 </method>
 </class>
 <class name='AFXMLRequestOperation'>
 <method class_method='true' selector='XMLParserRequestOperationWithRequest:success:failure:'>
-<arg declared_type='NSURLRequest*' index='0' type='@' name='urlRequest'/>
-<arg declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, NSXMLParser *)' function_pointer='true' index='1' type='@?' name='success'>
-<arg declared_type='NSURLRequest*' type='@'/>
-<arg declared_type='NSHTTPURLResponse*' type='@'/>
-<arg declared_type='NSXMLParser*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='urlRequest' type='@' declared_type='NSURLRequest*'/>
+<arg index='1' name='success' function_pointer='true' type='@?' declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, NSXMLParser *)'>
+<arg type='@' declared_type='NSURLRequest*'/>
+<arg type='@' declared_type='NSHTTPURLResponse*'/>
+<arg type='@' declared_type='NSXMLParser*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, NSError *, NSXMLParser *)' function_pointer='true' index='2' type='@?' name='failure'>
-<arg declared_type='NSURLRequest*' type='@'/>
-<arg declared_type='NSHTTPURLResponse*' type='@'/>
-<arg declared_type='NSError*' type='@'/>
-<arg declared_type='NSXMLParser*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='2' name='failure' function_pointer='true' type='@?' declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, NSError *, NSXMLParser *)'>
+<arg type='@' declared_type='NSURLRequest*'/>
+<arg type='@' declared_type='NSHTTPURLResponse*'/>
+<arg type='@' declared_type='NSError*'/>
+<arg type='@' declared_type='NSXMLParser*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='id' type='@'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='responseXMLParser'>
-<retval declared_type='NSXMLParser*' type='@'/>
+<retval type='@' declared_type='NSXMLParser*'/>
 </method>
 </class>
 <class name='IISideController'>
 <method selector='constrainedSize'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='initWithViewController:constrained:'>
-<arg declared_type='UIViewController*' index='0' type='@' name='controller'/>
-<arg declared_type='CGFloat' index='1' type='f' name='constrainedSize'/>
-<retval declared_type='id' type='@'/>
+<arg index='0' name='controller' type='@' declared_type='UIViewController*'/>
+<arg index='1' name='constrainedSize' type='f' declared_type='CGFloat'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='setConstrainedSize:'>
-<arg declared_type='CGFloat' index='0' type='f' name='constrainedSize'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='constrainedSize' type='f' declared_type='CGFloat'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='shrinkSide'>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='shrinkSideAnimated:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 </class>
 <class name='IIViewDeckController'>
 <method selector='automaticallyUpdateTabBarItems'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='bottomController'>
-<retval declared_type='UIViewController*' type='@'/>
+<retval type='@' declared_type='UIViewController*'/>
 </method>
 <method selector='bottomLedgeSize'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='bottomSize'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='bottomViewSize'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='bounceDurationFactor'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='bounceOpenSideDurationFactor'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='canRightViewPushViewControllerOverCenterController'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='centerController'>
-<retval declared_type='UIViewController*' type='@'/>
+<retval type='@' declared_type='UIViewController*'/>
 </method>
 <method selector='centerhiddenInteractivity'>
-<retval declared_type='IIViewDeckCenterHiddenInteractivity' type='L'/>
+<retval type='L' declared_type='IIViewDeckCenterHiddenInteractivity'/>
 </method>
 <method selector='closeBottomView'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeBottomViewAnimated:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeBottomViewAnimated:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeBottomViewAnimated:duration:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='NSTimeInterval' index='1' type='d' name='duration'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='2' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='duration' type='d' declared_type='NSTimeInterval'/>
+<arg index='2' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeBottomViewBouncing:'>
-<arg declared_type='IIViewDeckControllerBounceBlock' function_pointer='true' index='0' type='@?' name='bounced'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounced' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBounceBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeBottomViewBouncing:completion:'>
-<arg declared_type='IIViewDeckControllerBounceBlock' function_pointer='true' index='0' type='@?' name='bounced'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounced' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBounceBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeLeftView'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeLeftViewAnimated:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeLeftViewAnimated:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeLeftViewAnimated:duration:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='NSTimeInterval' index='1' type='d' name='duration'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='2' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='duration' type='d' declared_type='NSTimeInterval'/>
+<arg index='2' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeLeftViewBouncing:'>
-<arg declared_type='IIViewDeckControllerBounceBlock' function_pointer='true' index='0' type='@?' name='bounced'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounced' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBounceBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeLeftViewBouncing:completion:'>
-<arg declared_type='IIViewDeckControllerBounceBlock' function_pointer='true' index='0' type='@?' name='bounced'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounced' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBounceBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeOpenView'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeOpenViewAnimated:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeOpenViewAnimated:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeOpenViewAnimated:duration:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='NSTimeInterval' index='1' type='d' name='duration'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='2' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='duration' type='d' declared_type='NSTimeInterval'/>
+<arg index='2' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeOpenViewBouncing:'>
-<arg declared_type='IIViewDeckControllerBounceBlock' function_pointer='true' index='0' type='@?' name='bounced'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounced' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBounceBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeOpenViewBouncing:completion:'>
-<arg declared_type='IIViewDeckControllerBounceBlock' function_pointer='true' index='0' type='@?' name='bounced'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounced' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBounceBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeRightView'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeRightViewAnimated:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeRightViewAnimated:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeRightViewAnimated:duration:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='NSTimeInterval' index='1' type='d' name='duration'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='2' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='duration' type='d' declared_type='NSTimeInterval'/>
+<arg index='2' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeRightViewBouncing:'>
-<arg declared_type='IIViewDeckControllerBounceBlock' function_pointer='true' index='0' type='@?' name='bounced'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounced' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBounceBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeRightViewBouncing:completion:'>
-<arg declared_type='IIViewDeckControllerBounceBlock' function_pointer='true' index='0' type='@?' name='bounced'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounced' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBounceBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeSlideAnimationDuration'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='closeTopView'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeTopViewAnimated:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeTopViewAnimated:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeTopViewAnimated:duration:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='NSTimeInterval' index='1' type='d' name='duration'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='2' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='duration' type='d' declared_type='NSTimeInterval'/>
+<arg index='2' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeTopViewBouncing:'>
-<arg declared_type='IIViewDeckControllerBounceBlock' function_pointer='true' index='0' type='@?' name='bounced'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounced' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBounceBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='closeTopViewBouncing:completion:'>
-<arg declared_type='IIViewDeckControllerBounceBlock' function_pointer='true' index='0' type='@?' name='bounced'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounced' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBounceBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='controllers'>
-<retval declared_type='NSArray*' type='@'/>
+<retval type='@' declared_type='NSArray*'/>
 </method>
 <method selector='delegate'>
-<retval declared_type='id' type='@'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='delegateMode'>
-<retval declared_type='IIViewDeckDelegateMode' type='L'/>
+<retval type='L' declared_type='IIViewDeckDelegateMode'/>
 </method>
 <method selector='initWithCenterViewController:'>
-<arg declared_type='UIViewController*' index='0' type='@' name='centerController'/>
-<retval declared_type='id' type='@'/>
+<arg index='0' name='centerController' type='@' declared_type='UIViewController*'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='initWithCenterViewController:bottomViewController:'>
-<arg declared_type='UIViewController*' index='0' type='@' name='centerController'/>
-<arg declared_type='UIViewController*' index='1' type='@' name='bottomController'/>
-<retval declared_type='id' type='@'/>
+<arg index='0' name='centerController' type='@' declared_type='UIViewController*'/>
+<arg index='1' name='bottomController' type='@' declared_type='UIViewController*'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='initWithCenterViewController:leftViewController:'>
-<arg declared_type='UIViewController*' index='0' type='@' name='centerController'/>
-<arg declared_type='UIViewController*' index='1' type='@' name='leftController'/>
-<retval declared_type='id' type='@'/>
+<arg index='0' name='centerController' type='@' declared_type='UIViewController*'/>
+<arg index='1' name='leftController' type='@' declared_type='UIViewController*'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='initWithCenterViewController:leftViewController:rightViewController:'>
-<arg declared_type='UIViewController*' index='0' type='@' name='centerController'/>
-<arg declared_type='UIViewController*' index='1' type='@' name='leftController'/>
-<arg declared_type='UIViewController*' index='2' type='@' name='rightController'/>
-<retval declared_type='id' type='@'/>
+<arg index='0' name='centerController' type='@' declared_type='UIViewController*'/>
+<arg index='1' name='leftController' type='@' declared_type='UIViewController*'/>
+<arg index='2' name='rightController' type='@' declared_type='UIViewController*'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='initWithCenterViewController:leftViewController:rightViewController:topViewController:bottomViewController:'>
-<arg declared_type='UIViewController*' index='0' type='@' name='centerController'/>
-<arg declared_type='UIViewController*' index='1' type='@' name='leftController'/>
-<arg declared_type='UIViewController*' index='2' type='@' name='rightController'/>
-<arg declared_type='UIViewController*' index='3' type='@' name='topController'/>
-<arg declared_type='UIViewController*' index='4' type='@' name='bottomController'/>
-<retval declared_type='id' type='@'/>
+<arg index='0' name='centerController' type='@' declared_type='UIViewController*'/>
+<arg index='1' name='leftController' type='@' declared_type='UIViewController*'/>
+<arg index='2' name='rightController' type='@' declared_type='UIViewController*'/>
+<arg index='3' name='topController' type='@' declared_type='UIViewController*'/>
+<arg index='4' name='bottomController' type='@' declared_type='UIViewController*'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='initWithCenterViewController:rightViewController:'>
-<arg declared_type='UIViewController*' index='0' type='@' name='centerController'/>
-<arg declared_type='UIViewController*' index='1' type='@' name='rightController'/>
-<retval declared_type='id' type='@'/>
+<arg index='0' name='centerController' type='@' declared_type='UIViewController*'/>
+<arg index='1' name='rightController' type='@' declared_type='UIViewController*'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='initWithCenterViewController:topViewController:'>
-<arg declared_type='UIViewController*' index='0' type='@' name='centerController'/>
-<arg declared_type='UIViewController*' index='1' type='@' name='topController'/>
-<retval declared_type='id' type='@'/>
+<arg index='0' name='centerController' type='@' declared_type='UIViewController*'/>
+<arg index='1' name='topController' type='@' declared_type='UIViewController*'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='initWithCenterViewController:topViewController:bottomViewController:'>
-<arg declared_type='UIViewController*' index='0' type='@' name='centerController'/>
-<arg declared_type='UIViewController*' index='1' type='@' name='topController'/>
-<arg declared_type='UIViewController*' index='2' type='@' name='bottomController'/>
-<retval declared_type='id' type='@'/>
+<arg index='0' name='centerController' type='@' declared_type='UIViewController*'/>
+<arg index='1' name='topController' type='@' declared_type='UIViewController*'/>
+<arg index='2' name='bottomController' type='@' declared_type='UIViewController*'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='isAnySideOpen'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='isElastic'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='isEnabled'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='isSideClosed:'>
-<arg declared_type='IIViewDeckSide' index='0' type='L' name='viewDeckSide'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='isSideOpen:'>
-<arg declared_type='IIViewDeckSide' index='0' type='L' name='viewDeckSide'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='leftController'>
-<retval declared_type='UIViewController*' type='@'/>
+<retval type='@' declared_type='UIViewController*'/>
 </method>
 <method selector='leftLedgeSize'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='leftSize'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='leftViewSize'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='maxSize'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='navigationControllerBehavior'>
-<retval declared_type='IIViewDeckNavigationControllerBehavior' type='L'/>
+<retval type='L' declared_type='IIViewDeckNavigationControllerBehavior'/>
 </method>
 <method selector='openBottomView'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openBottomViewAnimated:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openBottomViewAnimated:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openBottomViewBouncing:'>
-<arg declared_type='IIViewDeckControllerBounceBlock' function_pointer='true' index='0' type='@?' name='bounced'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounced' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBounceBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openBottomViewBouncing:completion:'>
-<arg declared_type='IIViewDeckControllerBounceBlock' function_pointer='true' index='0' type='@?' name='bounced'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounced' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBounceBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openLeftView'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openLeftViewAnimated:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openLeftViewAnimated:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openLeftViewBouncing:'>
-<arg declared_type='IIViewDeckControllerBounceBlock' function_pointer='true' index='0' type='@?' name='bounced'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounced' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBounceBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openLeftViewBouncing:completion:'>
-<arg declared_type='IIViewDeckControllerBounceBlock' function_pointer='true' index='0' type='@?' name='bounced'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounced' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBounceBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openRightView'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openRightViewAnimated:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openRightViewAnimated:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openRightViewBouncing:'>
-<arg declared_type='IIViewDeckControllerBounceBlock' function_pointer='true' index='0' type='@?' name='bounced'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounced' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBounceBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openRightViewBouncing:completion:'>
-<arg declared_type='IIViewDeckControllerBounceBlock' function_pointer='true' index='0' type='@?' name='bounced'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounced' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBounceBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openSlideAnimationDuration'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='openTopView'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openTopViewAnimated:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openTopViewAnimated:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openTopViewBouncing:'>
-<arg declared_type='IIViewDeckControllerBounceBlock' function_pointer='true' index='0' type='@?' name='bounced'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounced' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBounceBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='openTopViewBouncing:completion:'>
-<arg declared_type='IIViewDeckControllerBounceBlock' function_pointer='true' index='0' type='@?' name='bounced'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounced' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBounceBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='panningCancelsTouchesInView'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='panningGestureDelegate'>
-<retval declared_type='id' type='@'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='panningMode'>
-<retval declared_type='IIViewDeckPanningMode' type='L'/>
+<retval type='L' declared_type='IIViewDeckPanningMode'/>
 </method>
 <method selector='panningView'>
-<retval declared_type='UIView*' type='@'/>
+<retval type='@' declared_type='UIView*'/>
 </method>
 <method selector='parallaxAmount'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='previewBounceView:'>
-<arg declared_type='IIViewDeckSide' index='0' type='L' name='viewDeckSide'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='previewBounceView:toDistance:duration:callDelegate:completion:'>
-<arg declared_type='IIViewDeckSide' index='0' type='L' name='viewDeckSide'/>
-<arg declared_type='CGFloat' index='1' type='f' name='distance'/>
-<arg declared_type='NSTimeInterval' index='2' type='d' name='duration'/>
-<arg declared_type='BOOL' index='3' type='B' name='callDelegate'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='4' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='1' name='distance' type='f' declared_type='CGFloat'/>
+<arg index='2' name='duration' type='d' declared_type='NSTimeInterval'/>
+<arg index='3' name='callDelegate' type='B' declared_type='BOOL'/>
+<arg index='4' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='previewBounceView:toDistance:duration:numberOfBounces:dampingFactor:callDelegate:completion:'>
-<arg declared_type='IIViewDeckSide' index='0' type='L' name='viewDeckSide'/>
-<arg declared_type='CGFloat' index='1' type='f' name='distance'/>
-<arg declared_type='NSTimeInterval' index='2' type='d' name='duration'/>
-<arg declared_type='CGFloat' index='3' type='f' name='numberOfBounces'/>
-<arg declared_type='CGFloat' index='4' type='f' name='zeta'/>
-<arg declared_type='BOOL' index='5' type='B' name='callDelegate'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='6' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='1' name='distance' type='f' declared_type='CGFloat'/>
+<arg index='2' name='duration' type='d' declared_type='NSTimeInterval'/>
+<arg index='3' name='numberOfBounces' type='f' declared_type='CGFloat'/>
+<arg index='4' name='zeta' type='f' declared_type='CGFloat'/>
+<arg index='5' name='callDelegate' type='B' declared_type='BOOL'/>
+<arg index='6' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='previewBounceView:withCompletion:'>
-<arg declared_type='IIViewDeckSide' index='0' type='L' name='viewDeckSide'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='resizesCenterView'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='rightController'>
-<retval declared_type='UIViewController*' type='@'/>
+<retval type='@' declared_type='UIViewController*'/>
 </method>
 <method selector='rightLedgeSize'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='rightSize'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='rightViewPushViewControllerOverCenterController:'>
-<arg declared_type='UIViewController*' index='0' type='@' name='controller'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='controller' type='@' declared_type='UIViewController*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='rightViewSize'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='setAutomaticallyUpdateTabBarItems:'>
-<arg declared_type='BOOL' index='0' type='B' name='automaticallyUpdateTabBarItems'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='automaticallyUpdateTabBarItems' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setBottomController:'>
-<arg declared_type='UIViewController*' index='0' type='@' name='bottomController'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bottomController' type='@' declared_type='UIViewController*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setBottomSize:'>
-<arg declared_type='CGFloat' index='0' type='f' name='bottomSize'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bottomSize' type='f' declared_type='CGFloat'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setBottomSize:completion:'>
-<arg declared_type='CGFloat' index='0' type='f' name='rightSize'/>
-<arg declared_type='void (^)(BOOL)' function_pointer='true' index='1' type='@?' name='completion'>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='rightSize' type='f' declared_type='CGFloat'/>
+<arg index='1' name='completion' function_pointer='true' type='@?' declared_type='void (^)(BOOL)'>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setBounceDurationFactor:'>
-<arg declared_type='CGFloat' index='0' type='f' name='bounceDurationFactor'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounceDurationFactor' type='f' declared_type='CGFloat'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setBounceOpenSideDurationFactor:'>
-<arg declared_type='CGFloat' index='0' type='f' name='bounceOpenSideDurationFactor'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='bounceOpenSideDurationFactor' type='f' declared_type='CGFloat'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setCenterController:'>
-<arg declared_type='UIViewController*' index='0' type='@' name='centerController'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='centerController' type='@' declared_type='UIViewController*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setCenterhiddenInteractivity:'>
-<arg declared_type='IIViewDeckCenterHiddenInteractivity' index='0' type='L' name='centerhiddenInteractivity'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='centerhiddenInteractivity' type='L' declared_type='IIViewDeckCenterHiddenInteractivity'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setCloseSlideAnimationDuration:'>
-<arg declared_type='CGFloat' index='0' type='f' name='closeSlideAnimationDuration'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='closeSlideAnimationDuration' type='f' declared_type='CGFloat'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setDelegate:'>
-<arg declared_type='id' index='0' type='@' name='delegate'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='delegate' type='@' declared_type='id'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setDelegateMode:'>
-<arg declared_type='IIViewDeckDelegateMode' index='0' type='L' name='delegateMode'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='delegateMode' type='L' declared_type='IIViewDeckDelegateMode'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setElastic:'>
-<arg declared_type='BOOL' index='0' type='B' name='elastic'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='elastic' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setEnabled:'>
-<arg declared_type='BOOL' index='0' type='B' name='enabled'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='enabled' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setLeftController:'>
-<arg declared_type='UIViewController*' index='0' type='@' name='leftController'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='leftController' type='@' declared_type='UIViewController*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setLeftSize:'>
-<arg declared_type='CGFloat' index='0' type='f' name='leftSize'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='leftSize' type='f' declared_type='CGFloat'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setLeftSize:completion:'>
-<arg declared_type='CGFloat' index='0' type='f' name='leftSize'/>
-<arg declared_type='void (^)(BOOL)' function_pointer='true' index='1' type='@?' name='completion'>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='leftSize' type='f' declared_type='CGFloat'/>
+<arg index='1' name='completion' function_pointer='true' type='@?' declared_type='void (^)(BOOL)'>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setMaxSize:'>
-<arg declared_type='CGFloat' index='0' type='f' name='maxSize'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='maxSize' type='f' declared_type='CGFloat'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setMaxSize:completion:'>
-<arg declared_type='CGFloat' index='0' type='f' name='maxSize'/>
-<arg declared_type='void (^)(BOOL)' function_pointer='true' index='1' type='@?' name='completion'>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='maxSize' type='f' declared_type='CGFloat'/>
+<arg index='1' name='completion' function_pointer='true' type='@?' declared_type='void (^)(BOOL)'>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setNavigationControllerBehavior:'>
-<arg declared_type='IIViewDeckNavigationControllerBehavior' index='0' type='L' name='navigationControllerBehavior'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='navigationControllerBehavior' type='L' declared_type='IIViewDeckNavigationControllerBehavior'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setOpenSlideAnimationDuration:'>
-<arg declared_type='CGFloat' index='0' type='f' name='openSlideAnimationDuration'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='openSlideAnimationDuration' type='f' declared_type='CGFloat'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setPanningCancelsTouchesInView:'>
-<arg declared_type='BOOL' index='0' type='B' name='panningCancelsTouchesInView'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='panningCancelsTouchesInView' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setPanningGestureDelegate:'>
-<arg declared_type='id' index='0' type='@' name='panningGestureDelegate'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='panningGestureDelegate' type='@' declared_type='id'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setPanningMode:'>
-<arg declared_type='IIViewDeckPanningMode' index='0' type='L' name='panningMode'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='panningMode' type='L' declared_type='IIViewDeckPanningMode'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setPanningView:'>
-<arg declared_type='UIView*' index='0' type='@' name='panningView'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='panningView' type='@' declared_type='UIView*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setParallaxAmount:'>
-<arg declared_type='CGFloat' index='0' type='f' name='parallaxAmount'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='parallaxAmount' type='f' declared_type='CGFloat'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setResizesCenterView:'>
-<arg declared_type='BOOL' index='0' type='B' name='resizesCenterView'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='resizesCenterView' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setRightController:'>
-<arg declared_type='UIViewController*' index='0' type='@' name='rightController'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='rightController' type='@' declared_type='UIViewController*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setRightSize:'>
-<arg declared_type='CGFloat' index='0' type='f' name='rightSize'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='rightSize' type='f' declared_type='CGFloat'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setRightSize:completion:'>
-<arg declared_type='CGFloat' index='0' type='f' name='rightSize'/>
-<arg declared_type='void (^)(BOOL)' function_pointer='true' index='1' type='@?' name='completion'>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='rightSize' type='f' declared_type='CGFloat'/>
+<arg index='1' name='completion' function_pointer='true' type='@?' declared_type='void (^)(BOOL)'>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setSizeMode:'>
-<arg declared_type='IIViewDeckSizeMode' index='0' type='L' name='sizeMode'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='sizeMode' type='L' declared_type='IIViewDeckSizeMode'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setTopController:'>
-<arg declared_type='UIViewController*' index='0' type='@' name='topController'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='topController' type='@' declared_type='UIViewController*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setTopSize:'>
-<arg declared_type='CGFloat' index='0' type='f' name='topSize'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='topSize' type='f' declared_type='CGFloat'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setTopSize:completion:'>
-<arg declared_type='CGFloat' index='0' type='f' name='leftSize'/>
-<arg declared_type='void (^)(BOOL)' function_pointer='true' index='1' type='@?' name='completion'>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='leftSize' type='f' declared_type='CGFloat'/>
+<arg index='1' name='completion' function_pointer='true' type='@?' declared_type='void (^)(BOOL)'>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='sideForController:'>
-<arg declared_type='UIViewController*' index='0' type='@' name='controller'/>
-<retval declared_type='IIViewDeckSide' type='L'/>
+<arg index='0' name='controller' type='@' declared_type='UIViewController*'/>
+<retval type='L' declared_type='IIViewDeckSide'/>
 </method>
 <method selector='sizeMode'>
-<retval declared_type='IIViewDeckSizeMode' type='L'/>
+<retval type='L' declared_type='IIViewDeckSizeMode'/>
 </method>
 <method selector='slidingController'>
-<retval declared_type='UIViewController*' type='@'/>
+<retval type='@' declared_type='UIViewController*'/>
 </method>
 <method selector='statusBarHeight'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='toggleBottomView'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='toggleBottomViewAnimated:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='toggleBottomViewAnimated:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='toggleLeftView'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='toggleLeftViewAnimated:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='toggleLeftViewAnimated:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='toggleOpenView'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='toggleOpenViewAnimated:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='toggleOpenViewAnimated:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='toggleRightView'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='toggleRightViewAnimated:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='toggleRightViewAnimated:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='toggleTopView'>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='toggleTopViewAnimated:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='toggleTopViewAnimated:completion:'>
-<arg declared_type='BOOL' index='0' type='B' name='animated'/>
-<arg declared_type='IIViewDeckControllerBlock' function_pointer='true' index='1' type='@?' name='completed'>
-<arg declared_type='IIViewDeckController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='animated' type='B' declared_type='BOOL'/>
+<arg index='1' name='completed' function_pointer='true' type='@?' declared_type='IIViewDeckControllerBlock'>
+<arg type='@' declared_type='IIViewDeckController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='BOOL' type='B'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='topController'>
-<retval declared_type='UIViewController*' type='@'/>
+<retval type='@' declared_type='UIViewController*'/>
 </method>
 <method selector='topLedgeSize'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='topSize'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='topViewSize'>
-<retval declared_type='CGFloat' type='f'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 </class>
 <class name='IIWrapController'>
 <method selector='initWithViewController:'>
-<arg declared_type='UIViewController*' index='0' type='@' name='controller'/>
-<retval declared_type='id' type='@'/>
+<arg index='0' name='controller' type='@' declared_type='UIViewController*'/>
+<retval type='@' declared_type='id'/>
 </method>
 <method selector='onViewDidAppear'>
-<retval declared_type='void (^)(IIWrapController *, BOOL)' function_pointer='true' type='@?'>
-<arg declared_type='IIWrapController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<retval function_pointer='true' type='@?' declared_type='void (^)(IIWrapController *, BOOL)'>
+<arg type='@' declared_type='IIWrapController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </retval>
 </method>
 <method selector='onViewDidDisappear'>
-<retval declared_type='void (^)(IIWrapController *, BOOL)' function_pointer='true' type='@?'>
-<arg declared_type='IIWrapController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<retval function_pointer='true' type='@?' declared_type='void (^)(IIWrapController *, BOOL)'>
+<arg type='@' declared_type='IIWrapController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </retval>
 </method>
 <method selector='onViewDidLoad'>
-<retval declared_type='void (^)(IIWrapController *)' function_pointer='true' type='@?'>
-<arg declared_type='IIWrapController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<retval function_pointer='true' type='@?' declared_type='void (^)(IIWrapController *)'>
+<arg type='@' declared_type='IIWrapController*'/>
+<retval type='v' declared_type='void'/>
 </retval>
 </method>
 <method selector='onViewWillAppear'>
-<retval declared_type='void (^)(IIWrapController *, BOOL)' function_pointer='true' type='@?'>
-<arg declared_type='IIWrapController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<retval function_pointer='true' type='@?' declared_type='void (^)(IIWrapController *, BOOL)'>
+<arg type='@' declared_type='IIWrapController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </retval>
 </method>
 <method selector='onViewWillDisappear'>
-<retval declared_type='void (^)(IIWrapController *, BOOL)' function_pointer='true' type='@?'>
-<arg declared_type='IIWrapController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<retval function_pointer='true' type='@?' declared_type='void (^)(IIWrapController *, BOOL)'>
+<arg type='@' declared_type='IIWrapController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </retval>
 </method>
 <method selector='setOnViewDidAppear:'>
-<arg declared_type='void (^)(IIWrapController *, BOOL)' function_pointer='true' index='0' type='@?' name='onViewDidAppear'>
-<arg declared_type='IIWrapController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='onViewDidAppear' function_pointer='true' type='@?' declared_type='void (^)(IIWrapController *, BOOL)'>
+<arg type='@' declared_type='IIWrapController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setOnViewDidDisappear:'>
-<arg declared_type='void (^)(IIWrapController *, BOOL)' function_pointer='true' index='0' type='@?' name='onViewDidDisappear'>
-<arg declared_type='IIWrapController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='onViewDidDisappear' function_pointer='true' type='@?' declared_type='void (^)(IIWrapController *, BOOL)'>
+<arg type='@' declared_type='IIWrapController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setOnViewDidLoad:'>
-<arg declared_type='void (^)(IIWrapController *)' function_pointer='true' index='0' type='@?' name='onViewDidLoad'>
-<arg declared_type='IIWrapController*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='onViewDidLoad' function_pointer='true' type='@?' declared_type='void (^)(IIWrapController *)'>
+<arg type='@' declared_type='IIWrapController*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setOnViewWillAppear:'>
-<arg declared_type='void (^)(IIWrapController *, BOOL)' function_pointer='true' index='0' type='@?' name='onViewWillAppear'>
-<arg declared_type='IIWrapController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='onViewWillAppear' function_pointer='true' type='@?' declared_type='void (^)(IIWrapController *, BOOL)'>
+<arg type='@' declared_type='IIWrapController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setOnViewWillDisappear:'>
-<arg declared_type='void (^)(IIWrapController *, BOOL)' function_pointer='true' index='0' type='@?' name='onViewWillDisappear'>
-<arg declared_type='IIWrapController*' type='@'/>
-<arg declared_type='BOOL' type='B'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='onViewWillDisappear' function_pointer='true' type='@?' declared_type='void (^)(IIWrapController *, BOOL)'>
+<arg type='@' declared_type='IIWrapController*'/>
+<arg type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='wrappedController'>
-<retval declared_type='UIViewController*' type='@'/>
+<retval type='@' declared_type='UIViewController*'/>
 </method>
 </class>
 <class name='NSObject'>
 <method selector='appendPartWithFileData:name:fileName:mimeType:'>
-<arg declared_type='NSData*' index='0' type='@' name='data'/>
-<arg declared_type='NSString*' index='1' type='@' name='name'/>
-<arg declared_type='NSString*' index='2' type='@' name='fileName'/>
-<arg declared_type='NSString*' index='3' type='@' name='mimeType'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='data' type='@' declared_type='NSData*'/>
+<arg index='1' name='name' type='@' declared_type='NSString*'/>
+<arg index='2' name='fileName' type='@' declared_type='NSString*'/>
+<arg index='3' name='mimeType' type='@' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='appendPartWithFileURL:name:error:'>
-<arg declared_type='NSURL*' index='0' type='@' name='fileURL'/>
-<arg declared_type='NSString*' index='1' type='@' name='name'/>
-<arg declared_type='NSError**' index='2' type='^@' name='error'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='fileURL' type='@' declared_type='NSURL*'/>
+<arg index='1' name='name' type='@' declared_type='NSString*'/>
+<arg index='2' name='error' type='^@' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='appendPartWithFileURL:name:fileName:mimeType:error:'>
-<arg declared_type='NSURL*' index='0' type='@' name='fileURL'/>
-<arg declared_type='NSString*' index='1' type='@' name='name'/>
-<arg declared_type='NSString*' index='2' type='@' name='fileName'/>
-<arg declared_type='NSString*' index='3' type='@' name='mimeType'/>
-<arg declared_type='NSError**' index='4' type='^@' name='error'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='fileURL' type='@' declared_type='NSURL*'/>
+<arg index='1' name='name' type='@' declared_type='NSString*'/>
+<arg index='2' name='fileName' type='@' declared_type='NSString*'/>
+<arg index='3' name='mimeType' type='@' declared_type='NSString*'/>
+<arg index='4' name='error' type='^@' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='appendPartWithFormData:name:'>
-<arg declared_type='NSData*' index='0' type='@' name='data'/>
-<arg declared_type='NSString*' index='1' type='@' name='name'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='data' type='@' declared_type='NSData*'/>
+<arg index='1' name='name' type='@' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='appendPartWithHeaders:body:'>
-<arg declared_type='NSDictionary*' index='0' type='@' name='headers'/>
-<arg declared_type='NSData*' index='1' type='@' name='body'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='headers' type='@' declared_type='NSDictionary*'/>
+<arg index='1' name='body' type='@' declared_type='NSData*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='appendPartWithInputStream:name:fileName:length:mimeType:'>
-<arg declared_type='NSInputStream*' index='0' type='@' name='inputStream'/>
-<arg declared_type='NSString*' index='1' type='@' name='name'/>
-<arg declared_type='NSString*' index='2' type='@' name='fileName'/>
-<arg declared_type='unsigned long long' index='3' type='Q' name='length'/>
-<arg declared_type='NSString*' index='4' type='@' name='mimeType'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='inputStream' type='@' declared_type='NSInputStream*'/>
+<arg index='1' name='name' type='@' declared_type='NSString*'/>
+<arg index='2' name='fileName' type='@' declared_type='NSString*'/>
+<arg index='3' name='length' type='Q' declared_type='unsigned long long'/>
+<arg index='4' name='mimeType' type='@' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='throttleBandwidthWithPacketSize:delay:'>
-<arg declared_type='NSUInteger' index='0' type='I' name='numberOfBytes'/>
-<arg declared_type='NSTimeInterval' index='1' type='d' name='delay'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='numberOfBytes' type='I' declared_type='NSUInteger'/>
+<arg index='1' name='delay' type='d' declared_type='NSTimeInterval'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='viewDeckController:applyShadow:withBounds:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='CALayer*' index='1' type='@' name='shadowLayer'/>
-<arg declared_type='CGRect' index='2' type='{CGRect={CGPoint=ff}{CGSize=ff}}' name='rect'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='shadowLayer' type='@' declared_type='CALayer*'/>
+<arg index='2' name='rect' type='{CGRect={CGPoint=ff}{CGSize=ff}}' declared_type='CGRect'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='viewDeckController:changesLedge:forSide:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='CGFloat' index='1' type='f' name='ledge'/>
-<arg declared_type='IIViewDeckSide' index='2' type='L' name='viewDeckSide'/>
-<retval declared_type='CGFloat' type='f'/>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='ledge' type='f' declared_type='CGFloat'/>
+<arg index='2' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='viewDeckController:didBounceViewSide:closingController:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='UIViewController*' index='2' type='@' name='closingController'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='closingController' type='@' declared_type='UIViewController*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='viewDeckController:didBounceViewSide:openingController:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='UIViewController*' index='2' type='@' name='openingController'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='openingController' type='@' declared_type='UIViewController*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='viewDeckController:didChangeOffset:orientation:panning:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='CGFloat' index='1' type='f' name='offset'/>
-<arg declared_type='IIViewDeckOffsetOrientation' index='2' type='L' name='orientation'/>
-<arg declared_type='BOOL' index='3' type='B' name='panning'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='offset' type='f' declared_type='CGFloat'/>
+<arg index='2' name='orientation' type='L' declared_type='IIViewDeckOffsetOrientation'/>
+<arg index='3' name='panning' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='viewDeckController:didCloseViewSide:animated:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='BOOL' index='2' type='B' name='animated'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='animated' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='viewDeckController:didOpenViewSide:animated:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='BOOL' index='2' type='B' name='animated'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='animated' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='viewDeckController:didPreviewBounceViewSide:animated:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='BOOL' index='2' type='B' name='animated'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='animated' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='viewDeckController:didShowCenterViewFromSide:animated:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='BOOL' index='2' type='B' name='animated'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='animated' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='viewDeckController:shouldCloseViewSide:animated:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='BOOL' index='2' type='B' name='animated'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='animated' type='B' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='viewDeckController:shouldOpenViewSide:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='viewDeckController:shouldPan:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='UIPanGestureRecognizer*' index='1' type='@' name='panGestureRecognizer'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='panGestureRecognizer' type='@' declared_type='UIPanGestureRecognizer*'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='viewDeckController:shouldPreviewBounceViewSide:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<retval declared_type='BOOL' type='B'/>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='viewDeckController:willCloseViewSide:animated:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='BOOL' index='2' type='B' name='animated'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='animated' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='viewDeckController:willOpenViewSide:animated:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='BOOL' index='2' type='B' name='animated'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='animated' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='viewDeckController:willPreviewBounceViewSide:animated:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='BOOL' index='2' type='B' name='animated'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='animated' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 </class>
 <class name='UIImageView'>
 <method selector='cancelImageRequestOperation'>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setImageWithURL:'>
-<arg declared_type='NSURL*' index='0' type='@' name='url'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='url' type='@' declared_type='NSURL*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setImageWithURL:placeholderImage:'>
-<arg declared_type='NSURL*' index='0' type='@' name='url'/>
-<arg declared_type='UIImage*' index='1' type='@' name='placeholderImage'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='url' type='@' declared_type='NSURL*'/>
+<arg index='1' name='placeholderImage' type='@' declared_type='UIImage*'/>
+<retval type='v' declared_type='void'/>
 </method>
 <method selector='setImageWithURLRequest:placeholderImage:success:failure:'>
-<arg declared_type='NSURLRequest*' index='0' type='@' name='urlRequest'/>
-<arg declared_type='UIImage*' index='1' type='@' name='placeholderImage'/>
-<arg declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, UIImage *)' function_pointer='true' index='2' type='@?' name='success'>
-<arg declared_type='NSURLRequest*' type='@'/>
-<arg declared_type='NSHTTPURLResponse*' type='@'/>
-<arg declared_type='UIImage*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='0' name='urlRequest' type='@' declared_type='NSURLRequest*'/>
+<arg index='1' name='placeholderImage' type='@' declared_type='UIImage*'/>
+<arg index='2' name='success' function_pointer='true' type='@?' declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, UIImage *)'>
+<arg type='@' declared_type='NSURLRequest*'/>
+<arg type='@' declared_type='NSHTTPURLResponse*'/>
+<arg type='@' declared_type='UIImage*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<arg declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, NSError *)' function_pointer='true' index='3' type='@?' name='failure'>
-<arg declared_type='NSURLRequest*' type='@'/>
-<arg declared_type='NSHTTPURLResponse*' type='@'/>
-<arg declared_type='NSError*' type='@'/>
-<retval declared_type='void' type='v'/>
+<arg index='3' name='failure' function_pointer='true' type='@?' declared_type='void (^)(NSURLRequest *, NSHTTPURLResponse *, NSError *)'>
+<arg type='@' declared_type='NSURLRequest*'/>
+<arg type='@' declared_type='NSHTTPURLResponse*'/>
+<arg type='@' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
 </arg>
-<retval declared_type='void' type='v'/>
+<retval type='v' declared_type='void'/>
 </method>
 </class>
 <class name='UIViewController'>
 <method selector='sideController'>
-<retval declared_type='IISideController*' type='@'/>
+<retval type='@' declared_type='IISideController*'/>
 </method>
 <method selector='viewDeckController'>
-<retval declared_type='IIViewDeckController*' type='@'/>
+<retval type='@' declared_type='IIViewDeckController*'/>
 </method>
 <method selector='wrapController'>
-<retval declared_type='IIWrapController*' type='@'/>
+<retval type='@' declared_type='IIWrapController*'/>
 </method>
 </class>
 <informal_protocol name='AFMultipartFormData'>
-<method type='v24@0:4@8@12@16@20' selector='appendPartWithFileData:name:fileName:mimeType:'>
-<arg declared_type='NSData*' index='0' type='@' name='data'/>
-<arg declared_type='NSString*' index='1' type='@' name='name'/>
-<arg declared_type='NSString*' index='2' type='@' name='fileName'/>
-<arg declared_type='NSString*' index='3' type='@' name='mimeType'/>
-<retval declared_type='void' type='v'/>
+<method selector='appendPartWithFileData:name:fileName:mimeType:' type='v24@0:4@8@12@16@20'>
+<arg index='0' name='data' type='@' declared_type='NSData*'/>
+<arg index='1' name='name' type='@' declared_type='NSString*'/>
+<arg index='2' name='fileName' type='@' declared_type='NSString*'/>
+<arg index='3' name='mimeType' type='@' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
 </method>
-<method type='B20@0:4@8@12^@16' selector='appendPartWithFileURL:name:error:'>
-<arg declared_type='NSURL*' index='0' type='@' name='fileURL'/>
-<arg declared_type='NSString*' index='1' type='@' name='name'/>
-<arg declared_type='NSError**' index='2' type='^@' name='error'/>
-<retval declared_type='BOOL' type='B'/>
+<method selector='appendPartWithFileURL:name:error:' type='B20@0:4@8@12^@16'>
+<arg index='0' name='fileURL' type='@' declared_type='NSURL*'/>
+<arg index='1' name='name' type='@' declared_type='NSString*'/>
+<arg index='2' name='error' type='^@' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
-<method type='B28@0:4@8@12@16@20^@24' selector='appendPartWithFileURL:name:fileName:mimeType:error:'>
-<arg declared_type='NSURL*' index='0' type='@' name='fileURL'/>
-<arg declared_type='NSString*' index='1' type='@' name='name'/>
-<arg declared_type='NSString*' index='2' type='@' name='fileName'/>
-<arg declared_type='NSString*' index='3' type='@' name='mimeType'/>
-<arg declared_type='NSError**' index='4' type='^@' name='error'/>
-<retval declared_type='BOOL' type='B'/>
+<method selector='appendPartWithFileURL:name:fileName:mimeType:error:' type='B28@0:4@8@12@16@20^@24'>
+<arg index='0' name='fileURL' type='@' declared_type='NSURL*'/>
+<arg index='1' name='name' type='@' declared_type='NSString*'/>
+<arg index='2' name='fileName' type='@' declared_type='NSString*'/>
+<arg index='3' name='mimeType' type='@' declared_type='NSString*'/>
+<arg index='4' name='error' type='^@' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
-<method type='v16@0:4@8@12' selector='appendPartWithFormData:name:'>
-<arg declared_type='NSData*' index='0' type='@' name='data'/>
-<arg declared_type='NSString*' index='1' type='@' name='name'/>
-<retval declared_type='void' type='v'/>
+<method selector='appendPartWithFormData:name:' type='v16@0:4@8@12'>
+<arg index='0' name='data' type='@' declared_type='NSData*'/>
+<arg index='1' name='name' type='@' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
 </method>
-<method type='v16@0:4@8@12' selector='appendPartWithHeaders:body:'>
-<arg declared_type='NSDictionary*' index='0' type='@' name='headers'/>
-<arg declared_type='NSData*' index='1' type='@' name='body'/>
-<retval declared_type='void' type='v'/>
+<method selector='appendPartWithHeaders:body:' type='v16@0:4@8@12'>
+<arg index='0' name='headers' type='@' declared_type='NSDictionary*'/>
+<arg index='1' name='body' type='@' declared_type='NSData*'/>
+<retval type='v' declared_type='void'/>
 </method>
-<method type='v32@0:4@8@12@16Q20@28' selector='appendPartWithInputStream:name:fileName:length:mimeType:'>
-<arg declared_type='NSInputStream*' index='0' type='@' name='inputStream'/>
-<arg declared_type='NSString*' index='1' type='@' name='name'/>
-<arg declared_type='NSString*' index='2' type='@' name='fileName'/>
-<arg declared_type='unsigned long long' index='3' type='Q' name='length'/>
-<arg declared_type='NSString*' index='4' type='@' name='mimeType'/>
-<retval declared_type='void' type='v'/>
+<method selector='appendPartWithInputStream:name:fileName:length:mimeType:' type='v32@0:4@8@12@16Q20@28'>
+<arg index='0' name='inputStream' type='@' declared_type='NSInputStream*'/>
+<arg index='1' name='name' type='@' declared_type='NSString*'/>
+<arg index='2' name='fileName' type='@' declared_type='NSString*'/>
+<arg index='3' name='length' type='Q' declared_type='unsigned long long'/>
+<arg index='4' name='mimeType' type='@' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
 </method>
-<method type='v20@0:4I8d12' selector='throttleBandwidthWithPacketSize:delay:'>
-<arg declared_type='NSUInteger' index='0' type='I' name='numberOfBytes'/>
-<arg declared_type='NSTimeInterval' index='1' type='d' name='delay'/>
-<retval declared_type='void' type='v'/>
+<method selector='throttleBandwidthWithPacketSize:delay:' type='v20@0:4I8d12'>
+<arg index='0' name='numberOfBytes' type='I' declared_type='NSUInteger'/>
+<arg index='1' name='delay' type='d' declared_type='NSTimeInterval'/>
+<retval type='v' declared_type='void'/>
 </method>
 </informal_protocol>
 <informal_protocol name='IIViewDeckControllerDelegate'>
-<method type='v32@0:4@8@12{CGRect={CGPoint=ff}{CGSize=ff}}16' selector='viewDeckController:applyShadow:withBounds:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='CALayer*' index='1' type='@' name='shadowLayer'/>
-<arg declared_type='CGRect' index='2' type='{CGRect={CGPoint=ff}{CGSize=ff}}' name='rect'/>
-<retval declared_type='void' type='v'/>
+<method selector='viewDeckController:applyShadow:withBounds:' type='v32@0:4@8@12{CGRect={CGPoint=ff}{CGSize=ff}}16'>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='shadowLayer' type='@' declared_type='CALayer*'/>
+<arg index='2' name='rect' type='{CGRect={CGPoint=ff}{CGSize=ff}}' declared_type='CGRect'/>
+<retval type='v' declared_type='void'/>
 </method>
-<method type='f20@0:4@8f12L16' selector='viewDeckController:changesLedge:forSide:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='CGFloat' index='1' type='f' name='ledge'/>
-<arg declared_type='IIViewDeckSide' index='2' type='L' name='viewDeckSide'/>
-<retval declared_type='CGFloat' type='f'/>
+<method selector='viewDeckController:changesLedge:forSide:' type='f20@0:4@8f12L16'>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='ledge' type='f' declared_type='CGFloat'/>
+<arg index='2' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<retval type='f' declared_type='CGFloat'/>
 </method>
-<method type='v20@0:4@8L12@16' selector='viewDeckController:didBounceViewSide:closingController:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='UIViewController*' index='2' type='@' name='closingController'/>
-<retval declared_type='void' type='v'/>
+<method selector='viewDeckController:didBounceViewSide:closingController:' type='v20@0:4@8L12@16'>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='closingController' type='@' declared_type='UIViewController*'/>
+<retval type='v' declared_type='void'/>
 </method>
-<method type='v20@0:4@8L12@16' selector='viewDeckController:didBounceViewSide:openingController:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='UIViewController*' index='2' type='@' name='openingController'/>
-<retval declared_type='void' type='v'/>
+<method selector='viewDeckController:didBounceViewSide:openingController:' type='v20@0:4@8L12@16'>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='openingController' type='@' declared_type='UIViewController*'/>
+<retval type='v' declared_type='void'/>
 </method>
-<method type='v24@0:4@8f12L16B20' selector='viewDeckController:didChangeOffset:orientation:panning:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='CGFloat' index='1' type='f' name='offset'/>
-<arg declared_type='IIViewDeckOffsetOrientation' index='2' type='L' name='orientation'/>
-<arg declared_type='BOOL' index='3' type='B' name='panning'/>
-<retval declared_type='void' type='v'/>
+<method selector='viewDeckController:didChangeOffset:orientation:panning:' type='v24@0:4@8f12L16B20'>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='offset' type='f' declared_type='CGFloat'/>
+<arg index='2' name='orientation' type='L' declared_type='IIViewDeckOffsetOrientation'/>
+<arg index='3' name='panning' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
-<method type='v20@0:4@8L12B16' selector='viewDeckController:didCloseViewSide:animated:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='BOOL' index='2' type='B' name='animated'/>
-<retval declared_type='void' type='v'/>
+<method selector='viewDeckController:didCloseViewSide:animated:' type='v20@0:4@8L12B16'>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='animated' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
-<method type='v20@0:4@8L12B16' selector='viewDeckController:didOpenViewSide:animated:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='BOOL' index='2' type='B' name='animated'/>
-<retval declared_type='void' type='v'/>
+<method selector='viewDeckController:didOpenViewSide:animated:' type='v20@0:4@8L12B16'>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='animated' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
-<method type='v20@0:4@8L12B16' selector='viewDeckController:didPreviewBounceViewSide:animated:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='BOOL' index='2' type='B' name='animated'/>
-<retval declared_type='void' type='v'/>
+<method selector='viewDeckController:didPreviewBounceViewSide:animated:' type='v20@0:4@8L12B16'>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='animated' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
-<method type='v20@0:4@8L12B16' selector='viewDeckController:didShowCenterViewFromSide:animated:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='BOOL' index='2' type='B' name='animated'/>
-<retval declared_type='void' type='v'/>
+<method selector='viewDeckController:didShowCenterViewFromSide:animated:' type='v20@0:4@8L12B16'>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='animated' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
-<method type='B20@0:4@8L12B16' selector='viewDeckController:shouldCloseViewSide:animated:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='BOOL' index='2' type='B' name='animated'/>
-<retval declared_type='BOOL' type='B'/>
+<method selector='viewDeckController:shouldCloseViewSide:animated:' type='B20@0:4@8L12B16'>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='animated' type='B' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
-<method type='B16@0:4@8L12' selector='viewDeckController:shouldOpenViewSide:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<retval declared_type='BOOL' type='B'/>
+<method selector='viewDeckController:shouldOpenViewSide:' type='B16@0:4@8L12'>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
-<method type='B16@0:4@8@12' selector='viewDeckController:shouldPan:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='UIPanGestureRecognizer*' index='1' type='@' name='panGestureRecognizer'/>
-<retval declared_type='BOOL' type='B'/>
+<method selector='viewDeckController:shouldPan:' type='B16@0:4@8@12'>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='panGestureRecognizer' type='@' declared_type='UIPanGestureRecognizer*'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
-<method type='B16@0:4@8L12' selector='viewDeckController:shouldPreviewBounceViewSide:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<retval declared_type='BOOL' type='B'/>
+<method selector='viewDeckController:shouldPreviewBounceViewSide:' type='B16@0:4@8L12'>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<retval type='B' declared_type='BOOL'/>
 </method>
-<method type='v20@0:4@8L12B16' selector='viewDeckController:willCloseViewSide:animated:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='BOOL' index='2' type='B' name='animated'/>
-<retval declared_type='void' type='v'/>
+<method selector='viewDeckController:willCloseViewSide:animated:' type='v20@0:4@8L12B16'>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='animated' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
-<method type='v20@0:4@8L12B16' selector='viewDeckController:willOpenViewSide:animated:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='BOOL' index='2' type='B' name='animated'/>
-<retval declared_type='void' type='v'/>
+<method selector='viewDeckController:willOpenViewSide:animated:' type='v20@0:4@8L12B16'>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='animated' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
-<method type='v20@0:4@8L12B16' selector='viewDeckController:willPreviewBounceViewSide:animated:'>
-<arg declared_type='IIViewDeckController*' index='0' type='@' name='viewDeckController'/>
-<arg declared_type='IIViewDeckSide' index='1' type='L' name='viewDeckSide'/>
-<arg declared_type='BOOL' index='2' type='B' name='animated'/>
-<retval declared_type='void' type='v'/>
+<method selector='viewDeckController:willPreviewBounceViewSide:animated:' type='v20@0:4@8L12B16'>
+<arg index='0' name='viewDeckController' type='@' declared_type='IIViewDeckController*'/>
+<arg index='1' name='viewDeckSide' type='L' declared_type='IIViewDeckSide'/>
+<arg index='2' name='animated' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
 </method>
 </informal_protocol>
 </signatures>

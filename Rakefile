@@ -5,7 +5,10 @@ require 'rubygems'
 require 'motion/project'
 require 'bundler'
 require 'motion-cocoapods'
+require 'motion/project'
+require 'motion-require'
 
+Motion::Require.all
 Bundler.require
 
 require 'bubble-wrap'
@@ -14,7 +17,6 @@ require 'sugarcube-gestures'
 require 'teacup'
 require 'sweettea'
 require 'geomotion'
-require 'afmotion'
 
 require 'graymatter'
 
@@ -22,8 +24,10 @@ require 'map-kit-wrapper'
 
 Motion::Project::App.setup do |app|
 
+  # app.detect_dependencies = false
+
   app.vendor_project(
-    'vendor/Pods/NewRelicAgent/NewRelic_iOS_Agent_1.309/NewRelicAgent.framework',
+    'vendor/Pods/NewRelic_iOS_Agent_1.309/NewRelicAgent.framework',
     :static,
     :products => ['NewRelicAgent'],
     :headers_dir => 'Headers'
