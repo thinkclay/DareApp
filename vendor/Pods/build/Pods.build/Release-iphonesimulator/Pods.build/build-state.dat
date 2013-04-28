@@ -1,191 +1,0 @@
-TPods
-v5
-r1
-cCheck dependencies
-cProcessPCH /var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-cxwywfreyoaphvgygqjzowmfvzgf/Pods-prefix.pch.pth Pods-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IIViewDeckController.o "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IIViewDeckController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IISideController.o "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IISideController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IIWrapController.o "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IIWrapController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/PodsDummy_Pods.o "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/PodsDummy_Pods.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLibtool "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/.build/libPods.a" normal i386
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c00000000000000000000000000000000
-t2
-s0
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c00000000510B0886000000000062AD10
-t1359677574
-s6466832
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk
-c000000005102E2D30000000000000110
-t1359143635
-s272
-
-N/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/.build/libPods.a
-t2
-s0
-
-N/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/Pods-prefix.pch
-c00000000514105D5000000000000002F
-t1363215829
-s47
-
-N/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/PodsDummy_Pods.m
-c00000000514105D5000000000000004E
-t1363215829
-s78
-
-N/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IISideController.h
-c000000005120389F00000000000001E4
-t1361066143
-s484
-
-N/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IISideController.m
-c000000005120389F0000000000000FCB
-t1361066143
-s4043
-
-N/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IIViewDeckController.h
-c000000005120389F000000000000464A
-t1361066143
-s17994
-
-N/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IIViewDeckController.m
-c000000005120389F000000000001E878
-t1361066143
-s125048
-
-N/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IIWrapController.h
-c000000005120389F0000000000000890
-t1361066143
-s2192
-
-N/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IIWrapController.m
-c000000005120389F0000000000002B85
-t1361066143
-s11141
-
-N/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IISideController.o
-t1363214610
-s80416
-
-N/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IIViewDeckController.o
-t1363214611
-s429464
-
-N/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IIWrapController.o
-t1363214610
-s105148
-
-N/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods.LinkFileList
-c00000000512038A00000000000000272
-t1361066144
-s626
-
-N/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/PodsDummy_Pods.o
-t1363214610
-s3288
-
-N/var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-bhczfbgagdlescdunzhpzqxavagt/Pods-prefix.pch.pth
-t2
-s0
-
-N/var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-cxwywfreyoaphvgygqjzowmfvzgf/Pods-prefix.pch.pth
-t1363214610
-s4667968
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies0f467c563df1b641^3333a7563df1b641^---0#1#0#--18"Check dependencies36"A97F71EE-204B-4E6B-A669-BE9D093851AB-
-
-CCompileC build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IISideController.o "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IISideController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s384908631.332545
-e384908631.540367
-r1
-xCompileC
-xbuild/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IISideController.o
-x/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IISideController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Compile /Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IISideController.m2e5555573df1b641^da538a573df1b641^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Volumes/Data/Projects/Mobile/RubyMotion/Bring%20It%20On/vendor/Pods/ViewDeck/ViewDeck/IISideController.m0000000000000000^3857"CompileC build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IISideController.o ViewDeck/ViewDeck/IISideController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/Cellar/ruby/2.0.0-p0/lib/ruby/gems/2.0.0/bin:/usr/local/heroku/bin:/usr/local/opt/php54/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/sbin:/usr/local/Cellar/gcc/4.7.2:/usr/local/Cellar/ruby/2.0.0-p0/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-generated-files.hmap" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-own-target-headers.hmap" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-all-target-headers.hmap" -iquote "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-project-headers.hmap" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/.build/include" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/BuildHeaders" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/BuildHeaders/ViewDeck" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/DerivedSources/i386" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/DerivedSources" "-F/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/.build" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-cxwywfreyoaphvgygqjzowmfvzgf/Pods-prefix.pch -MMD -MT dependencies -MF "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IISideController.d" --serialize-diagnostics "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IISideController.dia" -c "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IISideController.m" -o "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IISideController.o"36"1461FF6E-5E60-4C7F-995E-8D3DB98CDB77-
-
-CCompileC build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IIViewDeckController.o "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IIViewDeckController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s384908631.332547
-e384908632.159510
-r1
-xCompileC
-xbuild/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IIViewDeckController.o
-x/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IIViewDeckController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Compile /Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IIViewDeckController.mae4755573df1b641^aad428583df1b641^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Volumes/Data/Projects/Mobile/RubyMotion/Bring%20It%20On/vendor/Pods/ViewDeck/ViewDeck/IIViewDeckController.m0000000000000000^3881"CompileC build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IIViewDeckController.o ViewDeck/ViewDeck/IIViewDeckController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/Cellar/ruby/2.0.0-p0/lib/ruby/gems/2.0.0/bin:/usr/local/heroku/bin:/usr/local/opt/php54/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/sbin:/usr/local/Cellar/gcc/4.7.2:/usr/local/Cellar/ruby/2.0.0-p0/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-generated-files.hmap" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-own-target-headers.hmap" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-all-target-headers.hmap" -iquote "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-project-headers.hmap" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/.build/include" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/BuildHeaders" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/BuildHeaders/ViewDeck" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/DerivedSources/i386" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/DerivedSources" "-F/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/.build" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-cxwywfreyoaphvgygqjzowmfvzgf/Pods-prefix.pch -MMD -MT dependencies -MF "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IIViewDeckController.d" --serialize-diagnostics "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IIViewDeckController.dia" -c "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IIViewDeckController.m" -o "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IIViewDeckController.o"36"7188F1D4-3BC3-4D32-B888-62737DC172BF-
-
-CCompileC build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IIWrapController.o "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IIWrapController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s384908631.332565
-e384908631.559478
-r1
-xCompileC
-xbuild/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IIWrapController.o
-x/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IIWrapController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Compile /Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IIWrapController.m7a5355573df1b641^043a8f573df1b641^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Volumes/Data/Projects/Mobile/RubyMotion/Bring%20It%20On/vendor/Pods/ViewDeck/ViewDeck/IIWrapController.m0000000000000000^3857"CompileC build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IIWrapController.o ViewDeck/ViewDeck/IIWrapController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/Cellar/ruby/2.0.0-p0/lib/ruby/gems/2.0.0/bin:/usr/local/heroku/bin:/usr/local/opt/php54/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/sbin:/usr/local/Cellar/gcc/4.7.2:/usr/local/Cellar/ruby/2.0.0-p0/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-generated-files.hmap" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-own-target-headers.hmap" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-all-target-headers.hmap" -iquote "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-project-headers.hmap" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/.build/include" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/BuildHeaders" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/BuildHeaders/ViewDeck" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/DerivedSources/i386" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/DerivedSources" "-F/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/.build" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-cxwywfreyoaphvgygqjzowmfvzgf/Pods-prefix.pch -MMD -MT dependencies -MF "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IIWrapController.d" --serialize-diagnostics "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IIWrapController.dia" -c "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/ViewDeck/ViewDeck/IIWrapController.m" -o "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/IIWrapController.o"36"39CE0298-CA49-4548-9824-C44EFD50A204-
-
-CCompileC build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/PodsDummy_Pods.o "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/PodsDummy_Pods.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s384908631.332573
-e384908631.402205
-r1
-xCompileC
-xbuild/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/PodsDummy_Pods.o
-x/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/PodsDummy_Pods.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/PodsDummy_Pods.mf85155573df1b641^e0f466573df1b641^---0#0#0#-19%DVTDocumentLocation2@101"file://localhost/Volumes/Data/Projects/Mobile/RubyMotion/Bring%20It%20On/vendor/Pods/PodsDummy_Pods.m0000000000000000^3809"CompileC build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/PodsDummy_Pods.o PodsDummy_Pods.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/Cellar/ruby/2.0.0-p0/lib/ruby/gems/2.0.0/bin:/usr/local/heroku/bin:/usr/local/opt/php54/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/sbin:/usr/local/Cellar/gcc/4.7.2:/usr/local/Cellar/ruby/2.0.0-p0/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-generated-files.hmap" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-own-target-headers.hmap" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-all-target-headers.hmap" -iquote "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-project-headers.hmap" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/.build/include" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/BuildHeaders" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/BuildHeaders/ViewDeck" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/DerivedSources/i386" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/DerivedSources" "-F/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/.build" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-cxwywfreyoaphvgygqjzowmfvzgf/Pods-prefix.pch -MMD -MT dependencies -MF "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/PodsDummy_Pods.d" --serialize-diagnostics "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/PodsDummy_Pods.dia" -c "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/PodsDummy_Pods.m" -o "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/PodsDummy_Pods.o"36"541509F3-399D-4050-A0A0-B0D144B81DCB-
-
-CLibtool "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/.build/libPods.a" normal i386
-s384908632.166302
-e384908632.278873
-r1
-xLibtool
-x/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/.build/libPods.a
-xnormal
-xi386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Libtool .build/libPods.a normal i38682ad2a583df1b641^916347583df1b641^---0#0#0#--1168"Libtool .build/libPods.a normal i386    cd "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods"    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/Cellar/ruby/2.0.0-p0/lib/ruby/gems/2.0.0/bin:/usr/local/heroku/bin:/usr/local/opt/php54/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/sbin:/usr/local/Cellar/gcc/4.7.2:/usr/local/Cellar/ruby/2.0.0-p0/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk "-L/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/.build" -filelist "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods.LinkFileList" -framework Foundation -o "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/.build/libPods.a"36"2AC974C3-F96D-4BE5-92D8-BF7118BFF6D2-
-
-CProcessPCH /var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-bhczfbgagdlescdunzhpzqxavagt/Pods-prefix.pch.pth Pods-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s382758944.816461
-e382758945.444914
-r1
-xProcessPCH
-x/var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-bhczfbgagdlescdunzhpzqxavagt/Pods-prefix.pch.pth
-xPods-prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection26"Precompile Pods-prefix.pch3db6d12070d0b641^dae7712170d0b641^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Volumes/Data/Projects/Mobile/RubyMotion/Bring%20It%20On/vendor/Pods/Pods-prefix.pch0000000000000000^3755"ProcessPCH /var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-bhczfbgagdlescdunzhpzqxavagt/Pods-prefix.pch.pth Pods-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/heroku/bin:/Users/clay/.rvm/gems/ruby-1.9.3-p194/bin:/Users/clay/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/clay/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/clay/.rvm/bin:/usr/local/opt/php54/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/sbin:/usr/local/Cellar/gcc/4.7.2"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-generated-files.hmap" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-own-target-headers.hmap" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-all-target-headers.hmap" -iquote "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-project-headers.hmap" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/.build/include" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/BuildHeaders" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/BuildHeaders/ViewDeck" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/DerivedSources/i386" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/DerivedSources" "-F/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/.build" --serialize-diagnostics /var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-bhczfbgagdlescdunzhpzqxavagt/Pods-prefix.pch.dia -c "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/Pods-prefix.pch" -o /var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-bhczfbgagdlescdunzhpzqxavagt/Pods-prefix.pch.pth -MMD -MT dependencies -MF /var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-bhczfbgagdlescdunzhpzqxavagt/Pods-prefix.pch.d36"C873D574-8165-4DDA-8D6F-DB1AC2FC0620-
-
-CProcessPCH /var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-cxwywfreyoaphvgygqjzowmfvzgf/Pods-prefix.pch.pth Pods-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s384908630.660129
-e384908631.325586
-r1
-xProcessPCH
-x/var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-cxwywfreyoaphvgygqjzowmfvzgf/Pods-prefix.pch.pth
-xPods-prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection26"Precompile Pods-prefix.pch2847a9563df1b641^965a53573df1b641^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Volumes/Data/Projects/Mobile/RubyMotion/Bring%20It%20On/vendor/Pods/Pods-prefix.pch0000000000000000^3715"ProcessPCH /var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-cxwywfreyoaphvgygqjzowmfvzgf/Pods-prefix.pch.pth Pods-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/Cellar/ruby/2.0.0-p0/lib/ruby/gems/2.0.0/bin:/usr/local/heroku/bin:/usr/local/opt/php54/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/sbin:/usr/local/Cellar/gcc/4.7.2:/usr/local/Cellar/ruby/2.0.0-p0/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-generated-files.hmap" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-own-target-headers.hmap" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-all-target-headers.hmap" -iquote "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/Pods-project-headers.hmap" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/.build/include" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/BuildHeaders" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/BuildHeaders/ViewDeck" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/DerivedSources/i386" "-I/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/build/Pods.build/Release-iphonesimulator/Pods.build/DerivedSources" "-F/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/.build" -DNS_BLOCK_ASSERTIONS=1 --serialize-diagnostics /var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-cxwywfreyoaphvgygqjzowmfvzgf/Pods-prefix.pch.dia -c "/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/vendor/Pods/Pods-prefix.pch" -o /var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-cxwywfreyoaphvgygqjzowmfvzgf/Pods-prefix.pch.pth -MMD -MT dependencies -MF /var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Pods-prefix-cxwywfreyoaphvgygqjzowmfvzgf/Pods-prefix.pch.d36"CBC6F5B9-811B-4E5D-9BF2-DD67B512A864-
-

@@ -8,7 +8,6 @@
 #
 
 class CreateViewController < UIViewController
-
   include GM::KeyboardHandler
   stylesheet :create_screen
 

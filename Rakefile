@@ -5,12 +5,10 @@ require 'rubygems'
 require 'motion/project'
 require 'bundler'
 require 'motion-cocoapods'
-require 'motion/project'
-require 'motion-require'
 
-Motion::Require.all
 Bundler.require
 
+require 'afmotion'
 require 'bubble-wrap'
 require 'sugarcube'
 require 'sugarcube-gestures'
@@ -24,10 +22,8 @@ require 'map-kit-wrapper'
 
 Motion::Project::App.setup do |app|
 
-  # app.detect_dependencies = false
-
   app.vendor_project(
-    'vendor/Pods/NewRelic_iOS_Agent_1.309/NewRelicAgent.framework',
+    'vendor/Pods/NewRelicAgent/NewRelic_iOS_Agent_1.328/NewRelicAgent.framework',
     :static,
     :products => ['NewRelicAgent'],
     :headers_dir => 'Headers'
@@ -44,7 +40,7 @@ Motion::Project::App.setup do |app|
   app.name = 'Bring It On'
   app.identifier = "com.thinkclay.bring-it-on"
 
-  app.deployment_target = '6.0'
+  app.deployment_target = '6.1'
   app.device_family = [:iphone]
   app.frameworks += ['Social', 'Twitter', 'CoreLocation', 'MapKit']
 

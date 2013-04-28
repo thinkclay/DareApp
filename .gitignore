@@ -4,7 +4,10 @@ resources/*.momd
 resources/*.storyboardc
 .dat*
 vendor
+vendor/*
 build/*
+
+Gemfile.lock
 
 *.sublime-project
 *.sublime-workspace
