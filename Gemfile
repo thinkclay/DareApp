@@ -9,6 +9,7 @@ gem 'bubble-wrap'
 gem 'sugarcube' #:git => 'https://github.com/rubymotion/sugarcube.git'
 gem 'sweettea'
 gem 'geomotion'
+gem 'afmotion'
 
 gem 'graymatter'
 

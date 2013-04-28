@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 $:.unshift("/Library/RubyMotion/lib")
+
 require 'rubygems'
 require 'motion/project'
 require 'bundler'
@@ -13,14 +14,25 @@ require 'sugarcube-gestures'
 require 'teacup'
 require 'sweettea'
 require 'geomotion'
+require 'afmotion'
 
 require 'graymatter'
 
 require 'map-kit-wrapper'
 
 Motion::Project::App.setup do |app|
+
+  app.vendor_project(
+    'vendor/Pods/NewRelicAgent/NewRelic_iOS_Agent_1.309/NewRelicAgent.framework',
+    :static,
+    :products => ['NewRelicAgent'],
+    :headers_dir => 'Headers'
+  )
+
   # Get our CocoaPods
   app.pods do
+    pod 'AFNetworking'
+    pod 'NewRelicAgent'
     pod 'ViewDeck'
   end
 

@@ -17,6 +17,7 @@ class AppDelegate
   # contain many subviews for the region
   #
   def application(application, didFinishLaunchingWithOptions:launchOptions)
+    NewRelicAgent.startWithApplicationToken 'AA539587f3b947e0b1c5651d42572976bf89095592'
 
     find = FindViewController.new
     create = CreateViewController.new

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"inp",
+				"input_fields"
+			],
+			[
 				"close_",
 				"close_profile"
 			],
@@ -96,10 +100,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/controllers/main_view_controller.rb",
+			"file": "/Users/clay/Library/Application Support/Sublime Text 3/Packages/Hello/hello_world.py",
 			"settings":
 			{
-				"buffer_size": 3304,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -157,14 +161,14 @@
 			"settings":
 			{
 				"buffer_size": 3374,
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "app/controllers/create_view_controller.rb",
 			"settings":
 			{
-				"buffer_size": 5190,
+				"buffer_size": 5431,
 				"line_ending": "Windows"
 			}
 		}
@@ -232,9 +236,17 @@
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 125.0,
 		"history":
 		[
+			"print(sys.version)",
+			"import sys",
+			"import sysprint(sys.version)",
+			"print(sys.version)",
+			"print sys.version",
+			"view.run_command(\"ObjcToRubyMotion\")",
+			"view.run_command(\"example\")",
+			"CodeConverter.result()"
 		]
 	},
 	"distraction_free":
@@ -248,6 +260,7 @@
 	},
 	"file_history":
 	[
+		"/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/app/controllers/main_view_controller.rb",
 		"/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/app/styles/main_screen.rb",
 		"/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/app/classes/social/auto.rb",
 		"/Volumes/Data/Projects/Mobile/RubyMotion/Bring It On/Gemfile",
@@ -369,34 +382,32 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/main_view_controller.rb",
+					"file": "/Users/clay/Library/Application Support/Sublime Text 3/Packages/Hello/hello_world.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3304,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1708,
-								1736
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 238.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -414,8 +425,8 @@
 						"selection":
 						[
 							[
-								942,
-								942
+								1163,
+								1163
 							]
 						],
 						"settings":
@@ -587,8 +598,8 @@
 						"selection":
 						[
 							[
-								2627,
-								2627
+								425,
+								425
 							]
 						],
 						"settings":
@@ -598,7 +609,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1343.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -609,15 +620,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5190,
+						"buffer_size": 5431,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5179,
-								5179
+								621,
+								621
 							]
 						],
 						"settings":
