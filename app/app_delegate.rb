@@ -19,6 +19,9 @@ class AppDelegate
   def application(application, didFinishLaunchingWithOptions:launchOptions)
     NewRelicAgent.startWithApplicationToken 'AA539587f3b947e0b1c5651d42572976bf89095592'
 
+    # Globally instantiate and share our API connection from AFNetworking
+    API.bio_services
+
     find = FindViewController.new
     create = CreateViewController.new
     main = MainViewController.new

@@ -35,23 +35,39 @@ class CreateViewController < UIViewController
   layout :root do
     # assign our input fields to an array so we can loop through
     # and manage keyboard actions
-    @input_fields = [];
+    @input_fields = {
+      'type' => UITextField,
+      'name' => UITextField,
+      'description' => UITextView,
+      'location' => UITextField,
+      'privacy' => UITextField,
+    }
 
     subview(@pagination, :pagination) do
 
       subview(@create_challenge, :form_create) do
         subview(UIImageView, :text_create)
 
-        subview(UIImageView, :input_text_type) do
-          @input_fields << subview(UITextField, :challenge_type)
+        @input_fields.each do |key, value|
+          subview(UIImageView, :"input_text_#{key}") do
+            @input_fields[key] = subview(value, :"challenge_#{key}")
+          end
         end
 
-        subview(UIImageView, :input_text_name) do
-          @input_fields << subview(UITextField, :challenge_name)
-        end
+        subview(UIImageView, :btn_submit).when_tapped do
+          post_data = {}
 
-        subview(UIImageView, :input_text_location) do
-          @input_fields << subview(UITextField, :challenge_location)
+          @input_fields.each { |key, value|
+            post_data[key] = value.text
+          }
+
+          AFMotion::Client.shared.put('api/challenges/create', post_data) do |result|
+            if result.success?
+              p result.object
+            elsif result.failure?
+              p result.error.localizedDescription
+            end
+          end
         end
       end
 
@@ -76,12 +92,16 @@ class CreateViewController < UIViewController
     @page_2 = subview(UIImageView, :page_2)
     @page_3 = subview(UIImageView, :page_3)
     @page_4 = subview(UIImageView, :page_4)
-  end
 
-  # As the view is actually being called, lets attach our listeners
-  def viewWillAppear(animated)
-    super
-    keyboard_handler_start
+    @input_fields.each { |key, value|
+      value.delegate = self
+    }
+
+    self.view.when_tapped do
+      @input_fields.each { |key, value|
+        value.resignFirstResponder
+      }
+    end
 
     @share_facebook.when_tapped do
       Composer.new(self, "Facebook", "I just created a challenge!")
@@ -122,17 +142,12 @@ class CreateViewController < UIViewController
       @page_4.image = UIImage.imageNamed('ui-bullet-selected.png')
       @pagination.setContentOffset(CGPointMake(Device.screen.width*3, 0), animated: true)
     end
+  end
 
-
-    @input_fields.each { |field|
-      field.delegate = self
-    }
-
-    self.view.when_tapped do
-      @input_fields.each { |field|
-        field.resignFirstResponder
-      }
-    end
+  # As the view is actually being called, lets attach our listeners
+  def viewWillAppear(animated)
+    super
+    keyboard_handler_start
   end
 
   # Remove the keyboard listener
@@ -148,14 +163,28 @@ class CreateViewController < UIViewController
     @pagination.contentSize = self.view.superview.bounds.size
   end
 
-  def textFieldShouldReturn(textfield)
-    index = @input_fields.index(textfield)
-
-    if index == @input_fields.length - 1
-      textfield.resignFirstResponder
-    else
-      @input_fields[index + 1].becomeFirstResponder
+  # Override the textView method so that my "textareas" go to the next field on "return"
+  def textView(textView, shouldChangeTextInRange:range, replacementText:text)
+    if text.isEqualToString("\n")
+      textView.resignFirstResponder
+      textView.superview.superview.viewWithTag(textView.tag + 1).becomeFirstResponder
+      return false
     end
+
+    return true
+  end
+
+  def textFieldShouldReturn(textfield)
+    next_tag = textfield.tag + 1;
+    next_responder = textfield.superview.superview.viewWithTag(next_tag)
+
+    if (next_responder)
+      next_responder.becomeFirstResponder
+    else
+      textfield.resignFirstResponder
+    end
+
+    return false;
   end
 
 end

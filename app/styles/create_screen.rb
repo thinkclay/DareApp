@@ -100,6 +100,12 @@ Teacup::Stylesheet.new :create_screen do
     userInteractionEnabled: true,
     width: 249
 
+  style :input_textarea_wrapper,
+    left: 24,
+    image: UIImage.imageNamed('ui-textarea-normal.png'),
+    userInteractionEnabled: true,
+    width: 249
+
   style :input_text_type,
     extends: :input_text_wrapper,
     tag: 1,
@@ -109,15 +115,34 @@ Teacup::Stylesheet.new :create_screen do
     extends: :input_text_wrapper,
     constraints: [
       constrain(:top).equals(:input_text_type, :bottom).plus(15)
-    ],
-    tag: 2
+    ]
+
+  style :input_text_description,
+    extends: :input_textarea_wrapper,
+    constraints: [
+      constrain(:top).equals(:input_text_name, :bottom).plus(15)
+    ]
 
   style :input_text_location,
     extends: :input_text_wrapper,
     constraints: [
-      constrain(:top).equals(:input_text_name, :bottom).plus(15)
+      constrain(:top).equals(:input_text_description, :bottom).plus(15)
+    ]
+
+  style :input_text_privacy,
+    extends: :input_text_wrapper,
+    constraints: [
+      constrain(:top).equals(:input_text_location, :bottom).plus(15)
+    ]
+
+  style :btn_submit,
+    image: UIImage.imageNamed('ui-btn-coins.png'),
+    constraints: [
+      constrain(:top).equals(:input_text_privacy, :bottom).plus(15)
     ],
-    tag: 3
+    left: 25,
+    height: 29,
+    width: 110
 
   style :input_text,
     color: BubbleWrap.rgb_color(118, 90, 59),
@@ -127,17 +152,45 @@ Teacup::Stylesheet.new :create_screen do
     top: 5,
     width: 237
 
+  style :input_textarea,
+    background: UIColor.clearColor,
+    color: BubbleWrap.rgb_color(118, 90, 59),
+    font: UIFont.systemFontOfSize(17),
+    height: 42,
+    left: 0,
+    placeholder: 'Nothing Set',
+    top: 2,
+    width: 245
+
   style :challenge_type,
     extends: :input_text,
-    placeholder: 'Challenge Type'
+    placeholder: 'Challenge Type',
+    returnKeyType: UIReturnKeyNext,
+    tag: 1
 
   style :challenge_name,
     extends: :input_text,
-    placeholder: 'Name of the Challenge'
+    placeholder: 'Name of the Challenge',
+    returnKeyType: UIReturnKeyNext,
+    tag: 2
+
+  style :challenge_description,
+    extends: :input_textarea,
+    placeholder: 'Description',
+    returnKeyType: UIReturnKeyNext,
+    tag: 3
 
   style :challenge_location,
     extends: :input_text,
-    placeholder: 'Start Location'
+    placeholder: 'Start Location',
+    returnKeyType: UIReturnKeyNext,
+    tag: 4
+
+  style :challenge_privacy,
+    extends: :input_text,
+    placeholder: 'Privacy',
+    returnKeyType: UIReturnKeyGo,
+    tag: 5
 
   # Social
   style :button_share_facebook,

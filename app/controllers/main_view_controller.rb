@@ -15,12 +15,6 @@ class MainViewController < UIViewController
   def loadView
     super
 
-    # API.bio_services
-    # AFMotion::HTTP.get("http://google.com") do |result|
-    #   p result.body
-    # end
-
-
     if ( Device.screen.height == 480 )
       self.view.backgroundColor = UIColor.colorWithPatternImage(UIImage.imageNamed('ui-bg-octo.png'));
     else

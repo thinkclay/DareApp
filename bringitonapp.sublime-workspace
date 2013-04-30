@@ -127,7 +127,7 @@
 			"file": "Gemfile",
 			"settings":
 			{
-				"buffer_size": 381,
+				"buffer_size": 406,
 				"line_ending": "Windows"
 			}
 		},
@@ -135,7 +135,7 @@
 			"file": "app/controllers/map_view_controller.rb",
 			"settings":
 			{
-				"buffer_size": 362,
+				"buffer_size": 378,
 				"line_ending": "Unix",
 				"name": "class MapViewController < UIViewController"
 			}
@@ -144,7 +144,7 @@
 			"file": "app/app_delegate.rb",
 			"settings":
 			{
-				"buffer_size": 1651,
+				"buffer_size": 1836,
 				"line_ending": "Windows"
 			}
 		},
@@ -160,7 +160,7 @@
 			"file": "app/styles/create_screen.rb",
 			"settings":
 			{
-				"buffer_size": 3374,
+				"buffer_size": 4454,
 				"line_ending": "Windows"
 			}
 		},
@@ -168,7 +168,7 @@
 			"file": "app/controllers/create_view_controller.rb",
 			"settings":
 			{
-				"buffer_size": 5431,
+				"buffer_size": 5886,
 				"line_ending": "Windows"
 			}
 		}
@@ -176,9 +176,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 147.0,
+		"height": 267.0,
 		"selected_items":
 		[
+			[
+				"refr",
+				"Project: Refresh Folders"
+			],
 			[
 				"synt sh",
 				"Set Syntax: Shell Script (Bash)"
@@ -232,7 +236,7 @@
 				"Package Control: Discover Packages"
 			]
 		],
-		"width": 449.0
+		"width": 530.0
 	},
 	"console":
 	{
@@ -476,15 +480,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 381,
+						"buffer_size": 406,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								167,
-								167
+								0,
+								0
 							]
 						],
 						"settings":
@@ -503,15 +507,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 362,
+						"buffer_size": 378,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								351,
-								351
+								0,
+								0
 							]
 						],
 						"settings":
@@ -533,15 +537,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1651,
+						"buffer_size": 1836,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1538,
-								1538
+								0,
+								0
 							]
 						],
 						"settings":
@@ -591,15 +595,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3374,
+						"buffer_size": 4454,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								425,
-								425
+								0,
+								0
 							]
 						],
 						"settings":
@@ -620,15 +624,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5431,
+						"buffer_size": 5886,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								621,
-								621
+								0,
+								0
 							]
 						],
 						"settings":
