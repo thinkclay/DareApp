@@ -22,24 +22,23 @@ class AppDelegate
     # Globally instantiate and share our API connection from AFNetworking
     API.bio_services
 
-    find = FindViewController.new
-    create = CreateViewController.new
-    main = MainViewController.new
-    auth = AuthViewController.new
-    map = MapViewController.new
+    @find = FindViewController.new
+    @create = CreateViewController.new
+    @main = MainViewController.new
+    @auth = AuthViewController.new
+    @map = MapViewController.new
 
-
-    @left = UINavigationController.alloc.initWithRootViewController(find)
+    @left = UINavigationController.alloc.initWithRootViewController(@find)
     @left.navigationBarHidden = true
-    @left.viewControllers = [find]
+    @left.viewControllers = [@find]
 
-    @right = UINavigationController.alloc.initWithRootViewController(create)
+    @right = UINavigationController.alloc.initWithRootViewController(@create)
     @right.navigationBarHidden = true
-    @right.viewControllers = [create]
+    @right.viewControllers = [@create]
 
-    @center = UINavigationController.alloc.initWithRootViewController(main)
+    @center = UINavigationController.alloc.initWithRootViewController(@main)
     @center.navigationBarHidden = true
-    @center.viewControllers = [auth, map, main]
+    @center.viewControllers = [@auth, @map, @main]
 
     @deckViewController = IIViewDeckController.alloc.initWithCenterViewController(@center, leftViewController: @left, rightViewController: @right)
     @deckViewController.leftSize = 25

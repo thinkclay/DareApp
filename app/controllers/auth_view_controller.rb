@@ -23,7 +23,6 @@ class AuthViewController < UIViewController
   end
 
   layout do
-
     BW::HTTP.post('http://thinkclay.com', {payload: {'foo' => 'bar'}}) do |response|
       puts response
     end
@@ -40,5 +39,4 @@ class AuthViewController < UIViewController
       subview(UIImageView, :btn_foursquare)
     end
   end
-
 end

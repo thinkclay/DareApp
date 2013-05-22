@@ -100,6 +100,12 @@ Teacup::Stylesheet.new :create_screen do
     userInteractionEnabled: true,
     width: 249
 
+  style :input_select_wrapper,
+    left: 24,
+    image: UIImage.imageNamed('ui-select-normal.png'),
+    userInteractionEnabled: true,
+    width: 249
+
   style :input_textarea_wrapper,
     left: 24,
     image: UIImage.imageNamed('ui-textarea-normal.png'),
@@ -107,7 +113,7 @@ Teacup::Stylesheet.new :create_screen do
     width: 249
 
   style :input_text_type,
-    extends: :input_text_wrapper,
+    extends: :input_select_wrapper,
     tag: 1,
     top: 50
 
@@ -158,7 +164,6 @@ Teacup::Stylesheet.new :create_screen do
     font: UIFont.systemFontOfSize(17),
     height: 42,
     left: 0,
-    placeholder: 'Nothing Set',
     top: 2,
     width: 245
 
@@ -168,6 +173,9 @@ Teacup::Stylesheet.new :create_screen do
     returnKeyType: UIReturnKeyNext,
     tag: 1
 
+  style :hs_challenge_type,
+    top: 0
+
   style :challenge_name,
     extends: :input_text,
     placeholder: 'Name of the Challenge',
@@ -176,7 +184,6 @@ Teacup::Stylesheet.new :create_screen do
 
   style :challenge_description,
     extends: :input_textarea,
-    placeholder: 'Description',
     returnKeyType: UIReturnKeyNext,
     tag: 3
 

@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 $:.unshift("/Library/RubyMotion/lib")
-
+require 'motion/project/template/ios'
 require 'rubygems'
-require 'motion/project'
 require 'bundler'
 require 'motion-cocoapods'
 
+Bundler.setup
 Bundler.require
 
 require 'afmotion'
-require 'bubble-wrap'
+require 'bubble-wrap/all'
 require 'sugarcube'
 require 'sugarcube-gestures'
 require 'teacup'
@@ -22,11 +22,18 @@ require 'map-kit-wrapper'
 
 Motion::Project::App.setup do |app|
 
+  # Analytics
   app.vendor_project(
     'vendor/Pods/NewRelicAgent/NewRelic_iOS_Agent_1.328/NewRelicAgent.framework',
     :static,
     :products => ['NewRelicAgent'],
     :headers_dir => 'Headers'
+  )
+
+  # Horizontal Picker
+  app.vendor_project(
+    'vendor/UI/KLHorizontalSelect/Classes',
+    :static
   )
 
   # Get our CocoaPods
@@ -42,7 +49,7 @@ Motion::Project::App.setup do |app|
 
   app.deployment_target = '6.1'
   app.device_family = [:iphone]
-  app.frameworks += ['Social', 'Twitter', 'CoreLocation', 'MapKit']
+  app.frameworks += ['Social', 'Twitter', 'CoreLocation', 'MapKit', 'QuartzCore']
 
   app.icons = ['Icon.png', 'Icon@2x.png', 'Icon-72.png', 'iTunesArtwork.png', 'iTunesArtwork@2x.png']
   app.fonts = ['CabinSketch-Bold.ttf', 'CabinSketch-Regular.ttf']

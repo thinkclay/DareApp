@@ -144,7 +144,7 @@
 			"file": "app/app_delegate.rb",
 			"settings":
 			{
-				"buffer_size": 1836,
+				"buffer_size": 1882,
 				"line_ending": "Windows"
 			}
 		},
@@ -160,7 +160,7 @@
 			"file": "app/styles/create_screen.rb",
 			"settings":
 			{
-				"buffer_size": 4454,
+				"buffer_size": 4692,
 				"line_ending": "Windows"
 			}
 		},
@@ -168,7 +168,7 @@
 			"file": "app/controllers/create_view_controller.rb",
 			"settings":
 			{
-				"buffer_size": 5886,
+				"buffer_size": 6558,
 				"line_ending": "Windows"
 			}
 		}
@@ -537,7 +537,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1836,
+						"buffer_size": 1882,
 						"regions":
 						{
 						},
@@ -595,7 +595,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4454,
+						"buffer_size": 4692,
 						"regions":
 						{
 						},
@@ -624,7 +624,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5886,
+						"buffer_size": 6558,
 						"regions":
 						{
 						},

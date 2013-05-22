@@ -8,8 +8,12 @@
 #
 
 class CreateViewController < UIViewController
+
   include GM::KeyboardHandler
+
   stylesheet :create_screen
+
+  attr_accessor :input_fields, :post_data
 
   # Create our parent declarations, instantiate, and set properties
   def loadView
@@ -33,6 +37,9 @@ class CreateViewController < UIViewController
   # these should be moved out into their own controllers.. but then how will
   # keyboard delegation and other master -> child properties get passed?
   layout :root do
+
+    @post_data = {}
+
     # assign our input fields to an array so we can loop through
     # and manage keyboard actions
     @input_fields = {
@@ -54,14 +61,28 @@ class CreateViewController < UIViewController
           end
         end
 
-        subview(UIImageView, :btn_submit).when_tapped do
-          post_data = {}
+        @input_fields['type'].when_tapped do
+          @pagination.setContentOffset(CGPointMake(0, -40), animated: true)
 
+          plistPath = NSBundle.mainBundle.pathForResource("ChallengeTypes", ofType:"plist")
+          controlData = NSArray.alloc.initWithContentsOfFile(plistPath)
+
+          @horizontalSelect = KLHorizontalSelect.alloc.initWithFrame(self.view.bounds)
+          @horizontalSelect.delegate = self
+          @horizontalSelect.setTableData(controlData)
+          subview(@horizontalSelect, :hs_challenge_type)
+        end
+
+        @input_fields['location'].when_tapped do
+          self.navigationController.presentViewController(PlacesListController.alloc.init, animated: true, completion: nil)
+        end
+
+        subview(UIImageView, :btn_submit).when_tapped do
           @input_fields.each { |key, value|
-            post_data[key] = value.text
+            @post_data[key] = value.text
           }
 
-          AFMotion::Client.shared.put('api/challenges/create', post_data) do |result|
+          AFMotion::Client.shared.put('api/challenges/create', @post_data) do |result|
             if result.success?
               p result.object
             elsif result.failure?
@@ -98,6 +119,8 @@ class CreateViewController < UIViewController
     }
 
     self.view.when_tapped do
+      @horizontalSelect.removeFromSuperview if defined? @horizontalSelect
+
       @input_fields.each { |key, value|
         value.resignFirstResponder
       }
@@ -185,6 +208,10 @@ class CreateViewController < UIViewController
     end
 
     return false;
+  end
+
+  def horizontalSelect(horizontalSelect, didSelectCell:cell)
+    @input_fields['type'].text = cell.label.text
   end
 
 end
