@@ -57,10 +57,8 @@ class CreateViewController < UIViewController
         subview(UIImageView, :text_create)
 
         @input_fields.each do |key, value|
-          subview(UIView, :"input_text_#{key}") do
-            # @input_fields[:"#{key}_bg"] = subview(UIImageView, :ui_text_normal)
+          subview(UIImageView, :"input_text_#{key}") do
             @input_fields[key] = subview(value, :"challenge_#{key}")
-            subview(UIImageView, :ui_text_normal)
           end
         end
 
@@ -69,7 +67,7 @@ class CreateViewController < UIViewController
           if defined? @challenge_type_dropdown
             @challenge_type_dropdown.fade_in
           else
-            @challenge_type_dropdown = subview(UIView, :select_dropdown) do
+            @challenge_type_dropdown = subview(UIImageView, :select_dropdown_wrapper) do
               @challenge_type_table = UITableView.alloc.init
               @challenge_type_table.delegate = @challenge_type_table.dataSource = self
 
@@ -166,8 +164,7 @@ class CreateViewController < UIViewController
   end
 
   def textFieldShouldReturn(textfield)
-    # textfield.superview.image = UIImage.imageNamed('ui-textfield-normal.png')
-
+    textfield.superview.image = UIImage.imageNamed('ui-textfield-normal.png')
     next_tag = textfield.tag + 1;
     next_responder = textfield.superview.superview.viewWithTag(next_tag)
 
@@ -207,7 +204,7 @@ class CreateViewController < UIViewController
     @post_data['category'] = @challenge_types[indexPath.row]['name']
 
     @challenge_type_dropdown.fade_out if defined? @challenge_type_dropdown
-    # @input_fields['type'].superview.image = UIImage.imageNamed('ui-textfield-normal.png')
+    @input_fields['type'].superview.image = UIImage.imageNamed('ui-textfield-normal.png')
   end
 
   def post_data_status
@@ -218,9 +215,7 @@ class CreateViewController < UIViewController
 
       if v.text.nil?
         # only the regular text inputs recognize an imageview as a proper container
-        # original_textfield = UIImage.imageNamed('ui-text-selected.png')
-        # stretchy_textfield = original_textfield.resizableImageWithCapInsets(UIEdgeInsetsMake(4,6,6,4))
-        # @input_fields[k].superview.image = stretchy_textfield
+        @input_fields[k].superview.image = UIImage.imageNamed('ui-textfield-selected.png')
 
         post_ready = false
       end
