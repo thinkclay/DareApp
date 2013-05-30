@@ -12,6 +12,7 @@ require 'afmotion'
 require 'bubble-wrap/all'
 require 'sugarcube'
 require 'sugarcube-gestures'
+require 'sugarcube-repl'
 require 'teacup'
 require 'sweettea'
 require 'geomotion'
@@ -30,10 +31,12 @@ Motion::Project::App.setup do |app|
     :headers_dir => 'Headers'
   )
 
-  # Horizontal Picker
+  # Inspector
   app.vendor_project(
-    'vendor/UI/KLHorizontalSelect/Classes',
-    :static
+    'vendor/SparkInspector.framework',
+    :static,
+    :products => ['SparkInspector'],
+    :headers_dir => './Headers'
   )
 
   # Get our CocoaPods
@@ -48,8 +51,11 @@ Motion::Project::App.setup do |app|
   app.identifier = "com.thinkclay.bring-it-on"
 
   app.deployment_target = '6.1'
+  app.provisioning_profile = '/Users/clay/Library/MobileDevice/Provisioning Profiles/B6FD73E2-3462-453F-99A8-C4F1F76ADE14.mobileprovision'
   app.device_family = [:iphone]
+
   app.frameworks += ['Social', 'Twitter', 'CoreLocation', 'MapKit', 'QuartzCore']
+  app.libs << "/usr/lib/libz.dylib"
 
   app.icons = ['Icon.png', 'Icon@2x.png', 'Icon-72.png', 'iTunesArtwork.png', 'iTunesArtwork@2x.png']
   app.fonts = ['CabinSketch-Bold.ttf', 'CabinSketch-Regular.ttf']

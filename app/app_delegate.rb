@@ -19,6 +19,10 @@ class AppDelegate
   def application(application, didFinishLaunchingWithOptions:launchOptions)
     NewRelicAgent.startWithApplicationToken 'AA539587f3b947e0b1c5651d42572976bf89095592'
 
+    if App.environment == 'development'
+      SparkInspector.enableObservation
+    end
+
     # Globally instantiate and share our API connection from AFNetworking
     API.bio_services
 

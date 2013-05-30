@@ -66,96 +66,73 @@ Teacup::Stylesheet.new :create_screen do
     image: UIImage.imageNamed('ui-bullet-normal.png'),
     width: 18
 
-  style :page_1,
+  style :page_0,
     extends: :paging,
     image: UIImage.imageNamed('ui-bullet-selected.png'),
     top: (Device.screen.height - 50),
-    left: 122
+    left: 122,
+    tag: 0
+
+  style :page_1,
+    extends: :paging,
+    constraints: [
+      constrain(:top).equals(:page_0, :top),
+      constrain(:left).equals(:page_0, :right).plus(8)
+    ],
+    tag: 1
 
   style :page_2,
     extends: :paging,
     constraints: [
       constrain(:top).equals(:page_1, :top),
       constrain(:left).equals(:page_1, :right).plus(8)
-    ]
+    ],
+    tag: 2
 
   style :page_3,
     extends: :paging,
     constraints: [
       constrain(:top).equals(:page_2, :top),
       constrain(:left).equals(:page_2, :right).plus(8)
-    ]
+    ],
+    tag: 3
 
-  style :page_4,
-    extends: :paging,
-    constraints: [
-      constrain(:top).equals(:page_3, :top),
-      constrain(:left).equals(:page_3, :right).plus(8)
-    ]
+  #
+  # Form fields for Challenge Creation
+  #
+  original_bg = UIImage.imageNamed('ui-text-normal.png')
+  stretchy_bg = original_bg.resizableImageWithCapInsets(UIEdgeInsetsMake(4,6,6,4))
 
-  # Input Fields
+  style :ui_text_normal,
+    height: 36,
+    image: stretchy_bg,
+    width: 248
+
   style :input_text_wrapper,
+    height: 36,
     left: 24,
-    image: UIImage.imageNamed('ui-textfield-normal.png'),
     userInteractionEnabled: true,
-    width: 249
-
-  style :input_select_wrapper,
-    left: 24,
-    image: UIImage.imageNamed('ui-select-normal.png'),
-    userInteractionEnabled: true,
-    width: 249
+    width: 248
 
   style :input_textarea_wrapper,
+    height: 72,
     left: 24,
-    image: UIImage.imageNamed('ui-textarea-normal.png'),
     userInteractionEnabled: true,
-    width: 249
+    width: 248
 
-  style :input_text_type,
-    extends: :input_select_wrapper,
-    tag: 1,
-    top: 50
-
-  style :input_text_name,
-    extends: :input_text_wrapper,
-    constraints: [
-      constrain(:top).equals(:input_text_type, :bottom).plus(15)
-    ]
-
-  style :input_text_description,
-    extends: :input_textarea_wrapper,
-    constraints: [
-      constrain(:top).equals(:input_text_name, :bottom).plus(15)
-    ]
-
-  style :input_text_location,
-    extends: :input_text_wrapper,
-    constraints: [
-      constrain(:top).equals(:input_text_description, :bottom).plus(15)
-    ]
-
-  style :input_text_privacy,
-    extends: :input_text_wrapper,
-    constraints: [
-      constrain(:top).equals(:input_text_location, :bottom).plus(15)
-    ]
-
-  style :btn_submit,
-    image: UIImage.imageNamed('ui-btn-coins.png'),
-    constraints: [
-      constrain(:top).equals(:input_text_privacy, :bottom).plus(15)
-    ],
-    left: 25,
-    height: 29,
-    width: 110
+  style :select_dropdown,
+    extends: :ui_text_normal,
+    left: 49,
+    top: 86,
+    userInteractionEnabled: true
 
   style :input_text,
     color: BubbleWrap.rgb_color(118, 90, 59),
-    height: 21,
+    height: 24,
     left: 8,
     placeholder: 'Nothing Set',
-    top: 5,
+    top: 6,
+    userInteractionEnabled: true,
     width: 237
 
   style :input_textarea,
@@ -165,7 +142,22 @@ Teacup::Stylesheet.new :create_screen do
     height: 42,
     left: 0,
     top: 2,
+    userInteractionEnabled: true,
     width: 245
+
+
+  # Challenge Type Select
+  style :input_text_type,
+    extends: :input_text_wrapper,
+    top: 50
+
+  style :input_select_type,
+    bounces: false,
+    height: 116,
+    left: 1,
+    separatorColor: BubbleWrap.rgb_color(36, 27, 17),
+    top: 0,
+    width: 247
 
   style :challenge_type,
     extends: :input_text,
@@ -173,8 +165,12 @@ Teacup::Stylesheet.new :create_screen do
     returnKeyType: UIReturnKeyNext,
     tag: 1
 
-  style :hs_challenge_type,
-    top: 0
+  # Challenge Name Input
+  style :input_text_name,
+    extends: :input_text_wrapper,
+    constraints: [
+      constrain(:top).equals(:input_text_type, :bottom).plus(50)
+    ]
 
   style :challenge_name,
     extends: :input_text,
@@ -182,10 +178,24 @@ Teacup::Stylesheet.new :create_screen do
     returnKeyType: UIReturnKeyNext,
     tag: 2
 
+  #  Challenge Description Textarea
+  style :input_text_description,
+    extends: :input_textarea_wrapper,
+    constraints: [
+      constrain(:top).equals(:input_text_name, :bottom).plus(50)
+    ]
+
   style :challenge_description,
     extends: :input_textarea,
     returnKeyType: UIReturnKeyNext,
     tag: 3
+
+  # Challenge Location Select Window
+  style :input_text_location,
+    extends: :input_text_wrapper,
+    constraints: [
+      constrain(:top).equals(:input_text_description, :bottom).plus(50)
+    ]
 
   style :challenge_location,
     extends: :input_text,
@@ -193,11 +203,29 @@ Teacup::Stylesheet.new :create_screen do
     returnKeyType: UIReturnKeyNext,
     tag: 4
 
+  # Challenge Privacy
+  style :input_text_privacy,
+    extends: :input_text_wrapper,
+    constraints: [
+      constrain(:top).equals(:input_text_location, :bottom).plus(50)
+    ]
+
   style :challenge_privacy,
     extends: :input_text,
     placeholder: 'Privacy',
     returnKeyType: UIReturnKeyGo,
     tag: 5
+
+
+  style :btn_next_rules,
+    image: UIImage.imageNamed('btn_next_rules.png'),
+    constraints: [
+      constrain(:top).equals(:input_text_privacy, :bottom).plus(50)
+    ],
+    left: 25,
+    height: 29,
+    width: 145
+
 
   # Social
   style :button_share_facebook,

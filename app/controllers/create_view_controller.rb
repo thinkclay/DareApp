@@ -26,6 +26,7 @@ class CreateViewController < UIViewController
     @pagination.bounces = false
 
     @create_challenge = UIScrollView.new
+    @challenge_types = Types.load(self)
 
     # A nice handy function from @colinta which will intercept our keyboard delegation
     # and do work for us, like making the scroll area larger to accommodate overlap and such
@@ -56,39 +57,33 @@ class CreateViewController < UIViewController
         subview(UIImageView, :text_create)
 
         @input_fields.each do |key, value|
-          subview(UIImageView, :"input_text_#{key}") do
+          subview(UIView, :"input_text_#{key}") do
+            # @input_fields[:"#{key}_bg"] = subview(UIImageView, :ui_text_normal)
             @input_fields[key] = subview(value, :"challenge_#{key}")
+            subview(UIImageView, :ui_text_normal)
           end
         end
 
+        # Pick a challenge type from the select field
         @input_fields['type'].when_tapped do
-          @pagination.setContentOffset(CGPointMake(0, -40), animated: true)
+          if defined? @challenge_type_dropdown
+            @challenge_type_dropdown.fade_in
+          else
+            @challenge_type_dropdown = subview(UIView, :select_dropdown) do
+              @challenge_type_table = UITableView.alloc.init
+              @challenge_type_table.delegate = @challenge_type_table.dataSource = self
 
-          plistPath = NSBundle.mainBundle.pathForResource("ChallengeTypes", ofType:"plist")
-          controlData = NSArray.alloc.initWithContentsOfFile(plistPath)
-
-          @horizontalSelect = KLHorizontalSelect.alloc.initWithFrame(self.view.bounds)
-          @horizontalSelect.delegate = self
-          @horizontalSelect.setTableData(controlData)
-          subview(@horizontalSelect, :hs_challenge_type)
+              subview(@challenge_type_table, :input_select_type)
+            end
+          end
         end
 
         @input_fields['location'].when_tapped do
           self.navigationController.presentViewController(PlacesListController.alloc.init, animated: true, completion: nil)
         end
 
-        subview(UIImageView, :btn_submit).when_tapped do
-          @input_fields.each { |key, value|
-            @post_data[key] = value.text
-          }
-
-          AFMotion::Client.shared.put('api/challenges/create', @post_data) do |result|
-            if result.success?
-              p result.object
-            elsif result.failure?
-              p result.error.localizedDescription
-            end
-          end
+        subview(UIImageView, :btn_next_rules).when_tapped do
+          self.switch_page(1) if self.post_data_status
         end
       end
 
@@ -109,18 +104,21 @@ class CreateViewController < UIViewController
     end
 
     # pagination control
-    @page_1 = subview(UIImageView, :page_1)
-    @page_2 = subview(UIImageView, :page_2)
-    @page_3 = subview(UIImageView, :page_3)
-    @page_4 = subview(UIImageView, :page_4)
+    @page = []
+
+    4.times { |i|
+      @page[i] = subview(UIImageView, :"page_#{i}")
+
+      @page[i].when_tapped do
+        self.switch_page(i)
+      end
+    }
 
     @input_fields.each { |key, value|
       value.delegate = self
     }
 
     self.view.when_tapped do
-      @horizontalSelect.removeFromSuperview if defined? @horizontalSelect
-
       @input_fields.each { |key, value|
         value.resignFirstResponder
       }
@@ -132,38 +130,6 @@ class CreateViewController < UIViewController
 
     @share_twitter.when_tapped do
       Composer.new(self, "Twitter", "I just created a challenge!")
-    end
-
-    @page_1.when_tapped do
-      @page_1.image = UIImage.imageNamed('ui-bullet-selected.png')
-      @page_2.image = UIImage.imageNamed('ui-bullet-normal.png')
-      @page_3.image = UIImage.imageNamed('ui-bullet-normal.png')
-      @page_4.image = UIImage.imageNamed('ui-bullet-normal.png')
-      @pagination.setContentOffset(CGPointMake(0, 0), animated: true)
-    end
-
-    @page_2.when_tapped do
-      @page_1.image = UIImage.imageNamed('ui-bullet-normal.png')
-      @page_2.image = UIImage.imageNamed('ui-bullet-selected.png')
-      @page_3.image = UIImage.imageNamed('ui-bullet-normal.png')
-      @page_4.image = UIImage.imageNamed('ui-bullet-normal.png')
-      @pagination.setContentOffset(CGPointMake(Device.screen.width, 0), animated: true)
-    end
-
-    @page_3.when_tapped do
-      @page_1.image = UIImage.imageNamed('ui-bullet-normal.png')
-      @page_2.image = UIImage.imageNamed('ui-bullet-normal.png')
-      @page_3.image = UIImage.imageNamed('ui-bullet-selected.png')
-      @page_4.image = UIImage.imageNamed('ui-bullet-normal.png')
-      @pagination.setContentOffset(CGPointMake(Device.screen.width*2, 0), animated: true)
-    end
-
-    @page_4.when_tapped do
-      @page_1.image = UIImage.imageNamed('ui-bullet-normal.png')
-      @page_2.image = UIImage.imageNamed('ui-bullet-normal.png')
-      @page_3.image = UIImage.imageNamed('ui-bullet-normal.png')
-      @page_4.image = UIImage.imageNamed('ui-bullet-selected.png')
-      @pagination.setContentOffset(CGPointMake(Device.screen.width*3, 0), animated: true)
     end
   end
 
@@ -191,6 +157,8 @@ class CreateViewController < UIViewController
     if text.isEqualToString("\n")
       textView.resignFirstResponder
       textView.superview.superview.viewWithTag(textView.tag + 1).becomeFirstResponder
+      self.navigationController.presentViewController(PlacesListController.alloc.init, animated: true, completion: nil)
+
       return false
     end
 
@@ -198,6 +166,8 @@ class CreateViewController < UIViewController
   end
 
   def textFieldShouldReturn(textfield)
+    # textfield.superview.image = UIImage.imageNamed('ui-textfield-normal.png')
+
     next_tag = textfield.tag + 1;
     next_responder = textfield.superview.superview.viewWithTag(next_tag)
 
@@ -210,8 +180,75 @@ class CreateViewController < UIViewController
     return false;
   end
 
-  def horizontalSelect(horizontalSelect, didSelectCell:cell)
-    @input_fields['type'].text = cell.label.text
+  def tableView(tableView, numberOfRowsInSection: section)
+    @challenge_types.size
+  end
+
+  CellID = 'ChallengeTypes'
+  def tableView(tableView, cellForRowAtIndexPath: indexPath)
+    cell = tableView.dequeueReusableCellWithIdentifier(CellID) || UITableViewCell.alloc.initWithStyle(UITableViewStylePlain, reuseIdentifier:CellID)
+    index = indexPath.indexAtPosition(indexPath.length - 1)
+
+    if index % 2 == 1
+      cell.contentView.backgroundColor = BubbleWrap.rgb_color(44, 33, 20)
+    else
+      cell.contentView.backgroundColor = BubbleWrap.rgb_color(36, 27, 17)
+    end
+
+    cell.textLabel.backgroundColor = UIColor.clearColor
+    cell.textLabel.text = @challenge_types[indexPath.row]['group']
+    cell.textLabel.color = BubbleWrap.rgb_color(99, 73, 44)
+    cell.textLabel.font = UIFont.systemFontOfSize(14)
+    cell
+  end
+
+  def tableView(tableView, didHighlightRowAtIndexPath: indexPath)
+    @input_fields['type'].text = @challenge_types[indexPath.row]['group']
+    @post_data['category'] = @challenge_types[indexPath.row]['name']
+
+    @challenge_type_dropdown.fade_out if defined? @challenge_type_dropdown
+    # @input_fields['type'].superview.image = UIImage.imageNamed('ui-textfield-normal.png')
+  end
+
+  def post_data_status
+    post_ready = true
+
+    @input_fields.each { |k, v|
+      @post_data[k] = v.text
+
+      if v.text.nil?
+        # only the regular text inputs recognize an imageview as a proper container
+        # original_textfield = UIImage.imageNamed('ui-text-selected.png')
+        # stretchy_textfield = original_textfield.resizableImageWithCapInsets(UIEdgeInsetsMake(4,6,6,4))
+        # @input_fields[k].superview.image = stretchy_textfield
+
+        post_ready = false
+      end
+    }
+
+    if post_ready
+      AFMotion::Client.shared.put('api/challenges/create', @post_data) { |result|
+        if result.success?
+          p result.object
+        elsif result.failure?
+          p result.error.localizedDescription
+        end
+      }
+    end
+  end
+
+  def switch_page(i)
+    # Loop through and set all the others to normal state
+    @page.each { |page|
+      page.image = UIImage.imageNamed('ui-bullet-normal.png')
+    }
+
+    # Set this one to selected state
+    @page[i].image = UIImage.imageNamed('ui-bullet-selected.png')
+
+    # Move the scroll view to the correct offset
+    offset = Device.screen.width * @page[i].tag.to_i
+    @pagination.setContentOffset(CGPointMake(offset, 0), animated: true)
   end
 
 end
