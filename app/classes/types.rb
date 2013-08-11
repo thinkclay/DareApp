@@ -4,39 +4,39 @@ class Types
     [
       {
         'name'  => 'action',
-        'group' => 'Action: athletics, sports, excersize'
+        'label' => 'Action: athletics, sports, excersize'
       },
       {
         'name'  => 'adventure',
-        'group' => 'Adventure: exploring'
+        'label' => 'Adventure: exploring'
       },
       {
         'name'  => 'dare',
-        'group' => 'Dare: social experiments, dangerous'
+        'label' => 'Dare: social experiments, dangerous'
       },
       {
         'name'  => 'drinking',
-        'group' => 'Drinking: shots, beer tours, events'
+        'label' => 'Drinking: shots, beer tours, events'
       },
       {
         'name'  => 'food',
-        'group' => 'Food: eating, playing, or making'
+        'label' => 'Food: eating, playing, or making'
       },
       {
         'name'  => 'other',
-        'group' => 'Other: generic challenge'
+        'label' => 'Other: generic challenge'
       },
       {
         'name'  => 'strategy',
-        'group' => 'Strategy: gaming, puzzles'
+        'label' => 'Strategy: gaming, puzzles'
       },
       {
         'name'  => 'territory',
-        'group' => 'Territory: king of the hill, CTF'
+        'label' => 'Territory: king of the hill, CTF'
       },
       {
         'name'  => 'travel',
-        'group' => 'Travel: sites, cities, states, countries'
+        'label' => 'Travel: sites, cities, states, countries'
       }
     ]
   end

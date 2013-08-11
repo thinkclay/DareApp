@@ -9,6 +9,15 @@
 
 Teacup::Stylesheet.new :create_screen do
 
+  #
+  # GLOBAL
+  #
+  bg_stitch_original = UIImage.imageNamed('ui-text-normal.png')
+  bg_stitch = bg_stitch_original.resizableImageWithCapInsets(UIEdgeInsetsMake(4,6,6,4))
+
+  style :bg_stitch,
+    image: bg_stitch
+
   # Form Wrappers
   style :form,
     height: (Device.screen.height - 50),
@@ -98,7 +107,7 @@ Teacup::Stylesheet.new :create_screen do
     tag: 3
 
   #
-  # Form fields for Challenge Creation
+  # CREATE
   #
   style :input_text_wrapper,
     left: 24,
@@ -221,7 +230,18 @@ Teacup::Stylesheet.new :create_screen do
     width: 145
 
 
-  # Social
+  #
+  # RULES
+  #
+  style :rules_window,
+    height: Device.screen.height - 100,
+    left: 24,
+    top: 50,
+    width: 248
+
+  #
+  # SOCIAL
+  #
   style :button_share_facebook,
     image: UIImage.imageNamed('ui-btn-facebook.png'),
     left: 24,

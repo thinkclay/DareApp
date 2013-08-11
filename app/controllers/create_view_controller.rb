@@ -53,12 +53,15 @@ class CreateViewController < UIViewController
 
     subview(@pagination, :pagination) do
 
+      #
+      # CREATE PAGE
+      #
       subview(@create_challenge, :form_create) do
         subview(UIImageView, :text_create)
 
         @input_fields.each do |key, value|
           subview(UIImageView, :"input_text_#{key}") do
-            @input_fields[key] = subview(value, :"challenge_#{key}")
+            @input_fields[key] = subview(value, :"challenge_#{key}", delegate: self)
           end
         end
 
@@ -85,8 +88,15 @@ class CreateViewController < UIViewController
         end
       end
 
+      #
+      # RULES PAGE
+      #
       subview(UIScrollView, :form_rules) do
         subview(UIImageView, :text_rules)
+
+        subview(UIView, :rules_window) do
+          subview(UIImageView, :bg_stitch, width: 248, height: 100)
+        end
       end
 
       subview(UIScrollView, :form_badge) do
@@ -110,10 +120,6 @@ class CreateViewController < UIViewController
       @page[i].when_tapped do
         self.switch_page(i)
       end
-    }
-
-    @input_fields.each { |key, value|
-      value.delegate = self
     }
 
     self.view.when_tapped do
@@ -193,14 +199,14 @@ class CreateViewController < UIViewController
     end
 
     cell.textLabel.backgroundColor = UIColor.clearColor
-    cell.textLabel.text = @challenge_types[indexPath.row]['group']
+    cell.textLabel.text = @challenge_types[indexPath.row]['label']
     cell.textLabel.color = BubbleWrap.rgb_color(99, 73, 44)
     cell.textLabel.font = UIFont.systemFontOfSize(14)
     cell
   end
 
   def tableView(tableView, didHighlightRowAtIndexPath: indexPath)
-    @input_fields['type'].text = @challenge_types[indexPath.row]['group']
+    @input_fields['type'].text = @challenge_types[indexPath.row]['label']
     @post_data['category'] = @challenge_types[indexPath.row]['name']
 
     @challenge_type_dropdown.fade_out if defined? @challenge_type_dropdown
