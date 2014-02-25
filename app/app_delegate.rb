@@ -4,10 +4,6 @@
 # Global delegation and handler. Creates our initial views and our ViewDeck which is responsible
 # for the side menus and swiping magic
 #
-# @author     Clay McIlrath <thinkclay@gmail.com>
-# @copyright  (c) 2013 Clayton McIlrath, All rights reserved
-#
-
 class AppDelegate
 
   #
@@ -17,14 +13,6 @@ class AppDelegate
   # contain many subviews for the region
   #
   def application(application, didFinishLaunchingWithOptions:launchOptions)
-    NewRelicAgent.startWithApplicationToken 'AA539587f3b947e0b1c5651d42572976bf89095592'
-
-    if App.environment == 'development'
-      SparkInspector.enableObservation
-    end
-
-    # Globally instantiate and share our API connection from AFNetworking
-    API.bio_services
 
     @find = FindViewController.new
     @create = CreateViewController.new

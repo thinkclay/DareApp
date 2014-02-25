@@ -9,11 +9,29 @@
 
 Teacup::Stylesheet.new :main_screen do
 
+  style :notice,
+    height: 55,
+    left: 20,
+    image: UIImage.imageNamed('bg-notice.png'),
+    top: 30,
+    width: 280
+
+  style :notice_content,
+    background: UIColor.clearColor,
+    color: BubbleWrap.rgb_color(118, 90, 59),
+    font: UIFont.systemFontOfSize(12),
+    left: 10,
+    height: 55,
+    numberOfLines: 3,
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, accusamus error omnis repellendus nihil! Ea, porro, aspernatur, suscipit eaque unde nostrum sunt corporis cum error aperiam consequuntur fugit vel quae?',
+    top: 0,
+    width: 260
+
   style :create_button,
     left: 29,
     height: 45,
     image: UIImage.imageNamed('ui-btn-create.png'),
-    top: 100,
+    top: 140,
     width: 291
 
   style :find_button,

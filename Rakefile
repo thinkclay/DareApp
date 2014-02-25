@@ -10,9 +10,7 @@ Bundler.require
 
 require 'afmotion'
 require 'bubble-wrap/all'
-require 'sugarcube'
-require 'sugarcube-gestures'
-require 'sugarcube-repl'
+require 'sugarcube-common'
 require 'teacup'
 require 'sweettea'
 require 'geomotion'
@@ -23,32 +21,16 @@ require 'map-kit-wrapper'
 
 Motion::Project::App.setup do |app|
 
-  # Analytics
-  app.vendor_project(
-    'vendor/Pods/NewRelicAgent/NewRelic_iOS_Agent_1.328/NewRelicAgent.framework',
-    :static,
-    :products => ['NewRelicAgent'],
-    :headers_dir => 'Headers'
-  )
-
-  # Inspector
-  app.vendor_project(
-    'vendor/SparkInspector.framework',
-    :static,
-    :products => ['SparkInspector'],
-    :headers_dir => './Headers'
-  )
-
   # Get our CocoaPods
   app.pods do
     pod 'AFNetworking'
-    pod 'NewRelicAgent'
     pod 'ViewDeck'
+    pod 'Orbiter', '~> 2.0.1'
   end
 
   # Use `rake config' to see complete project settings.
-  app.name = 'Bring It On'
-  app.identifier = "com.thinkclay.bring-it-on"
+  app.name = 'Dare'
+  app.identifier = "com.thinkclay.dare"
 
   app.deployment_target = '6.1'
   app.provisioning_profile = '/Users/clay/Library/MobileDevice/Provisioning Profiles/B6FD73E2-3462-453F-99A8-C4F1F76ADE14.mobileprovision'

@@ -19,10 +19,10 @@ Teacup::Stylesheet.new :auth_screen do
     font: UIFont.fontWithName('CabinSketch-Regular', size: 20),
     constraints: [
       constrain(:left).equals(:window, :left).plus(10),
-      constrain(:top).equals(:avatar, :top).plus(2)
     ],
     text: 'Clayton McIlrath',
-    textAlignment: UITextAlignmentCenter
+    textAlignment: UITextAlignmentCenter,
+    top: 20
 
   style :btn_facebook,
     image: UIImage.imageNamed('btn_facebook.png'),

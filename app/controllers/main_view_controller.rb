@@ -4,9 +4,6 @@
 # This controller is the middle, main screen that is shown on startup.
 # It contains navigation elements for the side menus as well as profile, activity, and friends
 #
-# @author     Clay McIlrath <thinkclay@gmail.com>
-# @copyright  (c) 2013 Clayton McIlrath, All rights reserved
-#
 
 class MainViewController < UIViewController
 
@@ -27,6 +24,27 @@ class MainViewController < UIViewController
   end
 
   layout do
+
+    BW::HTTP.get "https://dareyou.to/challenges.json" do |response|
+      if response.ok?
+        # Parse the json
+        json = BW::JSON.parse(response.body.to_str)
+
+        # Create the notice and add to screen
+        subview(UIImageView, :notice) do
+          @notice = subview(UILabel, :notice_content)
+        end
+
+        # Set the notice text to the title
+        @notice.text = "The user Dare just created a new challenge: #{json[:challenges][0][:name]}, click here to view and compete!"
+      elsif response.status_code.to_s =~ /40\d/
+        App.alert("Login failed")
+      else
+        App.alert(response.error_message)
+      end
+    end
+
+
     # Navigation
     create_button = subview(UIImageView, :create_button)
     find_button = subview(UIImageView, :find_button)

@@ -1,13 +1,4 @@
-#
-# Create View Controller
-#
-# The Create a Challenge Menu
-#
-# @author     Clay McIlrath <thinkclay@gmail.com>
-# @copyright  (c) 2013 Clayton McIlrath, All rights reserved
-#
-
-class CreateViewController < UIViewController
+  class CreateViewController < UIViewController
 
   include GM::KeyboardHandler
 
@@ -222,13 +213,16 @@ class CreateViewController < UIViewController
     }
 
     if post_ready
-      AFMotion::Client.shared.put('api/challenges/create', @post_data) { |result|
-        if result.success?
-          p result.object
-        elsif result.failure?
-          p result.error.localizedDescription
+      BW::HTTP.post("http://localhost:2222/api/challenges/create", {payload: @post_data}) do |response|
+        if response.ok?
+          json = BW::JSON.parse(response.body.to_str)
+          puts json.inspect
+        elsif response.status_code.to_s =~ /40\d/
+          App.alert("Login failed")
+        else
+          App.alert(response.error_message)
         end
-      }
+      end
     end
   end
 
