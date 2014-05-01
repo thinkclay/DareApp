@@ -25,22 +25,53 @@ Motion::Project::App.setup do |app|
   app.pods do
     pod 'AFNetworking'
     pod 'ViewDeck'
-    pod 'Orbiter', '~> 2.0.1'
+    pod 'Parse'
   end
 
   # Use `rake config' to see complete project settings.
   app.name = 'Dare'
+  app.seed_id = "DAC62CF44G"
   app.identifier = "com.thinkclay.dare"
+  # app.codesign_certificate = 'Apple Development IOS Push Services: com.thinkclay.dare'
 
-  app.deployment_target = '6.1'
-  app.provisioning_profile = '/Users/clay/Library/MobileDevice/Provisioning Profiles/B6FD73E2-3462-453F-99A8-C4F1F76ADE14.mobileprovision'
+  # Needed for APN
+  app.entitlements['application-identifier'] = app.seed_id + '.' + app.identifier
+  app.entitlements['keychain-access-groups'] = [
+    app.seed_id + '.' + app.identifier
+  ]
+  app.entitlements['aps-environment'] = 'development'
+  app.entitlements['get-task-allow'] = true
+
+  app.deployment_target = '7.0'
+  app.provisioning_profile = './environment/Dare_Dev.mobileprovision'
   app.device_family = [:iphone]
 
-  app.frameworks += ['Social', 'Twitter', 'CoreLocation', 'MapKit', 'QuartzCore']
-  app.libs << "/usr/lib/libz.dylib"
+  app.libs << '/usr/lib/libz.dylib'
+  app.libs << '/usr/lib/libsqlite3.dylib'
+
+  app.frameworks += [
+    'Accounts',
+    'AdSupport',
+    'AudioToolbox',
+    'CFNetwork',
+    'CoreGraphics',
+    'CoreLocation',
+    'MapKit',
+    'MobileCoreServices',
+    'Twitter',
+    'QuartzCore',
+    'Security',
+    'Social',
+    'StoreKit',
+    'SystemConfiguration'
+  ]
+
+  # For some reason.. i seem to need the cocoapod AND the vendor include. UGH.
+  app.vendor_project('vendor/Parse.framework', :static, :products => ['Parse'], :headers_dir => 'Headers')
 
   app.icons = ['Icon.png', 'Icon@2x.png', 'Icon-72.png', 'iTunesArtwork.png', 'iTunesArtwork@2x.png']
   app.fonts = ['CabinSketch-Bold.ttf', 'CabinSketch-Regular.ttf']
   app.prerendered_icon = true
   app.interface_orientations = [:portrait]
+
 end

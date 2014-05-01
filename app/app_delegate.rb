@@ -13,6 +13,8 @@ class AppDelegate
   # contain many subviews for the region
   #
   def application(application, didFinishLaunchingWithOptions:launchOptions)
+    Parse.setApplicationId("5va8t9YOgwLOrSBOXexVzZnVjSYWLl6h5AO7wldo", clientKey:"jl71OfhH0Lt32vJUAI5KiEsmNLQRo7QQe5bxOLlv")
+    application.registerForRemoteNotificationTypes(UIRemoteNotificationTypeBadge)
 
     @find = FindViewController.new
     @create = CreateViewController.new
@@ -40,7 +42,26 @@ class AppDelegate
     @window.rootViewController = (false) ? AuthViewController.alloc.init : @deckViewController
     @window.makeKeyAndVisible
 
-    return true
+    true
+  end
+
+  def application(application, didRegisterForRemoteNotificationsWithDeviceToken:newDeviceToken)
+    PFPush.storeDeviceToken(newDeviceToken)
+    PFPush.subscribeToChannelInBackground("test")
+  end
+
+  def application(application, didFailToRegisterForRemoteNotificationsWithError:error)
+    alert_log ("application:didFailToRegisterForRemoteNotificationsWithError: #{error.debugDescription}")
+  end
+
+  def application(application, didReceiveRemoteNotification:userInfo)
+    alert_log ("a push has been received at #{Time.now}: #{userInfo}")
+  end
+
+  def alert_log(message)
+    alert = UIAlertView.new
+    alert.message = message
+    alert.show
   end
 
 end
