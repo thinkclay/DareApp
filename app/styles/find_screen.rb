@@ -17,4 +17,7 @@ Teacup::Stylesheet.new :find_screen do
     height: 20,
     image: UIImage.imageNamed('txt-header-find.png')
 
+  style :find_screen,
+    top: 50
+
 end

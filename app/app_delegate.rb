@@ -14,7 +14,7 @@ class AppDelegate
   #
   def application(application, didFinishLaunchingWithOptions:launchOptions)
     Parse.setApplicationId("5va8t9YOgwLOrSBOXexVzZnVjSYWLl6h5AO7wldo", clientKey:"jl71OfhH0Lt32vJUAI5KiEsmNLQRo7QQe5bxOLlv")
-    application.registerForRemoteNotificationTypes(UIRemoteNotificationTypeBadge)
+    # application.registerForRemoteNotificationTypes(UIRemoteNotificationTypeBadge)
 
     @find = FindViewController.new
     @create = CreateViewController.new

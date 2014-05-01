@@ -1,12 +1,3 @@
-#
-# Find View Controller
-#
-# The Find a Challenge Menu
-#
-# @author     Clay McIlrath <thinkclay@gmail.com>
-# @copyright  (c) 2013 Clayton McIlrath, All rights reserved
-#
-
 class FindViewController < UIViewController
 
   stylesheet :find_screen
@@ -14,11 +5,22 @@ class FindViewController < UIViewController
   def loadView
     super
 
+    @challenges_list_controller = ChallengesListController.alloc.init
+    @challenges_list = @challenges_list_controller.view
+
+    self.addChildViewController(@challenges_list_controller)
+
     self.view.backgroundColor = UIColor.colorWithPatternImage(UIImage.imageNamed('ui-bg-denim.png'))
   end
 
   layout do
     find_text = subview(UIImageView, :text_find)
+
+    subview(@challenges_list, :challenges_list)
+
+    find_text.when_tapped do
+      self.navigationController.presentViewController(ChallengesListController.alloc.init, animated: true, completion: nil)
+    end
   end
 
 end
