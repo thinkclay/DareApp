@@ -26,6 +26,7 @@ Motion::Project::App.setup do |app|
     pod 'AFNetworking'
     pod 'ViewDeck'
     pod 'Parse'
+    pod 'FXLabel'
   end
 
   # Use `rake config' to see complete project settings.

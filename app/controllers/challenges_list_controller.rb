@@ -4,7 +4,20 @@ class ChallengesListController < UITableViewController
 
   def viewDidLoad
     @challenges_list = []
-    Challenges.load(self)
+
+    client = AFMotion::Client.build_shared("http://localhost:8080/") do
+      header "Accept", "application/json"
+      response_serializer :json
+    end
+
+    AFMotion::Client.shared.get("challenges.json") do |result|
+      if result.success?
+        @challenges_list = result.object[:challenges]
+      else
+        p result.error.localizedDescription
+      end
+    end
+
     view.dataSource = view.delegate = self
   end
 
@@ -25,23 +38,16 @@ class ChallengesListController < UITableViewController
   #
   # Globally used CellID, and create places list
   #
-  CellID = 'StartLocation'
   def tableView(tableView, cellForRowAtIndexPath:indexPath)
-    cell = tableView.dequeueReusableCellWithIdentifier(CellID) || UITableViewCell.alloc.initWithStyle(UITableViewCellStyleSubtitle, reuseIdentifier:CellID)
-    challenge = @challenges_list[indexPath.row]["title"]
-    cell.textLabel.text = challenge
-    cell
-  end
+    cell_identifier = 'challenge_cells'
+    cell = tableView.dequeueReusableCellWithIdentifier(cell_identifier)
 
-  #
-  # Table View: Row Select
-  #
-  # This method will be called whenever a table view row is selected
-  # We'll grab the row data, and get the corresponding Google Places data to then update both
-  # our form input and our post data for the web server
-  #
-  def tableView(tableView, didSelectRowAtIndexPath:indexPath)
-    self.dismissViewControllerAnimated(true, completion: nil)
+    unless cell
+      cell = UITableViewCell.alloc.initWithStyle(UITableViewCellStyleSubtitle, reuseIdentifier: cell_identifier)
+      cell.textLabel.text = @challenges_list[indexPath.row]["title"]
+    end
+
+    cell
   end
 
 end

@@ -8,9 +8,11 @@ class Challenges
 
     AFMotion::Client.shared.get("challenges.json") do |result|
       if result.success?
-        p result.object[:challenges]
-        challenges_list_controller.challenges_list = result.object[:challenges]
-        challenges_list_controller.reloadData
+        # p result.object[:challenges]
+        # challenges_list_controller.challenges_list = result.object[:challenges]
+        # challenges_list_controller.reloadData
+
+        result.object[:challenges]
       else
         p result.error.localizedDescription
       end
