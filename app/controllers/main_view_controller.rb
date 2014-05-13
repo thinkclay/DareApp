@@ -4,7 +4,6 @@
 # This controller is the middle, main screen that is shown on startup.
 # It contains navigation elements for the side menus as well as profile, activity, and friends
 #
-
 class MainViewController < UIViewController
 
   stylesheet :main_screen
@@ -18,33 +17,25 @@ class MainViewController < UIViewController
       self.view.backgroundColor = UIColor.colorWithPatternImage(UIImage.imageNamed('ui-bg-octo-5.png'));
     end
 
+    # Custom in app notices
+    AFMotion::Client.shared.get("challenges.json") do |result|
+      if result.success?
+        subview(UIImageView, :notice) do
+          @notice = subview(UILabel, :notice_content)
+        end
+
+        @notice.text = "The user Dare just created a new challenge: #{result.object[:challenges][0][:title]}, click here to view and compete!"
+      else
+        p result.error.localizedDescription
+      end
+    end
+
     @profile = UIView.alloc.initWithFrame([[Device.screen.width, Device.screen.height], [Device.screen.width, Device.screen.height]])
     @activity = UIView.alloc.initWithFrame([[Device.screen.width, Device.screen.height], [Device.screen.width, Device.screen.height]])
     @friends = UIView.alloc.initWithFrame([[Device.screen.width, Device.screen.height], [Device.screen.width, Device.screen.height]])
   end
 
   layout do
-
-    BW::HTTP.get "https://dareyou.to/challenges.json" do |response|
-      if response.ok?
-        # Parse the json
-        json = BW::JSON.parse(response.body.to_str)
-
-        # Create the notice and add to screen
-        subview(UIImageView, :notice) do
-          @notice = subview(UILabel, :notice_content)
-        end
-
-        # Set the notice text to the title
-        @notice.text = "The user Dare just created a new challenge: #{json[:challenges][0][:name]}, click here to view and compete!"
-      elsif response.status_code.to_s =~ /40\d/
-        App.alert("Login failed")
-      else
-        App.alert(response.error_message)
-      end
-    end
-
-
     # Navigation
     create_button = subview(UIImageView, :create_button)
     find_button = subview(UIImageView, :find_button)
@@ -57,7 +48,7 @@ class MainViewController < UIViewController
       subview(UIImageView, :background_modal)
 
       subview(UIImageView, :close_button).when_tapped do
-        @profile.move_to([0, Device.screen.height])
+        @profile.move_to([0, Device.screen.height]).layer.zPosition = 0
       end
 
       subview(UIImageView, :avatar)
@@ -105,7 +96,7 @@ class MainViewController < UIViewController
     end
 
     profile_button.when_tapped do
-      @profile.move_to([0, 0])
+      @profile.move_to([0, 0]).layer.zPosition = 9999
     end
 
     activity_button.when_tapped do

@@ -35,6 +35,10 @@ Motion::Project::App.setup do |app|
   app.identifier = "com.thinkclay.dare"
   # app.codesign_certificate = 'Apple Development IOS Push Services: com.thinkclay.dare'
 
+  app.info_plist['UIStatusBarHidden'] = true
+  app.info_plist['UIViewControllerBasedStatusBarAppearance'] = false
+
+
   # Needed for APN
   app.entitlements['application-identifier'] = app.seed_id + '.' + app.identifier
   app.entitlements['keychain-access-groups'] = [
@@ -57,6 +61,7 @@ Motion::Project::App.setup do |app|
     'CFNetwork',
     'CoreGraphics',
     'CoreLocation',
+    'CoreText',
     'MapKit',
     'MobileCoreServices',
     'Twitter',
@@ -71,7 +76,19 @@ Motion::Project::App.setup do |app|
   app.vendor_project('vendor/Parse.framework', :static, :products => ['Parse'], :headers_dir => 'Headers')
 
   app.icons = ['Icon.png', 'Icon@2x.png', 'Icon-72.png', 'iTunesArtwork.png', 'iTunesArtwork@2x.png']
-  app.fonts = ['CabinSketch-Bold.ttf', 'CabinSketch-Regular.ttf']
+  app.fonts = [
+    'CabinSketch-Bold.ttf',
+    'CabinSketch-Regular.ttf',
+    'Raleway-Thin.ttf',
+    'Raleway-ExtraLight.ttf',
+    'Raleway-Light.ttf',
+    'Raleway-Regular.ttf',
+    'Raleway-Medium.ttf',
+    'Raleway-SemiBold.ttf',
+    'Raleway-Bold.ttf',
+    'Raleway-ExtraBold.ttf',
+    'Raleway-Heavy.ttf'
+  ]
   app.prerendered_icon = true
   app.interface_orientations = [:portrait]
 

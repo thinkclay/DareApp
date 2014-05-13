@@ -5,7 +5,6 @@
 # for the side menus and swiping magic
 #
 class AppDelegate
-
   #
   # Application Launch
   #
@@ -14,7 +13,19 @@ class AppDelegate
   #
   def application(application, didFinishLaunchingWithOptions:launchOptions)
     Parse.setApplicationId("5va8t9YOgwLOrSBOXexVzZnVjSYWLl6h5AO7wldo", clientKey:"jl71OfhH0Lt32vJUAI5KiEsmNLQRo7QQe5bxOLlv")
-    # application.registerForRemoteNotificationTypes(UIRemoteNotificationTypeBadge)
+
+    # Only do this on the device
+    if ! Device.simulator?
+      application.registerForRemoteNotificationTypes(UIRemoteNotificationTypeBadge)
+    end
+
+    UIApplication.sharedApplication.setStatusBarHidden true
+
+    # Do an actual request to the site on load so we can update the instance var
+    AFMotion::Client.build_shared("https://dareyou.to/") do
+      header "Accept", "application/json"
+      response_serializer :json
+    end
 
     @find = FindViewController.new
     @create = CreateViewController.new
@@ -35,6 +46,7 @@ class AppDelegate
     @center.viewControllers = [@auth, @map, @main]
 
     @deckViewController = IIViewDeckController.alloc.initWithCenterViewController(@center, leftViewController: @left, rightViewController: @right)
+    @deckViewController.delegate = self
     @deckViewController.leftSize = 25
     @deckViewController.rightSize = 25
 
@@ -62,6 +74,15 @@ class AppDelegate
     alert = UIAlertView.new
     alert.message = message
     alert.show
+  end
+
+  def viewDeckController(viewDeckController, applyShadow: shadowLayer, withBounds: rect)
+    shadowLayer.masksToBounds = false
+    shadowLayer.shadowRadius = 5
+    shadowLayer.shadowOpacity = 0.9
+    shadowLayer.shadowColor = UIColor.redColor.CGColor
+    shadowLayer.shadowOffset = CGSizeZero
+    shadowLayer.shadowPath = UIBezierPath.bezierPathWithRect(rect).CGPath
   end
 
 end

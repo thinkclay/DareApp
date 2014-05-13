@@ -9,7 +9,6 @@
   # Create our parent declarations, instantiate, and set properties
   def loadView
     self.view = UIView.new
-    self.view.backgroundColor = UIColor.colorWithPatternImage(UIImage.imageNamed('ui-bg-denim.png'))
 
     # This is the pagination wrapper which is a scroll view containing many more scroll views
     @pagination = UIScrollView.new
@@ -28,7 +27,7 @@
   # where I create multiple child views and attach them to @pagination ... OR if
   # these should be moved out into their own controllers.. but then how will
   # keyboard delegation and other master -> child properties get passed?
-  layout :root do
+  layout :side do
 
     @post_data = {}
 

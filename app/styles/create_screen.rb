@@ -3,11 +3,9 @@
 #
 # Styles that relate to the right column
 #
-# @author     Clay McIlrath <thinkclay@gmail.com>
-# @copyright  (c) 2013 Clayton McIlrath, All rights reserved
-#
-
 Teacup::Stylesheet.new :create_screen do
+
+  import :global
 
   # Form Wrappers
   style :form,
@@ -33,10 +31,7 @@ Teacup::Stylesheet.new :create_screen do
 
   # Headers
   style :create_header,
-    left: 24,
-    height: 20,
-    top: 20,
-    width: 250
+    extends: :h1
 
   style :text_create,
     extends: :create_header,

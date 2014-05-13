@@ -5,12 +5,8 @@ class FindViewController < UIViewController
   def loadView
     super
 
+    # This will hold the JSON from the website
     @challenges_data = []
-
-    client = AFMotion::Client.build_shared("http://clay-laptop.local:8080/") do
-      header "Accept", "application/json"
-      response_serializer :json
-    end
 
     AFMotion::Client.shared.get("challenges.json") do |result|
       if result.success?
@@ -20,7 +16,10 @@ class FindViewController < UIViewController
       end
     end
 
-    @challenges_table = UITableView.alloc.initWithFrame [[0, 50], [Device.screen.width - 35, Device.screen.height - 50]], style: UITableViewStylePlain
+    @challenge_details = layout(UIView, :modal_window)
+
+    # Creating the table inline since it has many custom methods for styling
+    @challenges_table = layout(UITableView, :challenges_table)
     @challenges_table.dataSource = self
     @challenges_table.delegate = self
     @challenges_table.backgroundColor = UIColor.clearColor
@@ -33,20 +32,34 @@ class FindViewController < UIViewController
     @challenges_table.reloadData
   end
 
-  layout :root do
-    find_text = subview(UIImageView, :text_find)
-
+  layout :side do
+    subview(UIImageView, :text_find)
     subview(@challenges_table, :challenges_list)
+
+    subview(@challenge_details, :modal_window) do
+      subview(UIImageView, :text_activity)
+      subview(UIImageView, :background_modal)
+      @details_title = subview(FXLabel, :details_title)
+      @details_description = subview(UITextView, :details_description)
+      @details_badge = subview(UIImageView, :details_badge)
+
+      subview(UIImageView, :close_button).when_tapped do
+        @challenge_details.move_to([0, Device.screen.height])
+      end
+    end
   end
 
+  # Needed for the tableview to create the proper scroll size and cells
   def tableView(tableView, numberOfRowsInSection:section)
     @challenges_data.size
   end
 
+  # Cell height is a fixed size, I would like it to be dynamic eventually, but this will do for now
   def tableView(tableView, heightForRowAtIndexPath:indexPath)
-    90
+    110
   end
 
+  # Table cells get created here
   def tableView(tableView, cellForRowAtIndexPath:indexPath)
     cell_identifier = 'challenge_cells'
     cell = tableView.dequeueReusableCellWithIdentifier(cell_identifier)
@@ -54,29 +67,34 @@ class FindViewController < UIViewController
     unless cell
       cell = UITableViewCell.alloc.initWithStyle(UITableViewCellStyleSubtitle, reuseIdentifier: cell_identifier)
       badge_image = UIImage.imageWithData(NSData.dataWithContentsOfURL(NSURL.URLWithString(@challenges_data[indexPath.row]["badge"])))
-      description = @challenges_data[indexPath.row]["description"]
-
-      attributedString = NSMutableAttributedString.alloc.initWithString(description)
-      paragraphStyle = NSMutableParagraphStyle.alloc.init
-      paragraphStyle.setLineSpacing(5)
-      attributedString.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: NSMakeRange(0, description.length))
 
       layout(cell.contentView) do
         subview(UIImageView, :challenge_badge, image: badge_image)
-        subview(UILabel, :challenge_title, text: @challenges_data[indexPath.row]["title"])
-        subview(UILabel, :challenge_description, text: description)
+        subview(FXLabel, :challenge_title, text: @challenges_data[indexPath.row]["title"].upcase)
+        subview(FXLabel, :challenge_description, text: @challenges_data[indexPath.row]["summary"].downcase)
+        subview(UIImageView, :cell_divider)
       end
 
+      bgColorView = layout(UIView, :cell_background)
+      cell.setSelectedBackgroundView(bgColorView)
     end
 
     cell
   end
 
-
   def tableView(tableView, willDisplayCell:cell, forRowAtIndexPath:indexPath)
     cell.backgroundColor = UIColor.clearColor
     cell.restyle!
     cell.apply_constraints
+  end
+
+  # Table Row Selection
+  def tableView(tableView, didSelectRowAtIndexPath:indexPath)
+    @challenge_details.move_to([0, 0])
+
+    @details_title.text = @challenges_data[indexPath.row]["title"].upcase
+    @details_description.text = @challenges_data[indexPath.row]["description"]
+    @details_badge.image = UIImage.imageWithData(NSData.dataWithContentsOfURL(NSURL.URLWithString(@challenges_data[indexPath.row]["badge"])))
   end
 
 end

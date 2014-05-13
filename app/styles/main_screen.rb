@@ -1,31 +1,6 @@
-#
-# Main Screen Styles
-#
-# Styles that relate to the middle column
-#
-# @author     Clay McIlrath <thinkclay@gmail.com>
-# @copyright  (c) 2013 Clayton McIlrath, All rights reserved
-#
-
 Teacup::Stylesheet.new :main_screen do
 
-  style :notice,
-    height: 55,
-    left: 20,
-    image: UIImage.imageNamed('bg-notice.png'),
-    top: 30,
-    width: 280
-
-  style :notice_content,
-    background: UIColor.clearColor,
-    color: BubbleWrap.rgb_color(118, 90, 59),
-    font: UIFont.systemFontOfSize(12),
-    left: 10,
-    height: 55,
-    numberOfLines: 3,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, accusamus error omnis repellendus nihil! Ea, porro, aspernatur, suscipit eaque unde nostrum sunt corporis cum error aperiam consequuntur fugit vel quae?',
-    top: 0,
-    width: 260
+  import :global
 
   style :create_button,
     left: 29,
@@ -62,45 +37,7 @@ Teacup::Stylesheet.new :main_screen do
     top: (Device.screen.height - 110),
     width: 70
 
-
-  #
-  # Modal Windows
-  #
-
-  # Universal
-  style :modal_window,
-    backgroundColor: UIColor.clearColor,
-    height: Device.screen.height,
-    left: 0,
-    top: Device.screen.height,
-    width: Device.screen.width
-
-  style :menu_header,
-    left: 34,
-    height: 20,
-    top: 21,
-    width: 250
-
-  style :close_button,
-    height: 22,
-    image: UIImage.imageNamed('ui-close.png'),
-    left: 290,
-    top: 28,
-    width: 22
-
-  # Universal
-  style :background_modal,
-    left: 20,
-    image: UIImage.imageNamed('bg-modal.png'),
-    top: 40
-
-  style :modal_close,
-    height: 20,
-    right: 20,
-    top: 25,
-    width: 22
-
-  # profile window
+  # profile modal
   style :text_profile,
     extends: :menu_header,
     image: UIImage.imageNamed('txt-header-profile.png')
