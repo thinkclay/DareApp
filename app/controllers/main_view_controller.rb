@@ -1,9 +1,3 @@
-#
-# Main View Controller
-#
-# This controller is the middle, main screen that is shown on startup.
-# It contains navigation elements for the side menus as well as profile, activity, and friends
-#
 class MainViewController < UIViewController
 
   stylesheet :main_screen
@@ -44,8 +38,8 @@ class MainViewController < UIViewController
     friends_button = subview(UIImageView, :friends_button)
 
     modal_profile = subview(@profile, :modal_window) do
-      subview(UIImageView, :text_profile)
-      subview(UIImageView, :background_modal)
+      subview(FXLabel, :modal_header, text: 'PROFILE')
+      subview(UIImageView, :modal_background)
 
       subview(UIImageView, :close_button).when_tapped do
         @profile.move_to([0, Device.screen.height]).layer.zPosition = 0
@@ -70,20 +64,20 @@ class MainViewController < UIViewController
     end
 
     modal_activity = subview(@activity, :modal_window) do
-      subview(UIImageView, :text_activity)
-      subview(UIImageView, :background_modal)
+      subview(FXLabel, :modal_header, text: 'ACTIVITY')
+      subview(UIImageView, :modal_background)
 
       subview(UIImageView, :close_button).when_tapped do
-        @activity.move_to([0, Device.screen.height])
+        @activity.move_to([0, Device.screen.height]).layer.zPosition = 0
       end
     end
 
     modal_friends = subview(@friends, :modal_window) do
-      subview(UIImageView, :text_friends)
-      subview(UIImageView, :background_modal)
+      subview(FXLabel, :modal_header, text: 'FRIENDS')
+      subview(UIImageView, :modal_background)
 
       subview(UIImageView, :close_button).when_tapped do
-        @friends.move_to([0, Device.screen.height])
+        @friends.move_to([0, Device.screen.height]).layer.zPosition = 0
       end
     end
 
@@ -100,11 +94,11 @@ class MainViewController < UIViewController
     end
 
     activity_button.when_tapped do
-      @activity.move_to([0, 0])
+      @activity.move_to([0, 0]).layer.zPosition = 9999
     end
 
     friends_button.when_tapped do
-      @friends.move_to([0, 0])
+      @friends.move_to([0, 0]).layer.zPosition = 9999
     end
 
     @coins.when_tapped do

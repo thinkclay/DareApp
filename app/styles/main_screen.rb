@@ -3,160 +3,139 @@ Teacup::Stylesheet.new :main_screen do
   import :global
 
   style :create_button,
-    left: 29,
-    height: 45,
-    image: UIImage.imageNamed('ui-btn-create.png'),
-    top: 140,
-    width: 291
+    image: 'ui-btn-create.png'.uiimage,
+    left: 29, top: 140,
+    width: 291, height: 45
 
   style :find_button,
-    left: 0,
-    height: 45,
-    image: UIImage.imageNamed('ui-btn-find.png'),
-    top: 250,
-    width: 261
+    image: 'ui-btn-find.png'.uiimage,
+    left: 0, top: 250,
+    width: 261, height: 45
 
   style :profile_button,
-    left: 20,
-    height: 70,
-    image: UIImage.imageNamed('ui-menu-profile.png'),
-    top: (Device.screen.height - 110),
-    width: 70
+    image: 'ui-menu-profile.png'.uiimage,
+    left: 20, top: (Device.screen.height - 110),
+    width: 70, height: 70
 
   style :activity_button,
-    left: 125,
-    height: 70,
-    image: UIImage.imageNamed('ui-menu-activity.png'),
-    top: (Device.screen.height - 110),
-    width: 70
+    image: 'ui-menu-activity.png'.uiimage,
+    left: 125, top: (Device.screen.height - 110),
+    width: 70, height: 70
 
   style :friends_button,
-    left: 230,
-    height: 70,
-    image: UIImage.imageNamed('ui-menu-friends.png'),
-    top: (Device.screen.height - 110),
-    width: 70
+    image: 'ui-menu-friends.png'.uiimage,
+    left: 230, top: (Device.screen.height - 110),
+    width: 70, height: 70
 
   # profile modal
   style :text_profile,
     extends: :menu_header,
-    image: UIImage.imageNamed('txt-header-profile.png')
+    image: 'txt-header-profile.png'.uiimage
 
   style :avatar,
-    height: 50,
-    image: UIImage.imageNamed('ph-avatar.png'),
-    left: 35,
-    top: 55,
-    width: 50
+    image: 'ph-avatar.png'.uiimage,
+    left: 35, top: 55,
+    width: 50, height: 50
 
   style :user_name,
-    background: UIColor.clearColor,
-    color: BubbleWrap.rgb_color(182, 164, 131),
-    font: UIFont.fontWithName('CabinSketch-Regular', size: 20),
+    text: 'Clayton McIlrath',
+    background: :clear.uicolor,
+    color: BW.rgb_color(182, 164, 131),
+    font: 'CabinSketch-Regular'.uifont(20),
     constraints: [
       constrain(:left).equals(:avatar, :right).plus(10),
       constrain(:top).equals(:avatar, :top).plus(2)
-    ],
-    text: 'Clayton McIlrath'
+    ]
 
   style :user_location,
-    background: UIColor.clearColor,
-    color: BubbleWrap.rgb_color(150, 130, 95),
+    text: 'Lafayette, CO',
+    background: :clear.uicolor,
+    color: BW.rgb_color(150, 130, 95),
+    font: :system.uifont(14.0),
     constraints: [
       constrain(:left).equals(:avatar, :right).plus(10),
       constrain(:top).equals(:avatar, :top).plus(28)
-    ],
-    font: UIFont.systemFontOfSize(14.0),
-    text: 'Lafayette, CO'
+    ]
 
   style :map_data,
+    image: 'ph-map.png'.uiimage,
+    width: 250, height: 129,
     constraints: [
       constrain(:left).equals(:avatar, :left),
       constrain(:top).equals(:user_location, :bottom).plus(15)
-    ],
-    height: 129,
-    image: UIImage.imageNamed('ph-map.png'),
-    width: 250
+    ]
+
 
   style :map_overlay,
+    image: 'profile-map-overlay.png'.uiimage,
+    width: 250, height: 129,
     constraints: [
       constrain(:left).equals(:avatar, :left),
       constrain(:top).equals(:user_location, :bottom).plus(15)
-    ],
-    height: 129,
-    image: UIImage.imageNamed('profile-map-overlay.png'),
-    width: 250
+    ]
 
   style :badges_earned,
-    background: BubbleWrap.rgba_color(55, 44, 31, 0.4),
+    background: BW.rgba_color(55, 44, 31, 0.4),
     contentSize: CGSizeMake(250, 500),
-    height: 129,
-    left: 35,
-    top: 258,
-    width: 250
+    width: 250, height: 129,
+    left: 35, top: 258
 
   style :badge,
-    height: 100,
-    image: UIImage.imageNamed('ph-badge-chinup.png'),
-    left: 6,
-    top: 0,
-    width: 75
+    width: 75, height: 100
 
   style :badge_chinup,
     extends: :badge,
-    image: UIImage.imageNamed('ph-badge-chinup.png')
+    image: 'ph-badge-chinup.png'.uiimage,
+    left: 6, top: 0
 
   style :badge_green,
+    extends: :badge,
+    image: 'ph-badge-green.png'.uiimage,
     constraints: [
       constrain(:left).equals(:badge_chinup, :right).plus(6),
       constrain(:top).equals(:badge_chinup, :top)
-    ],
-    extends: :badge,
-    image: UIImage.imageNamed('ph-badge-green.png')
+    ]
 
   style :badge_drunk,
+    extends: :badge,
+    image: 'ph-badge-drunk.png',
     constraints: [
       constrain(:left).equals(:badge_green, :right).plus(6),
       constrain(:top).equals(:badge_chinup, :top)
-    ],
-    extends: :badge,
-    image: UIImage.imageNamed('ph-badge-drunk.png')
+    ]
 
   style :badges_overlay,
+    image: 'profile-badges-overlay.png'.uiimage,
+    width: 250, height: 22,
     constraints: [
       constrain(:left).equals(:avatar, :left),
       constrain(:bottom).equals(:badges_earned, :bottom)
-    ],
-    height: 22,
-    image: UIImage.imageNamed('profile-badges-overlay.png'),
-    width: 250
+    ]
 
   style :btn_friends,
-    image: UIImage.imageNamed('ui-btn-friends.png'),
+    image: 'ui-btn-friends.png'.uiimage,
+    width: 110, height: 29,
     constraints: [
       constrain(:bottom).equals(:modal_window, :bottom).minus(38),
       constrain(:left).equals(:modal_window, :left).plus(38)
-    ],
-    height: 29,
-    width: 110
+    ]
 
   style :btn_coins,
-    image: UIImage.imageNamed('ui-btn-coins.png'),
+    image: 'ui-btn-coins.png'.uiimage,
+    width: 110, height: 29,
     constraints: [
       constrain(:bottom).equals(:modal_window, :bottom).minus(38),
       constrain(:right).equals(:modal_window, :right).minus(38)
-    ],
-    height: 29,
-    width: 110
+    ]
 
   # activity window
   style :text_activity,
     extends: :menu_header,
-    image: UIImage.imageNamed('txt-header-activity.png')
+    image: 'txt-header-activity.png'.uiimage
 
   # friends window
   style :text_friends,
     extends: :menu_header,
-    image: UIImage.imageNamed('txt-header-friends.png')
+    image: 'txt-header-friends.png'.uiimage
 
 end

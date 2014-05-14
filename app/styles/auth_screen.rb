@@ -1,17 +1,7 @@
-#
-# Auth Screen Styles
-#
-# Styles that relate to the auth screen
-#
-# @author     Clay McIlrath <thinkclay@gmail.com>
-# @copyright  (c) 2013 Clayton McIlrath, All rights reserved
-#
-
 Teacup::Stylesheet.new :auth_screen do
 
   style :window,
     background: BubbleWrap.rgba_color(216, 115, 41, 0.7)
-
 
   style :welcome,
     background: UIColor.clearColor,
@@ -56,7 +46,5 @@ Teacup::Stylesheet.new :auth_screen do
       constrain(:left).equals(:btn_facebook, :left),
       constrain(:top).equals(:btn_linkedin, :bottom)
     ]
-
-
 
 end

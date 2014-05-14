@@ -2,51 +2,42 @@ Teacup::Stylesheet.new :find_screen do
 
   import :global
 
-  style :text_find,
-    extends: :h1,
-    image: UIImage.imageNamed('txt-header-find.png')
-
   style :challenges_table,
-    frame: [[0, 47], [Device.screen.width - 25, Device.screen.height - 47]]
+    backgroundView: nil,
+    separatorColor: :clear.uicolor,
+    frame: [[0, 47], [Device.screen.width - 25, Device.screen.height - 47]],
+    backgroundColor: :clear.uicolor,
+    opaque: false
 
   style :cell_background,
-    background: BubbleWrap.rgba_color(55, 44, 31, 0.5)
+    background: TRANSPARENT_CREAM
 
   style :cell_divider,
-    image: UIImage.imageNamed('cell-divider.png'),
-    height: 1,
-    width: 280,
-    bottom: 0,
-    left: 5
-
-  style :challenge_badge,
-    left: 27,
-    top: 45,
-    width: 45,
-    height: 45
+    image: 'cell-divider.png'.uiimage,
+    left: 6, bottom: 0,
+    width: 280, height: 1
 
   style :challenge_title,
-    background: UIColor.clearColor,
-    color: BubbleWrap.rgb_color(118, 90, 59),
-    font: UIFont.fontWithName('Raleway-Light', size: 11),
-    height: 40,
-    left: 25,
-    top: 0,
-    width: 250
+    extends: :h2,
+    background: :clear.uicolor,
+    color: LIGHT_CREAM,
+    width: 265, height: 40,
+    left: 15, top: 0
+
+  style :challenge_badge,
+    left: 12, top: 40,
+    width: 50, height: 50
 
   style :challenge_description,
-    background: UIColor.clearColor,
-    color: BubbleWrap.rgb_color(148, 120, 89),
-    font: UIFont.fontWithName('Raleway-Light', size: 10),
-    lineSpacing: 0.3,
-    numberOfLines: 0,
-    left: 80,
-    height: 55,
-    top: 40,
-    width: 185
+    background: :clear.uicolor,
+    color: CREAM,
+    font: 'Raleway-Light'.uifont(12),
+    lineSpacing: 0.3, numberOfLines: 0,
+    left: 70, top: 32,
+    height: 63, width: 205
 
   # Modal Window
-  style :background_modal,
+  style :modal_background,
     left: 7
 
   style :close_button,
@@ -54,26 +45,22 @@ Teacup::Stylesheet.new :find_screen do
     top: 13
 
   style :details_title,
+    extends: :h2,
     numberOfLines: 0,
-    background: UIColor.clearColor,
-    color: BubbleWrap.rgb_color(78, 50, 19),
-    font: UIFont.fontWithName('Raleway-Light', size: 11),
-    height: 40,
-    width: 255,
-    left: 20,
-    top: 40
+    background: :clear.uicolor,
+    color: BW.rgb_color(78, 50, 19),
+    height: 40, width: 255,
+    left: 20, top: 50
 
   style :details_description,
+    extends: :p,
     editable: false,
-    background: UIColor.clearColor,
-    color: BubbleWrap.rgb_color(98, 70, 39),
-    font: UIFont.fontWithName('Raleway-Light', size: 10),
     height: 150, width: 255,
-    left: 15, top: 70
+    left: 15, top: 80
 
   style :details_badge,
     alpha: 0.1,
     height: 180, width: 180,
-    center_x: '46%', top: 60
+    center_x: '46%', top: 80
 
 end

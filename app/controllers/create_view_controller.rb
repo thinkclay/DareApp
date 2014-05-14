@@ -44,7 +44,7 @@
     subview(@pagination, :pagination) do
 
       subview(@create_challenge, :form_create) do
-        subview(UIImageView, :text_create)
+        subview(FXLabel, :h1, text: 'CREATE A CHALLENGE')
 
         @input_fields.each do |key, value|
           subview(UIImageView, :"input_text_#{key}") do
@@ -76,15 +76,15 @@
       end
 
       subview(UIScrollView, :form_rules) do
-        subview(UIImageView, :text_rules)
+        subview(FXLabel, :h1, text: 'MAKE THE RULES')
       end
 
       subview(UIScrollView, :form_badge) do
-        subview(UIImageView, :text_badge)
+        subview(FXLabel, :h1, text: 'MAKE A BADGE')
       end
 
       subview(UIScrollView, :form_share) do
-        subview(UIImageView, :text_share)
+        subview(FXLabel, :h1, text: 'TELL YOUR FRIENDS')
         @share_facebook = subview(UIImageView, :button_share_facebook)
         @share_twitter = subview(UIImageView, :button_share_twitter)
       end

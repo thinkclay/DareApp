@@ -1,8 +1,3 @@
-#
-# Main Screen Styles
-#
-# Styles that relate to the right column
-#
 Teacup::Stylesheet.new :create_screen do
 
   import :global
@@ -29,44 +24,20 @@ Teacup::Stylesheet.new :create_screen do
     extends: :form,
     left: (Device.screen.width*3 + 25)
 
-  # Headers
-  style :create_header,
-    extends: :h1
-
-  style :text_create,
-    extends: :create_header,
-    image: UIImage.imageNamed('txt-header-create.png')
-
-  style :text_rules,
-    extends: :create_header,
-    image: UIImage.imageNamed('txt-header-rules.png')
-
-  style :text_badge,
-    extends: :create_header,
-    image: UIImage.imageNamed('txt-header-badge.png')
-
-  style :text_share,
-    extends: :create_header,
-    image: UIImage.imageNamed('txt-header-share.png')
-
   # Pagination
   style :pagination,
-    left: 0,
-    height: (Device.screen.height - 50),
-    top: 0,
-    width: (Device.screen.width)
+    left: 0, top: 0,
+    width: Device.screen.width, height: (Device.screen.height - 50)
 
   style :paging,
-    height: 18,
-    image: UIImage.imageNamed('ui-bullet-normal.png'),
-    width: 18
+    image: 'ui-bullet-normal.png'.uiimage,
+    width: 18, height: 18
 
   style :page_0,
     extends: :paging,
-    image: UIImage.imageNamed('ui-bullet-selected.png'),
-    top: (Device.screen.height - 50),
-    left: 122,
-    tag: 0
+    tag: 0,
+    image: 'ui-bullet-selected.png'.uiimage,
+    left: 122, top: (Device.screen.height - 50)
 
   style :page_1,
     extends: :paging,
@@ -96,43 +67,35 @@ Teacup::Stylesheet.new :create_screen do
   # Form fields for Challenge Creation
   #
   style :input_text_wrapper,
-    left: 24,
-    image: UIImage.imageNamed('ui-textfield-normal.png'),
+    image: 'ui-textfield-normal.png'.uiimage,
     userInteractionEnabled: true,
+    left: 24,
     width: 249
 
   style :input_textarea_wrapper,
-    left: 24,
-    image: UIImage.imageNamed('ui-textarea-normal.png'),
+    image: 'ui-textarea-normal.png'.uiimage,
     userInteractionEnabled: true,
+    left: 24,
     width: 249
 
   style :select_dropdown_wrapper,
-    height: 114,
-    image: UIImage.imageNamed('ui-dropdown.png'),
-    left: 49,
-    top: 82,
+    image: 'ui-dropdown.png'.uiimage,
     userInteractionEnabled: true,
-    width: 249
+    left: 49, top: 82,
+    width: 249, height: 114
 
   style :input_text,
-    color: BubbleWrap.rgb_color(118, 90, 59),
-    height: 21,
-    left: 8,
     placeholder: 'Nothing Set',
-    top: 5,
-    width: 237
+    color: BW.rgb_color(118, 90, 59),
+    left: 8, top: 5,
+    width: 237, height: 21
 
   style :input_textarea,
-    background: UIColor.clearColor,
-    color: BubbleWrap.rgb_color(118, 90, 59),
-    font: UIFont.systemFontOfSize(17),
-    height: 42,
-    left: 0,
-    top: 2,
-    width: 245
-
-
+    background: :clear.uicolor,
+    color: BW.rgb_color(118, 90, 59),
+    font: :system.uifont(17),
+    width: 245, height: 42,
+    left: 0, top: 2
 
   # Challenge Type Select
   style :input_text_type,
@@ -141,12 +104,10 @@ Teacup::Stylesheet.new :create_screen do
     top: 50
 
   style :input_select_type,
+    separatorColor: BW.rgb_color(36, 27, 17),
     bounces: false,
-    height: 116,
-    left: 1,
-    separatorColor: BubbleWrap.rgb_color(36, 27, 17),
-    top: 0,
-    width: 247
+    width: 247, height: 116,
+    left: 1, top: 0
 
   style :challenge_type,
     extends: :input_text,
@@ -207,14 +168,12 @@ Teacup::Stylesheet.new :create_screen do
 
 
   style :btn_next_rules,
-    image: UIImage.imageNamed('btn_next_rules.png'),
+    image: 'btn_next_rules.png'.uiimage,
     constraints: [
       constrain(:top).equals(:input_text_privacy, :bottom).plus(15)
     ],
     left: 25,
-    height: 29,
-    width: 145
-
+    width: 145, height: 29
 
   # Social
   style :button_share_facebook,
