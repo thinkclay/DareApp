@@ -15,7 +15,9 @@ class AppDelegate
     Parse.setApplicationId("5va8t9YOgwLOrSBOXexVzZnVjSYWLl6h5AO7wldo", clientKey:"jl71OfhH0Lt32vJUAI5KiEsmNLQRo7QQe5bxOLlv")
 
     # Only do this on the device
-    if ! Device.simulator?
+    if Device.simulator?
+      # SparkInspector.enableObservation
+    else
       application.registerForRemoteNotificationTypes(UIRemoteNotificationTypeBadge)
     end
 
@@ -74,15 +76,6 @@ class AppDelegate
     alert = UIAlertView.new
     alert.message = message
     alert.show
-  end
-
-  def viewDeckController(viewDeckController, applyShadow: shadowLayer, withBounds: rect)
-    shadowLayer.masksToBounds = false
-    shadowLayer.shadowRadius = 5
-    shadowLayer.shadowOpacity = 0.9
-    shadowLayer.shadowColor = UIColor.redColor.CGColor
-    shadowLayer.shadowOffset = CGSizeZero
-    shadowLayer.shadowPath = UIBezierPath.bezierPathWithRect(rect).CGPath
   end
 
 end

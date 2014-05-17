@@ -1,9 +1,14 @@
 class MainViewController < UIViewController
 
+  include Interface
+
   stylesheet :main_screen
 
   def loadView
     super
+
+    # Used to set the custom drop shadow
+    self.viewDeckController.delegate = self
 
     if ( Device.screen.height == 480 )
       self.view.backgroundColor = UIColor.colorWithPatternImage(UIImage.imageNamed('ui-bg-octo.png'));
@@ -24,9 +29,9 @@ class MainViewController < UIViewController
       end
     end
 
-    @profile = UIView.alloc.initWithFrame([[Device.screen.width, Device.screen.height], [Device.screen.width, Device.screen.height]])
-    @activity = UIView.alloc.initWithFrame([[Device.screen.width, Device.screen.height], [Device.screen.width, Device.screen.height]])
-    @friends = UIView.alloc.initWithFrame([[Device.screen.width, Device.screen.height], [Device.screen.width, Device.screen.height]])
+    @profile = layout(UIView, :modal_window)
+    @activity = layout(UIView, :modal_window)
+    @friends = layout(UIView, :modal_window)
   end
 
   layout do
@@ -37,14 +42,7 @@ class MainViewController < UIViewController
     activity_button = subview(UIImageView, :activity_button)
     friends_button = subview(UIImageView, :friends_button)
 
-    modal_profile = subview(@profile, :modal_window) do
-      subview(FXLabel, :modal_header, text: 'PROFILE')
-      subview(UIImageView, :modal_background)
-
-      subview(UIImageView, :close_button).when_tapped do
-        @profile.move_to([0, Device.screen.height]).layer.zPosition = 0
-      end
-
+    create_modal(@profile, 'PROFILE') do
       subview(UIImageView, :avatar)
       subview(UILabel, :user_name)
       subview(UILabel, :user_location)
@@ -63,23 +61,8 @@ class MainViewController < UIViewController
       @coins = subview(UIImageView, :btn_coins)
     end
 
-    modal_activity = subview(@activity, :modal_window) do
-      subview(FXLabel, :modal_header, text: 'ACTIVITY')
-      subview(UIImageView, :modal_background)
-
-      subview(UIImageView, :close_button).when_tapped do
-        @activity.move_to([0, Device.screen.height]).layer.zPosition = 0
-      end
-    end
-
-    modal_friends = subview(@friends, :modal_window) do
-      subview(FXLabel, :modal_header, text: 'FRIENDS')
-      subview(UIImageView, :modal_background)
-
-      subview(UIImageView, :close_button).when_tapped do
-        @friends.move_to([0, Device.screen.height]).layer.zPosition = 0
-      end
-    end
+    create_modal(@activity, 'ACTIVITY')
+    create_modal(@friends, 'FRIENDS')
 
     create_button.when_tapped do
       self.viewDeckController.toggleRightViewAnimated(true)
@@ -89,22 +72,24 @@ class MainViewController < UIViewController
       self.viewDeckController.toggleLeftViewAnimated(true)
     end
 
-    profile_button.when_tapped do
-      @profile.move_to([0, 0]).layer.zPosition = 9999
-    end
-
-    activity_button.when_tapped do
-      @activity.move_to([0, 0]).layer.zPosition = 9999
-    end
-
-    friends_button.when_tapped do
-      @friends.move_to([0, 0]).layer.zPosition = 9999
-    end
+    profile_button.when_tapped { show_modal(@profile) }
+    activity_button.when_tapped { show_modal(@activity) }
+    friends_button.when_tapped { show_modal(@friends) }
 
     @coins.when_tapped do
       self.navigationController.pushViewController(MapViewController.alloc.init, animated: true)
     end
 
+  end
+
+  # Used to set the custom drop shadow
+  def viewDeckController(viewDeckController, applyShadow:shadowLayer, withBounds:rect)
+    shadowLayer.masksToBounds = false
+    shadowLayer.shadowRadius = 5;
+    shadowLayer.shadowOpacity = 0.9;
+    shadowLayer.shadowColor = UIColor.blackColor.CGColor
+    shadowLayer.shadowOffset = CGSizeZero;
+    shadowLayer.shadowPath = UIBezierPath.bezierPathWithRect(rect).CGPath
   end
 
 end

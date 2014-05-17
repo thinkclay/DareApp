@@ -41,8 +41,8 @@ Teacup::Stylesheet.new :global do
 
   style :modal_background,
     image: 'bg-modal.png'.uiimage,
-    left: 20,
-    top: 40
+    left: 10,
+    top: 30
 
   style :modal_header,
     backgroundColor: :clear.uicolor,
@@ -53,7 +53,7 @@ Teacup::Stylesheet.new :global do
 
   style :close_button,
     image: 'ui-close.png'.uiimage,
-    left: 280, top: 18,
+    left: 280, top: 13,
     width: 22, height: 22
 
   # Side Panels

@@ -1,5 +1,7 @@
 class FindViewController < UIViewController
 
+  include Interface
+
   stylesheet :find_screen
 
   def loadView
@@ -15,7 +17,6 @@ class FindViewController < UIViewController
       end
     end
 
-    @details = layout(UIView, :modal_window)
     @table = layout(UITableView, :challenges_table, delegate: self, dataSource: self)
   end
 
@@ -26,18 +27,6 @@ class FindViewController < UIViewController
   layout :side do
     subview(FXLabel, :h1, text: 'FIND A CHALLENGE')
     subview(@table, :challenges_list)
-
-    subview(@details, :modal_window) do
-      subview(UIImageView, :text_activity)
-      subview(UIImageView, :modal_background)
-      @details_title = subview(FXLabel, :details_title)
-      @details_description = subview(UITextView, :details_description)
-      @details_badge = subview(UIImageView, :details_badge)
-
-      subview(UIImageView, :close_button).when_tapped do
-        @details.move_to([0, Device.screen.height])
-      end
-    end
   end
 
   # Needed for the tableview to create the proper scroll size and cells
@@ -47,16 +36,15 @@ class FindViewController < UIViewController
 
   # Cell height is a fixed size, I would like it to be dynamic eventually, but this will do for now
   def tableView(tableView, heightForRowAtIndexPath:indexPath)
-    108
+    106
   end
 
   # Table cells get created here
   def tableView(tableView, cellForRowAtIndexPath:indexPath)
-    cell_identifier = 'challenge_cells'
-    cell = tableView.dequeueReusableCellWithIdentifier(cell_identifier)
+    cell = tableView.dequeueReusableCellWithIdentifier('challenge_cells')
 
     unless cell
-      cell = UITableViewCell.alloc.initWithStyle(UITableViewCellStyleSubtitle, reuseIdentifier: cell_identifier)
+      cell = UITableViewCell.alloc.initWithStyle(UITableViewCellStyleSubtitle, reuseIdentifier: 'challenge_cells')
 
       layout(cell.contentView) do
         subview(UIImageView, :challenge_badge, image: @data[indexPath.row]["badge"].nsurl.nsdata)
@@ -65,8 +53,7 @@ class FindViewController < UIViewController
         subview(UIImageView, :cell_divider)
       end
 
-      bgColorView = layout(UIView, :cell_background)
-      cell.setSelectedBackgroundView(bgColorView)
+      cell.setSelectedBackgroundView(layout(UIView, :cell_background))
     end
 
     cell
@@ -78,17 +65,28 @@ class FindViewController < UIViewController
 
   # Table Row Selection
   def tableView(tableView, didSelectRowAtIndexPath:indexPath)
-    @details.move_to([0, 0])
+    @modals = (! @modals.nil? && @modals.size < 10) ? @modals : {}
 
-    @details_title.text = @data[indexPath.row]["title"].upcase
-    @details_description.text = @data[indexPath.row]["description"]
-    @details_badge.image = UIImage.imageWithData(@data[indexPath.row]["badge"].nsurl.nsdata)
+    @modals[indexPath] ||= create_modal(layout(UIView, :modal_window)) do
+      details_badge = subview(UIImageView, :details_badge, image: UIImage.imageWithData(@data[indexPath.row][:badge].nsurl.nsdata))
 
-    title_text_size = @details_title.sizeThatFits(CGSizeMake(@details_title.frame.size.width, 900))
-    @details_title.height = title_text_size.height
+      details_title = subview(FXLabel, :details_title, text: @data[indexPath.row][:title].upcase)
+      title_text_size = details_title.sizeThatFits(CGSizeMake(details_title.frame.size.width, 900))
+      details_title.height = title_text_size.height
 
-    description_text_size = @details_description.sizeThatFits(CGSizeMake(@details_description.frame.size.width, 900))
-    @details_description.height = description_text_size.height
+      details_description = subview(UITextView, :details_description, text: @data[indexPath.row][:description])
+      description_text_size = details_description.sizeThatFits(CGSizeMake(details_description.frame.size.width, 900))
+      details_description.height = description_text_size.height
+
+      # Embed a scrollable table of rules here
+      subview(UIImageView, :rules) do
+        @data[indexPath.row][:rules].each do |rule|
+          subview(UILabel, :rule, text: rule[:title])
+        end
+      end
+    end
+
+    show_modal(@modals[indexPath])
   end
 
 end

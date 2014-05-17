@@ -38,29 +38,38 @@ Teacup::Stylesheet.new :find_screen do
 
   # Modal Window
   style :modal_background,
-    left: 7
+    left: -2
 
   style :close_button,
-    left: 265,
-    top: 13
+    left: 265
 
   style :details_title,
     extends: :h2,
     numberOfLines: 0,
     background: :clear.uicolor,
-    color: BW.rgb_color(78, 50, 19),
+    color: BW.rgb_color(48, 20, 0),
     height: 40, width: 255,
     left: 20, top: 50
 
   style :details_description,
     extends: :p,
     editable: false,
+    color: BW.rgb_color(58, 30, 10),
     height: 150, width: 255,
     left: 15, top: 80
 
   style :details_badge,
     alpha: 0.1,
-    height: 180, width: 180,
+    width: 180, height: 180,
     center_x: '46%', top: 80
+
+  style :rules,
+    image: 'bg-scroll.png'.uiimage,
+    width: 260, height: 142,
+    left: 20, top: 280
+
+  style :rule,
+    width: 240, height: 65,
+    left: 10, top: 5
 
 end

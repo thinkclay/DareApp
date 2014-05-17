@@ -4,6 +4,7 @@ require 'motion/project/template/ios'
 require 'rubygems'
 require 'bundler'
 require 'motion-cocoapods'
+require 'motion-sparkinspector'
 
 Bundler.setup
 Bundler.require

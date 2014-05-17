@@ -1,0 +1,5 @@
+class RulesListController < UIViewController
+
+
+
+end

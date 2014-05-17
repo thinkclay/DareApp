@@ -28,7 +28,6 @@
   # these should be moved out into their own controllers.. but then how will
   # keyboard delegation and other master -> child properties get passed?
   layout :side do
-
     @post_data = {}
 
     # assign our input fields to an array so we can loop through
@@ -42,7 +41,6 @@
     }
 
     subview(@pagination, :pagination) do
-
       subview(@create_challenge, :form_create) do
         subview(FXLabel, :h1, text: 'CREATE A CHALLENGE')
 
@@ -88,7 +86,6 @@
         @share_facebook = subview(UIImageView, :button_share_facebook)
         @share_twitter = subview(UIImageView, :button_share_twitter)
       end
-
     end
 
     # pagination control
@@ -194,7 +191,7 @@
     @post_data['category'] = @challenge_types[indexPath.row]['name']
 
     @challenge_type_dropdown.fade_out if defined? @challenge_type_dropdown
-    @input_fields['type'].superview.image = UIImage.imageNamed('ui-textfield-normal.png')
+    @input_fields['type'].superview.image = 'ui-textfield-normal.png'.uiimage
   end
 
   def post_data_status
@@ -205,34 +202,24 @@
 
       if v.text.nil?
         # only the regular text inputs recognize an imageview as a proper container
-        @input_fields[k].superview.image = UIImage.imageNamed('ui-textfield-selected.png')
+        @input_fields[k].superview.image = 'ui-textfield-selected.png'.uiimage
 
         post_ready = false
       end
     }
 
+    # Incomplete
     if post_ready
-      BW::HTTP.post("http://localhost:2222/api/challenges/create", {payload: @post_data}) do |response|
-        if response.ok?
-          json = BW::JSON.parse(response.body.to_str)
-          puts json.inspect
-        elsif response.status_code.to_s =~ /40\d/
-          App.alert("Login failed")
-        else
-          App.alert(response.error_message)
-        end
-      end
+      # Make the request to the web server with the @post_data payload
     end
   end
 
   def switch_page(i)
     # Loop through and set all the others to normal state
-    @page.each { |page|
-      page.image = UIImage.imageNamed('ui-bullet-normal.png')
-    }
+    @page.each { |page| page.image = 'ui-bullet-normal.png'.uiimage }
 
     # Set this one to selected state
-    @page[i].image = UIImage.imageNamed('ui-bullet-selected.png')
+    @page[i].image = 'ui-bullet-selected.png'.uiimage
 
     # Move the scroll view to the correct offset
     offset = Device.screen.width * @page[i].tag.to_i
