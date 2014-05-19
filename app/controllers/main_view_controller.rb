@@ -42,7 +42,7 @@ class MainViewController < UIViewController
     activity_button = subview(UIImageView, :activity_button)
     friends_button = subview(UIImageView, :friends_button)
 
-    create_modal(@profile, 'PROFILE') do
+    create_modal(@profile, header: 'PROFILE') do
       subview(UIImageView, :avatar)
       subview(UILabel, :user_name)
       subview(UILabel, :user_location)
@@ -61,8 +61,8 @@ class MainViewController < UIViewController
       @coins = subview(UIImageView, :btn_coins)
     end
 
-    create_modal(@activity, 'ACTIVITY')
-    create_modal(@friends, 'FRIENDS')
+    create_modal(@activity, header: 'ACTIVITY')
+    create_modal(@friends, header: 'FRIENDS')
 
     create_button.when_tapped do
       self.viewDeckController.toggleRightViewAnimated(true)

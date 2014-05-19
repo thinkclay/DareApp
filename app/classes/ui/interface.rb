@@ -1,7 +1,7 @@
 module Interface
-  def create_modal(window, header_text = nil)
+  def create_modal(window, options = {})
     modal_profile = subview(window, :modal_window) do
-      subview(FXLabel, :modal_header, text: header_text) unless header_text.nil?
+      subview(FXLabel, :modal_header, text: options[:header]) unless options[:header].nil?
       subview(UIImageView, :modal_background)
 
       subview(UIImageView, :close_button).when_tapped do

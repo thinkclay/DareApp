@@ -1,13 +1,3 @@
-#
-# Main View Controller
-#
-# This controller is the middle, main screen that is shown on startup.
-# It contains navigation elements for the side menus as well as profile, activity, and friends
-#
-# @author     Clay McIlrath <thinkclay@gmail.com>
-# @copyright  (c) 2013 Clayton McIlrath, All rights reserved
-#
-
 class AuthViewController < UIViewController
 
   stylesheet :auth_screen
